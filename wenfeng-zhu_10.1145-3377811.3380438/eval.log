@@ -1,0 +1,1420 @@
+Analyzing `../DroidMacroBench/repacked_apps/com.spotify.music.apk`
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis no_dumps /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.spotify.music.apk` and timeout None s
+Finished analysis. Took 1935.321896 seconds
+2021-12-30 16:00:37 [main] INFO  d.u.t.heapdumps.analysis.Driver - Finished analysis. Took 31.97 min. Writing out results...
+2021-12-30 16:00:37 [main] INFO  d.u.t.heapdumps.analysis.Driver - Terminaton state: 0, #Sources 3, #Sinks 3, #Classes: 35825, #Methods: 177397, #AppClasses: 33082, #AppMethods: 148218
+2021-12-30 16:00:37 [main] INFO  d.u.t.heapdumps.analysis.Driver - Callgraph Construction: 253 seconds
+Taint Propagation: 1490 seconds
+Path Reconstruction: 64 seconds
+Total Runtime: 1901 seconds
+Max Memory Consumption: 54317 MB
+
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis no_dumps /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.spotify.music.apk"
+	User time (seconds): 21080.83
+	System time (seconds): 401.75
+	Percent of CPU this job got: 1110%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 32:15.31
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 88905412
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 28
+	Minor (reclaiming a frame) page faults: 24408561
+	Voluntary context switches: 23300339
+	Involuntary context switches: 79650
+	Swaps: 0
+	File system inputs: 116424
+	File system outputs: 3520
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Filtered according to mode `first_only`. 1/47 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis first_only -d ../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222650413.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.spotify.music.apk` and timeout None s
+Finished analysis. Took 8.202334 seconds
+2021-12-30 16:00:49 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis first_only -d ../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222650413.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.spotify.music.apk"
+	User time (seconds): 29.88
+	System time (seconds): 1.82
+	Percent of CPU this job got: 386%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.19
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1300472
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 365015
+	Voluntary context switches: 22728
+	Involuntary context switches: 339
+	Swaps: 0
+	File system inputs: 48
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.spotify.music.apk/first_only/default.log
+Filtered according to mode `last_only`. 1/47 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis last_only -d ../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222721720.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.spotify.music.apk` and timeout None s
+Finished analysis. Took 8.282486 seconds
+2021-12-30 16:00:57 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis last_only -d ../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222721720.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.spotify.music.apk"
+	User time (seconds): 31.01
+	System time (seconds): 1.58
+	Percent of CPU this job got: 394%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.26
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1306704
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 370907
+	Voluntary context switches: 21893
+	Involuntary context switches: 410
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.spotify.music.apk/last_only/default.log
+Filtered according to mode `activity_last`. 8/47 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis activity_last -d ../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222721720.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223198114.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222657444.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222687535.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222765949.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222407853.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222633035.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222542656.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.spotify.music.apk` and timeout None s
+Finished analysis. Took 8.497294 seconds
+2021-12-30 16:01:06 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis activity_last -d ../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222721720.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223198114.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222657444.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222687535.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222765949.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222407853.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222633035.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222542656.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.spotify.music.apk"
+	User time (seconds): 31.04
+	System time (seconds): 1.86
+	Percent of CPU this job got: 387%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.48
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1301484
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 367249
+	Voluntary context switches: 21614
+	Involuntary context switches: 703
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.spotify.music.apk/activity_last/default.log
+Skipping analysis due to existing log file: ./output/com.spotify.music.apk/activity_last/default.log
+Filtered according to mode `action_all`. 47/47 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis action_all -d ../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222650413.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223198114.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223000143.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222614379.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222664817.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222694682.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223355789.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222687535.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223138050.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222706365.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223191854.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223150618.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222742696.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222865732.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223384810.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222765949.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222172989.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222516656.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222800016.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222814063.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222593515.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222623659.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222788977.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223180060.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222332157.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222633035.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222781574.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222601800.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223246770.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223125960.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222584214.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222526915.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222657444.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222677338.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222641266.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222504833.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222399242.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222735790.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222712806.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222773959.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223159742.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222728779.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222569469.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222542656.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222407853.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222492436.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222721720.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.spotify.music.apk` and timeout None s
+Finished analysis. Took 8.586196 seconds
+2021-12-30 16:01:14 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis action_all -d ../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222650413.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223198114.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223000143.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222614379.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222664817.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222694682.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223355789.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222687535.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223138050.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222706365.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223191854.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223150618.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222742696.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222865732.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223384810.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222765949.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222172989.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222516656.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222800016.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222814063.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222593515.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222623659.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222788977.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223180060.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222332157.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222633035.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222781574.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222601800.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223246770.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223125960.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222584214.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222526915.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222657444.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222677338.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222641266.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222504833.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222399242.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222735790.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222712806.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222773959.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547223159742.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222728779.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222569469.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222542656.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222407853.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222492436.hprof:../DroidMacroBench_snapshots/com.spotify.music.apk/2019-01-11_16_56_05/1547222721720.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.spotify.music.apk"
+	User time (seconds): 31.07
+	System time (seconds): 1.91
+	Percent of CPU this job got: 384%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1301208
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 367943
+	Voluntary context switches: 23162
+	Involuntary context switches: 270
+	Swaps: 0
+	File system inputs: 8
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.spotify.music.apk/action_all/default.log
+Skipping analysis due to existing log file: ./output/com.spotify.music.apk/action_all/default.log
+Analyzing `../DroidMacroBench/repacked_apps/com.contextlogic.wish.apk`
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis no_dumps /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.contextlogic.wish.apk` and timeout None s
+Finished analysis. Took 2717.199675 seconds
+2021-12-30 16:46:29 [main] INFO  d.u.t.heapdumps.analysis.Driver - Finished analysis. Took 45.23 min. Writing out results...
+2021-12-30 16:46:29 [main] INFO  d.u.t.heapdumps.analysis.Driver - Terminaton state: 0, #Sources 6, #Sinks 5, #Classes: 15974, #Methods: 98711, #AppClasses: 12488, #AppMethods: 62921
+2021-12-30 16:46:29 [main] INFO  d.u.t.heapdumps.analysis.Driver - Callgraph Construction: 83 seconds
+Taint Propagation: 2484 seconds
+Path Reconstruction: 38 seconds
+Total Runtime: 2707 seconds
+Max Memory Consumption: 55985 MB
+
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis no_dumps /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.contextlogic.wish.apk"
+	User time (seconds): 25114.51
+	System time (seconds): 422.88
+	Percent of CPU this job got: 939%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 45:17.19
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 85289872
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 23779234
+	Voluntary context switches: 27052661
+	Involuntary context switches: 107158
+	Swaps: 0
+	File system inputs: 43624
+	File system outputs: 3544
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Filtered according to mode `first_only`. 1/84 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis first_only -d ../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475175824.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.contextlogic.wish.apk` and timeout None s
+Finished analysis. Took 5.447062 seconds
+2021-12-30 16:46:37 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis first_only -d ../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475175824.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.contextlogic.wish.apk"
+	User time (seconds): 25.02
+	System time (seconds): 1.57
+	Percent of CPU this job got: 488%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.44
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 826196
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 252932
+	Voluntary context switches: 18454
+	Involuntary context switches: 527
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.contextlogic.wish.apk/first_only/default.log
+Filtered according to mode `last_only`. 1/84 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis last_only -d ../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475112701.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.contextlogic.wish.apk` and timeout None s
+Finished analysis. Took 5.258086 seconds
+2021-12-30 16:46:42 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis last_only -d ../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475112701.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.contextlogic.wish.apk"
+	User time (seconds): 25.28
+	System time (seconds): 1.35
+	Percent of CPU this job got: 507%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.25
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 840436
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 249045
+	Voluntary context switches: 16587
+	Involuntary context switches: 712
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.contextlogic.wish.apk/last_only/default.log
+Filtered according to mode `activity_last`. 24/84 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis activity_last -d ../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475260396.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475569609.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475721623.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476322877.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476246250.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475784342.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476044537.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475112701.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474473246.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476186867.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477262841.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475880549.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476201954.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474498481.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476077340.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476873091.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476059972.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476230138.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477237227.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476095362.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475522725.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475773379.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475486436.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477221996.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.contextlogic.wish.apk` and timeout None s
+Finished analysis. Took 5.206080 seconds
+2021-12-30 16:46:48 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis activity_last -d ../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475260396.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475569609.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475721623.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476322877.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476246250.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475784342.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476044537.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475112701.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474473246.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476186867.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477262841.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475880549.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476201954.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474498481.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476077340.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476873091.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476059972.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476230138.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477237227.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476095362.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475522725.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475773379.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475486436.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477221996.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.contextlogic.wish.apk"
+	User time (seconds): 24.11
+	System time (seconds): 1.24
+	Percent of CPU this job got: 487%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.19
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 809912
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 245466
+	Voluntary context switches: 17635
+	Involuntary context switches: 344
+	Swaps: 0
+	File system inputs: 8
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.contextlogic.wish.apk/activity_last/default.log
+Skipping analysis due to existing log file: ./output/com.contextlogic.wish.apk/activity_last/default.log
+Filtered according to mode `action_all`. 84/84 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis action_all -d ../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475175824.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475569609.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475652110.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476322877.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476925468.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476246250.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475739322.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477163886.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476029709.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475755640.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477143246.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476378583.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474473246.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476123879.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477253258.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476964484.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475824844.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474958120.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476307719.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474487498.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476442618.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476111361.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475957425.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476077340.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475218600.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476201954.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475683800.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476714649.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475942876.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476059972.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476853936.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476342927.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475665986.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476214810.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476729333.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475919218.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476948724.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476428580.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477262841.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476011594.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476137598.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474644264.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477237227.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476095362.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475191309.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475842981.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476501667.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475316110.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475721623.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474571286.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475855897.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475784342.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475147975.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475522725.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476230138.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475805502.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476983383.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475773379.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474547834.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477191021.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476149846.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475336734.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476044537.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474536067.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476628523.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475486436.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476461907.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475611638.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474617115.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474498481.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477221996.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475636934.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475452535.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475598338.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476873091.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475989624.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475260396.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476812914.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476413770.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476832877.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475880549.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476697984.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476186867.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475112701.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.contextlogic.wish.apk` and timeout None s
+Finished analysis. Took 5.410935 seconds
+2021-12-30 16:46:53 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis action_all -d ../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475175824.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475569609.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475652110.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476322877.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476925468.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476246250.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475739322.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477163886.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476029709.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475755640.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477143246.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476378583.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474473246.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476123879.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477253258.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476964484.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475824844.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474958120.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476307719.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474487498.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476442618.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476111361.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475957425.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476077340.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475218600.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476201954.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475683800.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476714649.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475942876.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476059972.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476853936.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476342927.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475665986.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476214810.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476729333.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475919218.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476948724.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476428580.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477262841.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476011594.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476137598.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474644264.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477237227.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476095362.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475191309.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475842981.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476501667.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475316110.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475721623.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474571286.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475855897.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475784342.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475147975.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475522725.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476230138.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475805502.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476983383.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475773379.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474547834.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477191021.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476149846.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475336734.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476044537.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474536067.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476628523.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475486436.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476461907.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475611638.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474617115.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474498481.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477221996.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475636934.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475452535.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475598338.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476873091.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475989624.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475260396.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476812914.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476413770.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476832877.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475880549.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476697984.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476186867.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475112701.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.contextlogic.wish.apk"
+	User time (seconds): 24.91
+	System time (seconds): 1.23
+	Percent of CPU this job got: 483%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.40
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 845608
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 253359
+	Voluntary context switches: 15923
+	Involuntary context switches: 872
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.contextlogic.wish.apk/action_all/default.log
+Skipping analysis due to existing log file: ./output/com.contextlogic.wish.apk/action_all/default.log
+Analyzing `../DroidMacroBench/repacked_apps/com.microsoft.office.outlook.apk`
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis no_dumps /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.office.outlook.apk` and timeout None s
+Finished analysis. Took 3440.198293 seconds
+2021-12-30 17:44:11 [main] INFO  d.u.t.heapdumps.analysis.Driver - Finished analysis. Took 57.29 min. Writing out results...
+2021-12-30 17:44:11 [main] INFO  d.u.t.heapdumps.analysis.Driver - Terminaton state: 0, #Sources 7, #Sinks 43, #Classes: 26798, #Methods: 181651, #AppClasses: 22756, #AppMethods: 142932
+2021-12-30 17:44:11 [main] INFO  d.u.t.heapdumps.analysis.Driver - Callgraph Construction: 157 seconds
+Taint Propagation: 3140 seconds
+Path Reconstruction: 15 seconds
+Total Runtime: 3423 seconds
+Max Memory Consumption: 54471 MB
+
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis no_dumps /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.office.outlook.apk"
+	User time (seconds): 45735.08
+	System time (seconds): 464.51
+	Percent of CPU this job got: 1342%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 57:20.19
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 81692416
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 22755949
+	Voluntary context switches: 41156162
+	Involuntary context switches: 149350
+	Swaps: 0
+	File system inputs: 77136
+	File system outputs: 6736
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Filtered according to mode `first_only`. 1/46 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis first_only -d ../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733412571.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.office.outlook.apk` and timeout None s
+Finished analysis. Took 9.271457 seconds
+2021-12-30 17:44:23 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis first_only -d ../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733412571.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.office.outlook.apk"
+	User time (seconds): 33.21
+	System time (seconds): 2.14
+	Percent of CPU this job got: 381%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.26
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1474012
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 415384
+	Voluntary context switches: 23099
+	Involuntary context switches: 287
+	Swaps: 0
+	File system inputs: 256
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.microsoft.office.outlook.apk/first_only/default.log
+Filtered according to mode `last_only`. 1/46 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis last_only -d ../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734200649.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.office.outlook.apk` and timeout None s
+Finished analysis. Took 9.295551 seconds
+2021-12-30 17:44:32 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis last_only -d ../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734200649.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.office.outlook.apk"
+	User time (seconds): 34.11
+	System time (seconds): 1.88
+	Percent of CPU this job got: 387%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.29
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1446188
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 409309
+	Voluntary context switches: 21462
+	Involuntary context switches: 1084
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.microsoft.office.outlook.apk/last_only/default.log
+Filtered according to mode `activity_last`. 18/46 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis activity_last -d ../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733180735.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734223992.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733099630.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734032474.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732996470.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733045210.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733947631.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733354107.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732205288.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734200649.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732962138.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734068925.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733970833.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733017927.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732149483.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733931722.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733379454.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733476678.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.office.outlook.apk` and timeout None s
+Finished analysis. Took 9.360835 seconds
+2021-12-30 17:44:42 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis activity_last -d ../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733180735.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734223992.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733099630.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734032474.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732996470.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733045210.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733947631.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733354107.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732205288.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734200649.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732962138.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734068925.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733970833.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733017927.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732149483.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733931722.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733379454.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733476678.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.office.outlook.apk"
+	User time (seconds): 34.28
+	System time (seconds): 1.93
+	Percent of CPU this job got: 387%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.35
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1464100
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 418409
+	Voluntary context switches: 23104
+	Involuntary context switches: 238
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.microsoft.office.outlook.apk/activity_last/default.log
+Skipping analysis due to existing log file: ./output/com.microsoft.office.outlook.apk/activity_last/default.log
+Filtered according to mode `action_all`. 46/46 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis action_all -d ../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733412571.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734266769.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733145199.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733099630.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733122002.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734027095.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732996470.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734077187.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733045210.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733957348.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734039039.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733354107.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732205288.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734183913.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733294149.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732181825.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734161886.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734240611.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734068925.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733987997.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733970833.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734032474.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733017927.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733328931.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732224881.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733931722.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734019837.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733225229.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734193973.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732962138.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734252172.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734057904.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734209466.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732149483.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733519257.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734006689.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733441931.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734049582.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733560457.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734172202.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733947631.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733379454.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733476678.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733180735.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734223992.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734200649.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.office.outlook.apk` and timeout None s
+Finished analysis. Took 9.165469 seconds
+2021-12-30 17:44:51 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis action_all -d ../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733412571.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734266769.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733145199.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733099630.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733122002.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734027095.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732996470.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734077187.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733045210.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733957348.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734039039.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733354107.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732205288.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734183913.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733294149.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732181825.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734161886.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734240611.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734068925.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733987997.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733970833.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734032474.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733017927.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733328931.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732224881.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733931722.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734019837.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733225229.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734193973.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732962138.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734252172.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734057904.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734209466.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732149483.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733519257.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734006689.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733441931.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734049582.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733560457.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734172202.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733947631.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733379454.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733476678.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733180735.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734223992.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734200649.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.office.outlook.apk"
+	User time (seconds): 33.21
+	System time (seconds): 1.79
+	Percent of CPU this job got: 382%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1447464
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 413914
+	Voluntary context switches: 22561
+	Involuntary context switches: 277
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.microsoft.office.outlook.apk/action_all/default.log
+Skipping analysis due to existing log file: ./output/com.microsoft.office.outlook.apk/action_all/default.log
+Analyzing `../DroidMacroBench/repacked_apps/com.microsoft.skydrive.apk`
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis no_dumps /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.skydrive.apk` and timeout None s
+Finished analysis. Took 1990.096741 seconds
+2021-12-30 18:18:00 [main] INFO  d.u.t.heapdumps.analysis.Driver - Finished analysis. Took 33.14 min. Writing out results...
+2021-12-30 18:18:00 [main] INFO  d.u.t.heapdumps.analysis.Driver - Terminaton state: 0, #Sources 13, #Sinks 13, #Classes: 15361, #Methods: 109819, #AppClasses: 11508, #AppMethods: 71634
+2021-12-30 18:18:00 [main] INFO  d.u.t.heapdumps.analysis.Driver - Callgraph Construction: 67 seconds
+Taint Propagation: 1812 seconds
+Path Reconstruction: 75 seconds
+Total Runtime: 1980 seconds
+Max Memory Consumption: 27565 MB
+
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis no_dumps /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.skydrive.apk"
+	User time (seconds): 5888.73
+	System time (seconds): 265.22
+	Percent of CPU this job got: 309%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 33:10.09
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 40220256
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 10414245
+	Voluntary context switches: 12135140
+	Involuntary context switches: 93120
+	Swaps: 0
+	File system inputs: 71424
+	File system outputs: 2720
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Filtered according to mode `first_only`. 1/49 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis first_only -d ../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218602483.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.skydrive.apk` and timeout None s
+Finished analysis. Took 6.466726 seconds
+2021-12-30 18:18:08 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis first_only -d ../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218602483.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.skydrive.apk"
+	User time (seconds): 27.22
+	System time (seconds): 1.45
+	Percent of CPU this job got: 444%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:06.45
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 970872
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 289303
+	Voluntary context switches: 20520
+	Involuntary context switches: 631
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.microsoft.skydrive.apk/first_only/default.log
+Filtered according to mode `last_only`. 1/49 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis last_only -d ../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218432203.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.skydrive.apk` and timeout None s
+Finished analysis. Took 6.381799 seconds
+2021-12-30 18:18:14 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis last_only -d ../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218432203.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.skydrive.apk"
+	User time (seconds): 25.89
+	System time (seconds): 1.47
+	Percent of CPU this job got: 429%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:06.37
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1015640
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 304027
+	Voluntary context switches: 20225
+	Involuntary context switches: 673
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.microsoft.skydrive.apk/last_only/default.log
+Filtered according to mode `activity_last`. 18/49 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis activity_last -d ../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218602483.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218432203.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218234529.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218592048.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218139377.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217899788.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217926324.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218368229.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218513611.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217736598.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218113321.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217522144.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217754906.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217533302.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217670701.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217787721.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217959414.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217545079.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.skydrive.apk` and timeout None s
+Finished analysis. Took 6.590973 seconds
+2021-12-30 18:18:21 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis activity_last -d ../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218602483.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218432203.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218234529.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218592048.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218139377.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217899788.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217926324.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218368229.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218513611.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217736598.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218113321.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217522144.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217754906.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217533302.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217670701.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217787721.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217959414.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217545079.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.skydrive.apk"
+	User time (seconds): 26.63
+	System time (seconds): 1.28
+	Percent of CPU this job got: 424%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:06.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 975260
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 289012
+	Voluntary context switches: 20543
+	Involuntary context switches: 864
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.microsoft.skydrive.apk/activity_last/default.log
+Skipping analysis due to existing log file: ./output/com.microsoft.skydrive.apk/activity_last/default.log
+Filtered according to mode `action_all`. 49/49 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis action_all -d ../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218602483.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218253653.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218234529.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218608789.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218193256.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218139377.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217893718.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217926324.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218368229.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218295220.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217721206.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218330184.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217687716.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218513611.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218746378.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217736598.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217706079.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218170464.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218078595.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218053301.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217503736.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217754906.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217512921.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217533302.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217628939.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217648338.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217522144.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217787721.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218619455.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218485644.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217993108.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217558315.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217773964.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217959414.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218215844.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218592048.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218460228.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217611398.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218031763.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218407330.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217545079.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217594735.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218561285.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218273505.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218113321.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217577852.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217899788.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217670701.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218432203.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.skydrive.apk` and timeout None s
+Finished analysis. Took 6.027042 seconds
+2021-12-30 18:18:27 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis action_all -d ../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218602483.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218253653.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218234529.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218608789.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218193256.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218139377.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217893718.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217926324.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218368229.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218295220.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217721206.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218330184.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217687716.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218513611.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218746378.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217736598.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217706079.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218170464.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218078595.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218053301.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217503736.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217754906.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217512921.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217533302.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217628939.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217648338.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217522144.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217787721.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218619455.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218485644.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217993108.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217558315.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217773964.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217959414.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218215844.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218592048.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218460228.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217611398.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218031763.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218407330.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217545079.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217594735.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218561285.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218273505.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218113321.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217577852.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217899788.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547217670701.hprof:../DroidMacroBench_snapshots/com.microsoft.skydrive.apk/2019-01-11_15_38_20/1547218432203.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.skydrive.apk"
+	User time (seconds): 25.91
+	System time (seconds): 1.27
+	Percent of CPU this job got: 451%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:06.02
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 976084
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 288692
+	Voluntary context switches: 19764
+	Involuntary context switches: 469
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.microsoft.skydrive.apk/action_all/default.log
+Skipping analysis due to existing log file: ./output/com.microsoft.skydrive.apk/action_all/default.log
+Analyzing `../DroidMacroBench/repacked_apps/com.uc.browser.en.apk`
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis no_dumps /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.uc.browser.en.apk` and timeout None s
+Finished analysis. Took 539.297273 seconds
+2021-12-30 18:27:26 [main] INFO  d.u.t.heapdumps.analysis.Driver - Finished analysis. Took 8.966 min. Writing out results...
+2021-12-30 18:27:26 [main] INFO  d.u.t.heapdumps.analysis.Driver - Terminaton state: 0, #Sources 11, #Sinks 13, #Classes: 19594, #Methods: 108794, #AppClasses: 16974, #AppMethods: 79719
+2021-12-30 18:27:26 [main] INFO  d.u.t.heapdumps.analysis.Driver - Callgraph Construction: 112 seconds
+Taint Propagation: 386 seconds
+Path Reconstruction: 28 seconds
+Total Runtime: 532 seconds
+Max Memory Consumption: 4368 MB
+
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis no_dumps /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.uc.browser.en.apk"
+	User time (seconds): 1454.32
+	System time (seconds): 59.31
+	Percent of CPU this job got: 280%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 8:59.29
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 30117376
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 7697774
+	Voluntary context switches: 1543436
+	Involuntary context switches: 42594
+	Swaps: 0
+	File system inputs: 20824
+	File system outputs: 1000
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Filtered according to mode `first_only`. 1/31 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis first_only -d ../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938091472.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.uc.browser.en.apk` and timeout None s
+Finished analysis. Took 4.718516 seconds
+2021-12-30 18:27:31 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis first_only -d ../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938091472.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.uc.browser.en.apk"
+	User time (seconds): 19.99
+	System time (seconds): 1.29
+	Percent of CPU this job got: 451%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 815640
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 245349
+	Voluntary context switches: 16117
+	Involuntary context switches: 270
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.uc.browser.en.apk/first_only/default.log
+Filtered according to mode `last_only`. 1/31 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis last_only -d ../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937618874.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.uc.browser.en.apk` and timeout None s
+Finished analysis. Took 4.681403 seconds
+2021-12-30 18:27:36 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis last_only -d ../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937618874.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.uc.browser.en.apk"
+	User time (seconds): 20.27
+	System time (seconds): 1.08
+	Percent of CPU this job got: 457%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.66
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 816980
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 241770
+	Voluntary context switches: 15667
+	Involuntary context switches: 258
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.uc.browser.en.apk/last_only/default.log
+Filtered according to mode `activity_last`. 6/31 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis activity_last -d ../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937618874.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938874302.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937963905.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937779407.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938157871.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938135809.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.uc.browser.en.apk` and timeout None s
+Finished analysis. Took 4.881565 seconds
+2021-12-30 18:27:41 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis activity_last -d ../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937618874.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938874302.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937963905.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937779407.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938157871.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938135809.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.uc.browser.en.apk"
+	User time (seconds): 20.27
+	System time (seconds): 1.15
+	Percent of CPU this job got: 439%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.87
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 810072
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 238927
+	Voluntary context switches: 16304
+	Involuntary context switches: 229
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.uc.browser.en.apk/activity_last/default.log
+Skipping analysis due to existing log file: ./output/com.uc.browser.en.apk/activity_last/default.log
+Filtered according to mode `action_all`. 31/31 snapshots chosen.
+Running analysis with params: `/usr/bin/time -v java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis action_all -d ../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938091472.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937354093.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937393275.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938219277.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937740482.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938901917.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938385188.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937232574.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937550104.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938052986.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938337199.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937516782.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937963905.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937779407.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937582663.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937915452.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937479257.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938013909.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937248860.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937866712.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938288870.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937323015.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937820898.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938874302.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937704670.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937436969.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938257975.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938157871.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937657362.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938135809.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937618874.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.uc.browser.en.apk` and timeout None s
+Finished analysis. Took 4.776441 seconds
+2021-12-30 18:27:46 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis action_all -d ../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938091472.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937354093.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937393275.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938219277.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937740482.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938901917.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938385188.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937232574.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937550104.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938052986.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938337199.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937516782.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937963905.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937779407.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937582663.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937915452.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937479257.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938013909.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937248860.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937866712.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938288870.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937323015.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937820898.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938874302.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937704670.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937436969.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938257975.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938157871.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937657362.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546938135809.hprof:../DroidMacroBench_snapshots/com.uc.browser.en.apk/2019-01-08_09_47_09/1546937618874.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.uc.browser.en.apk"
+	User time (seconds): 20.21
+	System time (seconds): 1.13
+	Percent of CPU this job got: 447%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.77
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 814364
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 243632
+	Voluntary context switches: 15809
+	Involuntary context switches: 696
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+Skipping analysis due to existing log file: ./output/com.uc.browser.en.apk/action_all/default.log
+Skipping analysis due to existing log file: ./output/com.uc.browser.en.apk/action_all/default.log

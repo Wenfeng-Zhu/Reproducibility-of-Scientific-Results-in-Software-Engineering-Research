@@ -1,0 +1,632 @@
+,Apk,Result,Time,Mem(GB),Heuristic,#Snapshots,Mode,#Sources,#Sinks,#classes,#methods,#cg_edges,#flows,#additional flows,#missing flows,#TP,#FP,#TN,#FN,#unknown
+0,com.UCMobile.intl,Exit status: 0,2:58:08,81.70377731323242,none,0,full static,16,15,24455,117794,71198,21,0,0,15,2,0,0,4
+1,com.UCMobile.intl,Exit status: 0,1:59,7.621219635009766,first_only,1/69,d,2,2,24455,117788,25036,2,0,19,2,0,2,13,0
+2,com.UCMobile.intl,Exit status: 0,7:21,28.044654846191406,first_only,1/69,sf,10,10,24455,117794,50383,13,1,9,12,0,2,3,1
+3,com.UCMobile.intl,Exit status: 0,1:58,7.604572296142578,last_only,1/69,d,2,2,24455,117788,25477,2,0,19,2,0,2,13,0
+4,com.UCMobile.intl,Exit status: 0,6:37,27.95368194580078,last_only,1/69,sf,10,9,24455,117794,48894,11,0,10,11,0,2,4,0
+5,com.UCMobile.intl,Exit status: 0,3:38,17.549697875976562,activity_last,11/69,d,4,5,24455,117788,30450,5,0,16,5,0,2,10,0
+6,com.UCMobile.intl,Exit status: 0,8:45,28.39086151123047,activity_last,11/69,sf,12,13,24455,117794,52723,15,0,6,15,0,2,0,0
+7,com.UCMobile.intl,Exit status: 0,17:50,21.23400115966797,activity_last,11/69,i,4,5,24455,117788,27548,5,0,16,5,0,2,10,0
+8,com.UCMobile.intl,Exit status: 0,10:47,28.750995635986328,action_all,69/69,d,4,5,24455,117788,31068,5,0,16,5,0,2,10,0
+9,com.UCMobile.intl,Exit status: 0,16:22,29.78240966796875,action_all,69/69,sf,11,10,24455,117794,52358,13,1,9,12,0,2,3,1
+10,com.UCMobile.intl,Exit status: 0,1:46:15,27.854904174804688,action_all,69/69,i,4,5,24455,117788,27312,5,0,16,5,0,2,10,0
+11,com.contextlogic.wish,Exit status: 0,46:37,79.11311340332031,none,0,full static,5,10,12488,62921,41937,14,0,0,3,11,0,0,0
+12,com.contextlogic.wish,Exit status: 0,1:36,8.43521499633789,first_only,1/84,d,1,1,12488,62921,18203,1,0,13,1,0,11,2,0
+13,com.contextlogic.wish,Exit status: 0,43:21,77.00423431396484,first_only,1/84,sf,2,4,12488,62921,33393,5,1,10,1,3,8,2,1
+14,com.contextlogic.wish,Exit status: 0,1:31,7.322460174560547,last_only,1/84,d,1,1,12488,62921,18180,1,0,13,1,0,11,2,0
+15,com.contextlogic.wish,Exit status: 0,43:57,76.84452056884766,last_only,1/84,sf,2,5,12488,62921,33427,6,1,9,1,4,7,2,1
+16,com.contextlogic.wish,Exit status: 0,8:17,27.9825439453125,activity_last,24/84,d,1,1,12488,62921,18281,1,0,13,1,0,11,2,0
+17,com.contextlogic.wish,Exit status: 0,51:33,81.4952278137207,activity_last,24/84,sf,2,2,12488,62921,29748,2,1,13,1,0,11,2,1
+18,com.contextlogic.wish,Exit status: 0,26:17,27.833946228027344,activity_last,24/84,i,1,1,12488,62921,17544,1,0,13,1,0,11,2,0
+19,com.contextlogic.wish,Exit status: 0,24:59,28.732929229736328,action_all,84/84,d,1,1,12488,62921,18282,1,0,13,1,0,11,2,0
+20,com.contextlogic.wish,Exit status: 0,1:05:37,77.11352157592773,action_all,84/84,sf,2,2,12488,62921,29742,2,1,13,1,0,11,2,1
+21,com.contextlogic.wish,Exit status: 0,1:28:14,28.11880874633789,action_all,84/84,i,1,1,12488,62921,17591,1,0,13,1,0,11,2,0
+22,com.domobile.applock,Exit status: 0,1:17:46,80.87627410888672,none,0,full static,11,15,6201,35686,21539,24,0,0,0,0,0,0,24
+23,com.domobile.applock,Exit status: 0,0:38,4.577777862548828,first_only,1/55,d,10,14,6201,35685,8362,22,2,4,0,0,0,0,22
+24,com.domobile.applock,Exit status: 0,1:06,6.867885589599609,first_only,1/55,sf,10,14,6201,35685,15899,24,3,3,0,0,0,0,24
+25,com.domobile.applock,Exit status: 0,0:38,4.459754943847656,last_only,1/55,d,10,15,6201,35685,8408,22,2,4,0,0,0,0,22
+26,com.domobile.applock,Exit status: 0,1:04,7.002510070800781,last_only,1/55,sf,10,14,6201,35685,15916,23,2,3,0,0,0,0,23
+27,com.domobile.applock,Exit status: 0,4:25,27.432025909423828,activity_last,14/55,d,10,13,6201,35685,10818,22,1,3,0,0,0,0,22
+28,com.domobile.applock,Exit status: 0,10:36,36.24183654785156,activity_last,14/55,sf,11,15,6201,35686,18460,23,2,3,0,0,0,0,23
+29,com.domobile.applock,Exit status: 0,8:19,24.551013946533203,activity_last,14/55,i,10,14,6201,35685,8531,21,2,5,0,0,0,0,21
+30,com.domobile.applock,Exit status: 0,6:53,32.965087890625,action_all,55/55,d,10,15,6201,35685,11155,23,2,3,0,0,0,0,23
+31,com.domobile.applock,Exit status: 0,12:29,37.27430725097656,action_all,55/55,sf,11,13,6201,35686,18357,21,1,4,0,0,0,0,21
+32,com.domobile.applock,Exit status: 0,32:59,32.520877838134766,action_all,55/55,i,10,15,6201,35685,8575,22,2,4,0,0,0,0,22
+33,com.spotify.music,Exit status: 0,36:41,81.15547943115234,none,0,full static,3,4,33082,148217,50176,8,0,0,1,7,0,0,0
+34,com.spotify.music,Exit status: 0,3:19,9.690681457519531,first_only,1/47,d,0,0,33082,148217,30951,0,0,8,0,0,7,1,0
+35,com.spotify.music,Exit status: 0,3:53,10.021308898925781,first_only,1/47,sf,2,4,33082,148217,40755,6,2,4,1,3,4,0,2
+36,com.spotify.music,Exit status: 0,3:16,9.768985748291016,last_only,1/47,d,0,0,33082,148217,30864,0,0,8,0,0,7,1,0
+37,com.spotify.music,Exit status: 0,4:08,9.842281341552734,last_only,1/47,sf,2,4,33082,148217,40649,5,1,4,1,3,4,0,1
+38,com.spotify.music,Exit status: 0,3:50,15.860359191894531,activity_last,8/47,d,0,0,33082,148217,31008,0,0,8,0,0,7,1,0
+39,com.spotify.music,Exit status: 0,4:23,17.397354125976562,activity_last,8/47,sf,2,3,33082,148217,40249,5,1,4,1,3,4,0,1
+40,com.spotify.music,Exit status: 0,22:59,24.651073455810547,activity_last,8/47,i,0,0,33082,148217,30395,0,0,8,0,0,7,1,0
+41,com.spotify.music,Exit status: 0,6:00,28.389957427978516,action_all,47/47,d,0,0,33082,148217,31413,0,0,8,0,0,7,1,0
+42,com.spotify.music,Exit status: 0,6:57,28.324668884277344,action_all,47/47,sf,2,4,33082,148217,40390,6,1,3,1,4,3,0,1
+43,com.spotify.music,Exit status: 0,2:09:29,27.731685638427734,action_all,47/47,i,0,0,33082,148217,30402,0,0,8,0,0,7,1,0
+44,com.zeptolab.ctr.ads,Exit status: 0,49:51,82.45535659790039,none,0,full static,15,20,12651,73860,41783,44,0,0,0,0,0,0,44
+45,com.zeptolab.ctr.ads,Exit status: 0,0:45,4.179927825927734,first_only,1/36,d,1,1,12651,73860,13470,1,0,43,0,0,0,0,1
+46,com.zeptolab.ctr.ads,Exit status: 0,1:44,18.7015380859375,first_only,1/36,sf,6,12,12651,73860,30214,15,5,34,0,0,0,0,15
+47,com.zeptolab.ctr.ads,Exit status: 0,0:43,4.179542541503906,last_only,1/36,d,1,1,12651,73860,13470,1,0,43,0,0,0,0,1
+48,com.zeptolab.ctr.ads,Exit status: 0,1:44,18.165023803710938,last_only,1/36,sf,6,12,12651,73860,30214,15,5,34,0,0,0,0,15
+49,com.zeptolab.ctr.ads,Exit status: 0,0:52,5.002208709716797,activity_last,3/36,d,1,1,12651,73860,13470,1,0,43,0,0,0,0,1
+50,com.zeptolab.ctr.ads,Exit status: 0,1:49,10.266788482666016,activity_last,3/36,sf,6,12,12651,73860,30214,17,5,32,0,0,0,0,17
+51,com.zeptolab.ctr.ads,Exit status: 0,1:44,8.304977416992188,activity_last,3/36,i,1,1,12651,73860,13400,1,0,43,0,0,0,0,1
+52,com.zeptolab.ctr.ads,Exit status: 0,3:09,13.330024719238281,action_all,36/36,d,1,1,12651,73860,13470,1,0,43,0,0,0,0,1
+53,com.zeptolab.ctr.ads,Exit status: 0,3:51,16.36803436279297,action_all,36/36,sf,6,14,12651,73860,30214,17,6,33,0,0,0,0,17
+54,com.zeptolab.ctr.ads,Exit status: 0,16:20,8.923583984375,action_all,36/36,i,1,1,12651,73860,13367,1,0,43,0,0,0,0,1
+55,com.fgol.HungrySharkEvolution,Exit status: 0,0:51,4.8664398193359375,none,0,full static,4,8,7334,41540,10345,11,0,0,7,4,0,0,0
+56,com.fgol.HungrySharkEvolution,Exit status: 0,0:22,2.460521697998047,first_only,1/49,d,1,1,7334,41539,5870,1,0,10,1,0,4,6,0
+57,com.fgol.HungrySharkEvolution,Exit status: 0,0:47,5.026012420654297,first_only,1/49,sf,4,8,7334,41540,8785,12,2,1,7,3,1,0,2
+58,com.fgol.HungrySharkEvolution,Exit status: 0,0:22,2.4204635620117188,last_only,1/49,d,1,1,7334,41539,5877,1,0,10,1,0,4,6,0
+59,com.fgol.HungrySharkEvolution,Exit status: 0,0:50,5.6557159423828125,last_only,1/49,sf,4,7,7334,41540,8788,11,2,2,7,2,2,0,2
+60,com.fgol.HungrySharkEvolution,Exit status: 0,0:37,4.808319091796875,activity_last,4/49,d,1,1,7334,41539,5878,1,0,10,1,0,4,6,0
+61,com.fgol.HungrySharkEvolution,Exit status: 0,1:02,6.588310241699219,activity_last,4/49,sf,4,9,7334,41540,8788,11,1,1,7,3,1,0,1
+62,com.fgol.HungrySharkEvolution,Exit status: 0,0:55,5.2520751953125,activity_last,4/49,i,1,1,7334,41539,5859,1,0,10,1,0,4,6,0
+63,com.fgol.HungrySharkEvolution,Exit status: 0,3:36,21.701374053955078,action_all,49/49,d,1,1,7334,41539,6357,1,0,10,1,0,4,6,0
+64,com.fgol.HungrySharkEvolution,Exit status: 0,3:50,23.234699249267578,action_all,49/49,sf,3,5,7334,41540,9665,7,0,4,7,0,4,0,0
+65,com.fgol.HungrySharkEvolution,Exit status: 0,8:12,5.9408416748046875,action_all,49/49,i,1,1,7334,41539,5947,1,0,10,1,0,4,6,0
+66,com.microsoft.office.outlook,Exit status: 0,1:17:50,78.50430297851562,none,0,full static,11,9,22756,142930,65614,54,0,0,2,25,0,0,27
+67,com.microsoft.office.outlook,Exit status: 0,2:06,5.273166656494141,first_only,1/46,d,0,0,22756,142929,26380,0,0,54,0,0,25,2,0
+68,com.microsoft.office.outlook,Exit status: 0,2:52,6.499027252197266,first_only,1/46,sf,1,2,22756,142930,43647,4,0,50,0,4,21,2,0
+69,com.microsoft.office.outlook,Exit status: 0,2:07,7.361232757568359,last_only,1/46,d,0,0,22756,142929,26342,0,0,54,0,0,25,2,0
+70,com.microsoft.office.outlook,Exit status: 0,3:00,10.843406677246094,last_only,1/46,sf,1,2,22756,142930,49666,4,0,50,0,4,21,2,0
+71,com.microsoft.office.outlook,Exit status: 0,5:44,16.917850494384766,activity_last,18/46,d,0,0,22756,142929,35274,0,0,54,0,0,25,2,0
+72,com.microsoft.office.outlook,Exit status: 0,1:24:22,79.68566131591797,activity_last,18/46,sf,3,5,22756,142930,53051,29,9,34,1,1,24,1,27
+73,com.microsoft.office.outlook,Exit status: 0,36:54,13.211494445800781,activity_last,18/46,i,0,0,22756,142929,29087,0,0,54,0,0,25,2,0
+74,com.microsoft.office.outlook,Exit status: 0,8:29,26.77983856201172,action_all,46/46,d,0,0,22756,142929,35422,0,0,54,0,0,25,2,0
+75,com.microsoft.office.outlook,Exit status: 0,1:27:14,79.1700210571289,action_all,46/46,sf,4,6,22756,142930,53823,39,9,24,1,2,23,1,36
+76,com.microsoft.office.outlook,Exit status: 0,1:48:12,16.22998809814453,action_all,46/46,i,0,0,22756,142929,30361,0,0,54,0,0,25,2,0
+77,com.microsoft.skydrive,Exit status: 0,16:44,36.56605911254883,none,0,full static,10,17,11508,71634,50031,24,0,0,14,7,0,0,3
+78,com.microsoft.skydrive,Exit status: 0,1:44,8.803169250488281,first_only,1/49,d,1,1,11508,71633,21263,1,0,23,1,0,7,13,0
+79,com.microsoft.skydrive,Exit status: 0,2:40,11.21694564819336,first_only,1/49,sf,5,9,11508,71634,35081,9,2,17,5,2,5,9,2
+80,com.microsoft.skydrive,Exit status: 0,1:51,8.066543579101562,last_only,1/49,d,2,2,11508,71633,21917,2,0,22,2,0,7,12,0
+81,com.microsoft.skydrive,Exit status: 0,2:50,14.882743835449219,last_only,1/49,sf,5,8,11508,71634,34051,8,2,18,5,1,6,9,2
+82,com.microsoft.skydrive,Exit status: 0,4:29,19.629669189453125,activity_last,18/49,d,2,5,11508,71633,23584,5,2,21,2,1,6,12,2
+83,com.microsoft.skydrive,Exit status: 0,8:30,27.427120208740234,activity_last,18/49,sf,6,10,11508,71634,36550,10,1,15,8,1,6,6,1
+84,com.microsoft.skydrive,Exit status: 0,24:55,28.51241683959961,activity_last,18/49,i,2,5,11508,71633,21503,5,2,21,2,1,6,12,2
+85,com.microsoft.skydrive,Exit status: 0,7:53,28.65877914428711,action_all,49/49,d,2,5,11508,71633,23998,5,2,21,2,1,6,12,2
+86,com.microsoft.skydrive,Exit status: 0,11:44,32.139957427978516,action_all,49/49,sf,6,12,11508,71634,37479,12,1,13,8,3,4,6,1
+87,com.microsoft.skydrive,Exit status: 0,1:08:30,29.171356201171875,action_all,49/49,i,2,2,11508,71633,21505,2,0,22,2,0,7,12,0
+88,com.soundcloud.android,Exit status: 0,1:00,3.8793869018554688,none,0,full static,2,4,18150,115606,20687,4,0,0,1,3,0,0,0
+89,com.soundcloud.android,Exit status: 0,0:54,4.345527648925781,first_only,1/38,d,0,0,18150,115606,11856,0,0,4,0,0,3,1,0
+90,com.soundcloud.android,Exit status: 0,0:58,4.423862457275391,first_only,1/38,sf,2,5,18150,115606,15080,5,2,1,1,2,1,0,2
+91,com.soundcloud.android,Exit status: 0,0:54,4.519580841064453,last_only,1/38,d,0,0,18150,115606,11811,0,0,4,0,0,3,1,0
+92,com.soundcloud.android,Exit status: 0,1:01,4.5432586669921875,last_only,1/38,sf,2,4,18150,115606,15061,7,4,1,1,2,1,0,4
+93,com.soundcloud.android,Exit status: 0,2:08,8.801094055175781,activity_last,10/38,d,0,0,18150,115606,12159,0,0,4,0,0,3,1,0
+94,com.soundcloud.android,Exit status: 0,2:11,13.189945220947266,activity_last,10/38,sf,1,1,18150,115606,15814,1,0,3,1,0,3,0,0
+95,com.soundcloud.android,Exit status: 0,5:44,8.816757202148438,activity_last,10/38,i,0,0,18150,115606,11776,0,0,4,0,0,3,1,0
+96,com.soundcloud.android,Exit status: 0,5:31,28.343753814697266,action_all,38/38,d,0,0,18150,115606,12159,0,0,4,0,0,3,1,0
+97,com.soundcloud.android,Exit status: 0,5:21,28.362319946289062,action_all,38/38,sf,1,1,18150,115606,15810,1,0,3,1,0,3,0,0
+98,com.soundcloud.android,Exit status: 0,20:51,11.552398681640625,action_all,38/38,i,0,0,18150,115606,11768,0,0,4,0,0,3,1,0
+99,com.sgiggle.production,Exit status: 0,50:38,79.5639877319336,none,0,full static,14,16,22964,140291,120379,21,0,0,9,11,0,0,1
+100,com.sgiggle.production,Exit status: 0,3:04,5.268257141113281,first_only,1/57,d,2,2,22964,140286,38097,2,0,19,2,0,11,7,0
+101,com.sgiggle.production,Exit status: 0,2:04:53,84.48291015625,first_only,1/57,sf,9,11,22964,140290,83636,14,5,12,6,3,8,3,5
+102,com.sgiggle.production,Exit status: 0,3:03,7.7366943359375,last_only,1/57,d,2,2,22964,140286,36386,2,0,19,2,0,11,7,0
+103,com.sgiggle.production,Exit status: 0,2:13:18,83.41190719604492,last_only,1/57,sf,11,15,22964,140290,85264,20,10,11,6,4,7,3,10
+104,com.sgiggle.production,Exit status: 0,5:45,19.95035171508789,activity_last,18/57,d,2,2,22964,140286,40547,2,0,19,2,0,11,7,0
+105,com.sgiggle.production,Exit status: 0,1:05:48,80.92525100708008,activity_last,18/57,sf,10,13,22964,140291,90247,14,7,14,7,0,11,2,7
+106,com.sgiggle.production,Exit status: 0,41:57,13.220867156982422,activity_last,18/57,i,2,2,22964,140286,36423,2,0,19,2,0,11,7,0
+107,com.sgiggle.production,Exit status: 0,11:18,28.619823455810547,action_all,57/57,d,2,2,22964,140286,40806,2,0,19,2,0,11,7,0
+108,com.sgiggle.production,Exit status: 0,1:21:59,77.97038269042969,action_all,57/57,sf,11,15,22964,140291,94482,16,8,13,7,1,10,2,8
+109,com.sgiggle.production,Exit status: 0,2:18:55,12.743766784667969,action_all,57/57,i,2,2,22964,140286,36651,2,0,19,2,0,11,7,0
+110,com.uc.browser.en,Exit status: 0,7:21,28.380123138427734,none,0,full static,8,11,16974,79717,50117,14,0,0,13,1,0,0,0
+111,com.uc.browser.en,Exit status: 0,1:16,4.9413604736328125,first_only,1/34,d,2,2,16974,79715,21525,2,0,12,2,0,1,11,0
+112,com.uc.browser.en,Exit status: 0,2:16,7.822757720947266,first_only,1/34,sf,5,7,16974,79717,35817,9,3,8,6,0,1,7,3
+113,com.uc.browser.en,Exit status: 0,3:25,27.37813949584961,last_only,1/34,d,5,6,16974,79715,26911,7,0,7,6,1,0,7,0
+114,com.uc.browser.en,Exit status: 0,5:17,27.714298248291016,last_only,1/34,sf,8,11,16974,79717,40664,12,1,3,10,1,0,3,1
+115,com.uc.browser.en,Exit status: 0,3:56,27.31352996826172,activity_last,6/34,d,5,6,16974,79715,27157,7,0,7,6,1,0,7,0
+116,com.uc.browser.en,Exit status: 0,5:41,28.089691162109375,activity_last,6/34,sf,7,9,16974,79717,38436,10,1,5,8,1,0,5,1
+117,com.uc.browser.en,Exit status: 0,9:34,27.646747589111328,activity_last,6/34,i,5,6,16974,79715,22924,6,0,8,5,1,0,8,0
+118,com.uc.browser.en,Exit status: 0,7:25,28.440628051757812,action_all,34/34,d,5,6,16974,79715,28197,7,0,7,6,1,0,7,0
+119,com.uc.browser.en,Exit status: 0,9:27,28.768131256103516,action_all,34/34,sf,7,10,16974,79717,39429,12,3,5,8,1,0,5,3
+120,com.uc.browser.en,Exit status: 0,45:06,27.81624984741211,action_all,34/34,i,5,6,16974,79715,22905,6,0,8,5,1,0,8,0
+121,com.natenai.glowhockey,Exit status: 0,0:13,1.2820930480957031,none,0,full static,5,5,5410,29216,5682,8,0,0,8,0,0,0,0
+122,com.natenai.glowhockey,Exit status: 0,0:15,2.3225784301757812,first_only,1/25,d,0,0,5410,29216,2101,0,0,8,0,0,0,8,0
+123,com.natenai.glowhockey,Exit status: 0,0:16,2.3451499938964844,first_only,1/25,sf,4,3,5410,29216,4002,6,0,2,6,0,0,2,0
+124,com.natenai.glowhockey,Exit status: 0,0:13,1.5358352661132812,last_only,1/25,d,0,0,5410,29216,2099,0,0,8,0,0,0,8,0
+125,com.natenai.glowhockey,Exit status: 0,0:14,1.7899017333984375,last_only,1/25,sf,4,3,5410,29216,4006,6,0,2,6,0,0,2,0
+126,com.natenai.glowhockey,Exit status: 0,0:18,2.7915496826171875,activity_last,3/25,d,0,0,5410,29216,2104,0,0,8,0,0,0,8,0
+127,com.natenai.glowhockey,Exit status: 0,0:20,2.8313560485839844,activity_last,3/25,sf,4,3,5410,29216,4006,6,0,2,6,0,0,2,0
+128,com.natenai.glowhockey,Exit status: 0,0:22,2.6901168823242188,activity_last,3/25,i,0,0,5410,29216,2090,0,0,8,0,0,0,8,0
+129,com.natenai.glowhockey,Exit status: 0,1:56,16.900054931640625,action_all,25/25,d,0,0,5410,29216,2109,0,0,8,0,0,0,8,0
+130,com.natenai.glowhockey,Exit status: 0,1:44,17.05337142944336,action_all,25/25,sf,4,3,5410,29216,4002,6,0,2,6,0,0,2,0
+131,com.natenai.glowhockey,Exit status: 0,2:17,4.289333343505859,action_all,25/25,i,0,0,5410,29216,2097,0,0,8,0,0,0,8,0
+132,com.forthblue.pool,Exit status: 0,1:04:36,80.50998306274414,none,0,full static,9,7,4833,33411,23655,14,0,0,5,5,0,0,4
+133,com.forthblue.pool,Exit status: 0,0:24,2.486419677734375,first_only,1/48,d,3,2,4833,33410,7356,5,0,9,1,0,5,4,4
+134,com.forthblue.pool,Exit status: 0,0:27,2.545459747314453,first_only,1/48,sf,3,2,4833,33410,10828,5,0,9,1,0,5,4,4
+135,com.forthblue.pool,Exit status: 0,0:26,2.5148048400878906,last_only,1/48,d,3,2,4833,33410,7617,5,0,9,1,0,5,4,4
+136,com.forthblue.pool,Exit status: 0,0:28,2.5469741821289062,last_only,1/48,sf,3,2,4833,33410,10691,5,0,9,1,0,5,4,4
+137,com.forthblue.pool,Exit status: 0,0:47,7.071941375732422,activity_last,5/48,d,3,2,4833,33410,7940,5,0,9,1,0,5,4,4
+138,com.forthblue.pool,Exit status: 0,0:48,7.562732696533203,activity_last,5/48,sf,3,2,4833,33410,11031,5,0,9,1,0,5,4,4
+139,com.forthblue.pool,Exit status: 0,1:20,6.1572113037109375,activity_last,5/48,i,3,2,4833,33410,7447,3,0,11,1,0,5,4,2
+140,com.forthblue.pool,Exit status: 0,3:28,20.797996520996094,action_all,48/48,d,3,2,4833,33410,8068,5,0,9,1,0,5,4,4
+141,com.forthblue.pool,Exit status: 0,3:10,23.377613067626953,action_all,48/48,sf,3,2,4833,33410,11156,5,0,9,1,0,5,4,4
+142,com.forthblue.pool,Exit status: 0,9:40,6.654876708984375,action_all,48/48,i,3,2,4833,33410,7362,3,0,11,1,0,5,4,2
+143,flipboard.app,Exit status: 0,46:50,81.7567024230957,none,0,full static,10,18,12857,69678,90643,31,0,0,0,0,0,0,31
+144,flipboard.app,Exit status: 0,1:23:47,80.36515808105469,first_only,1/62,d,2,3,12857,69676,36640,3,0,28,0,0,0,0,3
+145,flipboard.app,Exit status: 0,2:00:36,80.7185287475586,first_only,1/62,sf,11,21,12857,69677,55247,29,12,14,0,0,0,0,29
+146,flipboard.app,Exit status: 0,1:21:09,79.90771102905273,last_only,1/62,d,3,4,12857,69676,36511,4,1,28,0,0,0,0,4
+147,flipboard.app,Exit status: 0,1:51:41,82.92940521240234,last_only,1/62,sf,11,18,12857,69677,53616,34,10,7,0,0,0,0,34
+148,flipboard.app,Exit status: 0,1:22:37,82.38201904296875,activity_last,17/62,d,3,4,12857,69676,37256,4,1,28,0,0,0,0,4
+149,flipboard.app,Exit status: 0,2:23:56,81.80146026611328,activity_last,17/62,sf,10,22,12857,69677,52882,33,8,6,0,0,0,0,33
+150,flipboard.app,Exit status: 255,1:25:52,79.62321472167969,activity_last,17/62,i,4,5,0,0,36586,5,2,28,0,0,0,0,5
+151,flipboard.app,Exit status: 0,1:35:17,82.7662353515625,action_all,62/62,d,3,4,12857,69676,37285,4,1,28,0,0,0,0,4
+152,flipboard.app,Exit status: 0,2:32:01,84.8744888305664,action_all,62/62,sf,9,17,12857,69677,52880,28,4,7,0,0,0,0,28
+153,flipboard.app,Exit status: 255,1:29:42,79.54233932495117,action_all,62/62,i,3,4,0,0,36640,4,1,28,0,0,0,0,4
+154,com.bitstrips.imoji,Exit status: 0,0:32,3.631378173828125,none,0,full static,2,5,8546,53292,7630,6,0,0,1,2,0,0,3
+155,com.bitstrips.imoji,Exit status: 0,0:26,2.644634246826172,first_only,1/27,d,1,1,8546,53291,4749,1,0,5,1,0,2,0,0
+156,com.bitstrips.imoji,Exit status: 0,0:30,2.970836639404297,first_only,1/27,sf,2,5,8546,53291,5935,7,3,2,1,5,0,0,1
+157,com.bitstrips.imoji,Exit status: 0,0:27,2.533588409423828,last_only,1/27,d,1,1,8546,53291,4703,1,0,5,1,0,2,0,0
+158,com.bitstrips.imoji,Exit status: 0,0:37,3.9061508178710938,last_only,1/27,sf,2,6,8546,53292,7050,8,3,1,2,4,0,0,2
+159,com.bitstrips.imoji,Exit status: 0,0:48,7.417179107666016,activity_last,5/27,d,1,1,8546,53291,4775,1,0,5,1,0,2,0,0
+160,com.bitstrips.imoji,Exit status: 0,0:49,7.2620849609375,activity_last,5/27,sf,2,5,8546,53291,5926,7,3,2,2,4,0,0,1
+161,com.bitstrips.imoji,Exit status: 0,1:25,6.462577819824219,activity_last,5/27,i,1,1,8546,53291,4519,1,0,5,1,0,2,0,0
+162,com.bitstrips.imoji,Exit status: 0,2:39,16.84124755859375,action_all,27/27,d,1,1,8546,53291,4837,1,0,5,1,0,2,0,0
+163,com.bitstrips.imoji,Exit status: 0,2:38,17.052814483642578,action_all,27/27,sf,2,6,8546,53291,5953,7,3,2,1,5,0,0,1
+164,com.bitstrips.imoji,Exit status: 0,6:51,8.648189544677734,action_all,27/27,i,1,1,8546,53291,4620,1,0,5,1,0,2,0,0
+165,com.google.android.googlequicksearchbox,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+166,sg.bigo.live,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+167,com.dropbox.android,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+168,com.amazon.kindle,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+169,com.smule.singandroid,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+170,com.google.android.videos,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+171,com.imangi.templerun2,Exit status: 0,0:26,2.188396453857422,none,0,full static,1,1,7103,39575,12066,1,0,0,0,0,0,0,1
+172,com.imangi.templerun2,Exit status: 0,0:21,2.3632736206054688,first_only,1/54,d,0,0,7103,39575,5332,0,0,1,0,0,0,0,0
+173,com.imangi.templerun2,Exit status: 0,0:28,2.54827880859375,first_only,1/54,sf,1,1,7103,39575,11161,1,0,0,0,0,0,0,1
+174,com.imangi.templerun2,Exit status: 0,0:22,2.3610191345214844,last_only,1/54,d,0,0,7103,39575,5327,0,0,1,0,0,0,0,0
+175,com.imangi.templerun2,Exit status: 0,0:28,2.550567626953125,last_only,1/54,sf,1,1,7103,39575,11161,1,0,0,0,0,0,0,1
+176,com.imangi.templerun2,Exit status: 0,0:34,4.666572570800781,activity_last,4/54,d,0,0,7103,39575,5348,0,0,1,0,0,0,0,0
+177,com.imangi.templerun2,Exit status: 0,0:41,4.7231292724609375,activity_last,4/54,sf,1,1,7103,39575,11161,1,0,0,0,0,0,0,1
+178,com.imangi.templerun2,Exit status: 0,1:02,5.110881805419922,activity_last,4/54,i,0,0,7103,39575,5305,0,0,1,0,0,0,0,0
+179,com.imangi.templerun2,Exit status: 0,3:25,23.99725341796875,action_all,54/54,d,0,0,7103,39575,5348,0,0,1,0,0,0,0,0
+180,com.imangi.templerun2,Exit status: 0,3:27,23.84014129638672,action_all,54/54,sf,1,1,7103,39575,11161,1,0,0,0,0,0,0,1
+181,com.imangi.templerun2,Exit status: 0,10:12,5.149654388427734,action_all,54/54,i,0,0,7103,39575,5284,0,0,1,0,0,0,0,0
+182,in.startv.hotstar,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+183,com.outfit7.talkingtom2free,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+184,com.king.farmheroessaga,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+185,com.imo.android.imoim,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+186,com.halfbrick.fruitninjafree,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+187,com.outfit7.talkingtomgoldrun,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+188,com.threed.bowling,Exit status: 0,0:30,3.5595054626464844,none,0,full static,4,4,1549,8917,4928,7,0,0,0,0,0,0,7
+189,com.threed.bowling,Exit status: 0,0:20,2.38299560546875,first_only,1/21,d,4,5,1549,8916,2601,8,2,1,0,0,0,0,8
+190,com.threed.bowling,Exit status: 0,0:23,2.526165008544922,first_only,1/21,sf,4,3,1549,8916,3245,6,0,1,0,0,0,0,6
+191,com.threed.bowling,Exit status: 0,0:19,2.3519859313964844,last_only,1/21,d,4,4,1549,8916,2592,7,1,1,0,0,0,0,7
+192,com.threed.bowling,Exit status: 0,0:23,2.5933837890625,last_only,1/21,sf,4,5,1549,8916,3245,8,2,1,0,0,0,0,8
+193,com.threed.bowling,Exit status: 0,0:27,4.521984100341797,activity_last,2/21,d,4,4,1549,8916,2702,7,1,1,0,0,0,0,7
+194,com.threed.bowling,Exit status: 0,0:29,4.586162567138672,activity_last,2/21,sf,4,4,1549,8916,3254,7,1,1,0,0,0,0,7
+195,com.threed.bowling,Exit status: 0,0:34,6.180450439453125,activity_last,2/21,i,4,3,1549,8916,2646,4,0,3,0,0,0,0,4
+196,com.threed.bowling,Exit status: 0,1:57,13.983718872070312,action_all,21/21,d,4,5,1549,8916,3057,8,2,1,0,0,0,0,8
+197,com.threed.bowling,Exit status: 0,1:49,14.047500610351562,action_all,21/21,sf,4,6,1549,8916,3193,9,3,1,0,0,0,0,9
+198,com.threed.bowling,Exit status: 0,3:10,6.781581878662109,action_all,21/21,i,4,6,1549,8916,2646,7,3,3,0,0,0,0,7
+199,com.facebook.lite,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+200,com.google.android.tts,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+201,com.cyworld.camera,Exit status: 0,1:09:57,77.74505615234375,none,0,full static,18,15,8808,49627,51749,34,0,0,0,0,0,0,34
+202,com.cyworld.camera,Exit status: 0,35:48,76.33657455444336,first_only,1/69,d,12,12,8808,49626,32216,24,3,13,0,0,0,0,24
+203,com.cyworld.camera,Exit status: 0,41:25,78.41379928588867,first_only,1/69,sf,16,17,8808,49627,42146,38,18,14,0,0,0,0,38
+204,com.cyworld.camera,Exit status: 0,34:58,77.76988220214844,last_only,1/69,d,10,14,8808,49626,28426,21,5,18,0,0,0,0,21
+205,com.cyworld.camera,Exit status: 0,38:36,76.93127822875977,last_only,1/69,sf,14,18,8808,49627,38459,39,22,17,0,0,0,0,39
+206,com.cyworld.camera,Exit status: 0,40:27,79.05231475830078,activity_last,17/69,d,12,13,8808,49626,32379,31,10,13,0,0,0,0,31
+207,com.cyworld.camera,Exit status: 0,45:50,79.99392318725586,activity_last,17/69,sf,15,18,8808,49626,39833,40,20,14,0,0,0,0,40
+208,com.cyworld.camera,Exit status: 130,2:19:58,82.07408905029297,activity_last,17/69,i,11,13,0,0,26599,20,7,21,0,0,0,0,20
+209,com.cyworld.camera,Exit status: 0,42:13,76.72893142700195,action_all,69/69,d,10,14,8808,49626,32726,26,9,17,0,0,0,0,26
+210,com.cyworld.camera,Exit status: 0,47:03,77.74113845825195,action_all,69/69,sf,15,20,8808,49626,39019,47,25,12,0,0,0,0,47
+211,com.cyworld.camera,Exit status: 130,2:20:01,83.2255630493164,action_all,69/69,i,11,15,0,0,28442,26,13,21,0,0,0,0,26
+212,com.google.android.gms,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+213,com.alibaba.aliexpresshd,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+214,com.hp.android.printservice,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+215,com.h8games.helixjump,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+216,com.ebay.mobile,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+217,com.samsung.android.app.notes,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+218,com.dianxinos.dxbs,Exit status: 0,2:24:58,80.97415542602539,none,0,full static,46,51,12590,75294,103647,76,0,0,0,0,0,0,76
+219,com.dianxinos.dxbs,Exit status: 0,16:09,42.02283477783203,first_only,1/62,d,11,7,12590,75288,42145,13,4,67,0,0,0,0,13
+220,com.dianxinos.dxbs,Exit status: 0,1:44:29,80.01081466674805,first_only,1/62,sf,17,20,12590,75288,64525,32,12,56,0,0,0,0,32
+221,com.dianxinos.dxbs,Exit status: 0,16:44,41.69414520263672,last_only,1/62,d,11,8,12590,75288,41600,14,5,67,0,0,0,0,14
+222,com.dianxinos.dxbs,Exit status: 0,1:29:20,74.19905471801758,last_only,1/62,sf,17,16,12590,75289,66203,24,6,58,0,0,0,0,24
+223,com.dianxinos.dxbs,Exit status: 0,2:29:58,83.12432861328125,activity_last,30/62,d,30,22,12590,75293,64705,43,24,57,0,0,0,0,43
+224,com.dianxinos.dxbs,Exit status: 0,2:33:56,81.46969985961914,activity_last,30/62,sf,31,29,12590,75293,89065,46,15,45,0,0,0,0,46
+225,com.dianxinos.dxbs,Exit status: 130,4:49:59,84.88597869873047,activity_last,30/62,i,28,23,0,0,48449,45,30,61,0,0,0,0,45
+226,com.dianxinos.dxbs,Exit status: 0,2:19:22,80.72098159790039,action_all,62/62,d,27,25,12590,75293,65211,42,22,56,0,0,0,0,42
+227,com.dianxinos.dxbs,Exit status: 0,2:42:31,82.83198165893555,action_all,62/62,sf,29,27,12590,75293,89485,39,10,47,0,0,0,0,39
+228,com.dianxinos.dxbs,Exit status: 130,4:49:59,87.10736846923828,action_all,62/62,i,24,23,0,0,43579,34,17,59,0,0,0,0,34
+229,com.dianxinos.optimizer.duplay,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+230,com.avast.android.mobilesecurity,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+231,kik.android,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+232,com.google.zxing.client.android,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+233,net.zedge.android,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+234,com.jio.myjio,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+235,com.king.candycrushsaga,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+236,com.sec.app.samsungprintservice,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+237,com.google.earth,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+238,com.ubercab,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+239,com.microsoft.office.word,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+240,com.dsi.ant.service.socket,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+241,com.kiloo.subwaysurf,Exit status: 0,23:37,34.196903228759766,none,0,full static,11,11,10628,65079,41058,24,0,0,0,0,0,0,24
+242,com.kiloo.subwaysurf,Exit status: 0,0:28,2.6071510314941406,first_only,1/32,d,0,0,10628,65078,13316,0,0,24,0,0,0,0,0
+243,com.kiloo.subwaysurf,Exit status: 0,1:15,7.3768463134765625,first_only,1/32,sf,6,8,10628,65078,30175,12,7,19,0,0,0,0,12
+244,com.kiloo.subwaysurf,Exit status: 0,0:28,2.628742218017578,last_only,1/32,d,0,0,10628,65078,13331,0,0,24,0,0,0,0,0
+245,com.kiloo.subwaysurf,Exit status: 0,1:13,7.313198089599609,last_only,1/32,sf,4,8,10628,65078,29652,9,5,20,0,0,0,0,9
+246,com.kiloo.subwaysurf,Exit status: 0,0:38,4.867641448974609,activity_last,4/32,d,0,0,10628,65078,13355,0,0,24,0,0,0,0,0
+247,com.kiloo.subwaysurf,Exit status: 0,1:21,7.539966583251953,activity_last,4/32,sf,5,8,10628,65078,29652,11,7,20,0,0,0,0,11
+248,com.kiloo.subwaysurf,Exit status: 0,1:15,5.271472930908203,activity_last,4/32,i,0,0,10628,65078,13254,0,0,24,0,0,0,0,0
+249,com.kiloo.subwaysurf,Exit status: 0,2:11,17.391067504882812,action_all,32/32,d,0,0,10628,65078,13355,0,0,24,0,0,0,0,0
+250,com.kiloo.subwaysurf,Exit status: 0,2:42,17.77111053466797,action_all,32/32,sf,5,8,10628,65078,29652,11,7,20,0,0,0,0,11
+251,com.kiloo.subwaysurf,Exit status: 0,7:54,5.576972961425781,action_all,32/32,i,0,0,10628,65078,13218,0,0,24,0,0,0,0,0
+252,com.instagram.android,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+253,com.google.android.calendar,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+254,com.rovio.angrybirdsrio,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+255,com.gameloft.android.ANMP.GloftA8HM,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+256,com.jb.gosms,Exit status: 0,3:04:04,79.86701202392578,none,0,full static,132,131,23629,143186,190270,383,0,0,0,0,0,0,383
+257,com.jb.gosms,Exit status: 0,1:37:35,82.39273834228516,first_only,1/66,d,44,57,23629,143177,70873,136,48,295,0,0,0,0,136
+258,com.jb.gosms,Exit status: 0,1:51:26,80.40342330932617,first_only,1/66,sf,88,109,23629,143181,135405,344,167,206,0,0,0,0,344
+259,com.jb.gosms,Exit status: 0,1:33:24,82.71765518188477,last_only,1/66,d,42,56,23629,143177,70801,187,114,310,0,0,0,0,187
+260,com.jb.gosms,Exit status: 0,1:58:09,83.05610656738281,last_only,1/66,sf,87,99,23629,143181,134414,320,150,213,0,0,0,0,320
+261,com.jb.gosms,Exit status: 0,2:11:13,82.78395080566406,activity_last,28/66,d,59,68,23629,143181,91377,169,72,286,0,0,0,0,169
+262,com.jb.gosms,Exit status: 0,2:40:55,82.46294784545898,activity_last,28/66,sf,83,105,23629,143186,152898,316,136,203,0,0,0,0,316
+263,com.jb.gosms,Exit status: 130,6:08:12,81.74365615844727,activity_last,28/66,i,50,70,0,0,71378,158,75,300,0,0,0,0,158
+264,com.jb.gosms,Exit status: 0,2:21:57,81.0511474609375,action_all,66/66,d,63,83,23629,143181,96946,203,79,259,0,0,0,0,203
+265,com.jb.gosms,Exit status: 0,2:44:13,83.10414123535156,action_all,66/66,sf,111,116,23629,143186,157934,431,211,163,0,0,0,0,431
+266,com.jb.gosms,Exit status: 130,6:08:12,85.8407974243164,action_all,66/66,i,67,80,0,0,74007,186,90,287,0,0,0,0,186
+267,com.samsung.android.oneconnect,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+268,com.creativemobile.DragRacing,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+269,com.sec.android.gallery3d,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+270,com.microsoft.office.powerpoint,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+271,com.yahoo.mobile.client.android.mail,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+272,org.telegram.messenger,Exit status: 0,8:15:41,81.37887954711914,none,0,full static,10,8,9401,53340,89987,10,0,0,0,0,0,0,10
+273,org.telegram.messenger,Exit status: 0,2:24:49,82.58541488647461,first_only,1/47,d,6,10,9401,53340,50512,12,7,5,0,0,0,0,12
+274,org.telegram.messenger,Exit status: 0,8:00:59,79.80094909667969,first_only,1/47,sf,10,9,9401,53340,77527,11,2,1,0,0,0,0,11
+275,org.telegram.messenger,Exit status: 0,2:28:04,79.41452407836914,last_only,1/47,d,7,12,9401,53340,47614,13,8,5,0,0,0,0,13
+276,org.telegram.messenger,Exit status: 0,7:11:13,80.24361801147461,last_only,1/47,sf,10,8,9401,53340,76742,10,1,1,0,0,0,0,10
+277,org.telegram.messenger,Exit status: 0,2:23:29,84.8135871887207,activity_last,5/47,d,7,11,9401,53340,50572,14,9,5,0,0,0,0,14
+278,org.telegram.messenger,Exit status: 0,7:38:43,80.02966690063477,activity_last,5/47,sf,7,7,9401,53340,76222,7,1,4,0,0,0,0,7
+279,org.telegram.messenger,Exit status: 130,16:31:21,86.79961776733398,activity_last,5/47,i,8,17,0,0,36212,23,18,5,0,0,0,0,23
+280,org.telegram.messenger,Exit status: 0,3:38:23,83.7121467590332,action_all,47/47,d,7,11,9401,53340,51069,13,8,5,0,0,0,0,13
+281,org.telegram.messenger,Exit status: 0,5:11:30,77.98198318481445,action_all,47/47,sf,9,9,9401,53340,71058,11,5,4,0,0,0,0,11
+282,org.telegram.messenger,Exit status: 130,16:31:21,83.29152297973633,action_all,47/47,i,10,13,0,0,43692,18,13,5,0,0,0,0,18
+283,com.outfit7.mytalkingtomfree,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+284,com.surpax.ledflashlight.panel,Exit status: 0,3:43,13.43634033203125,none,0,full static,8,11,10475,55083,56598,14,0,0,0,0,0,0,14
+285,com.surpax.ledflashlight.panel,Exit status: 0,0:51,4.311756134033203,first_only,1/12,d,1,1,10475,55082,19913,1,0,13,0,0,0,0,1
+286,com.surpax.ledflashlight.panel,Exit status: 0,1:16,4.999229431152344,first_only,1/12,sf,3,6,10475,55083,39137,7,1,8,0,0,0,0,7
+287,com.surpax.ledflashlight.panel,Exit status: 0,0:50,4.306190490722656,last_only,1/12,d,1,1,10475,55082,19913,1,0,13,0,0,0,0,1
+288,com.surpax.ledflashlight.panel,Exit status: 0,1:17,5.006885528564453,last_only,1/12,sf,3,5,10475,55083,39127,8,4,10,0,0,0,0,8
+289,com.surpax.ledflashlight.panel,Exit status: 0,1:32,9.580314636230469,activity_last,9/12,d,1,1,10475,55082,20988,1,0,13,0,0,0,0,1
+290,com.surpax.ledflashlight.panel,Exit status: 0,1:52,9.906505584716797,activity_last,9/12,sf,3,6,10475,55082,36988,9,3,8,0,0,0,0,9
+291,com.surpax.ledflashlight.panel,Exit status: 0,5:09,10.041831970214844,activity_last,9/12,i,1,1,10475,55082,19945,1,0,13,0,0,0,0,1
+292,com.surpax.ledflashlight.panel,Exit status: 0,1:54,11.479862213134766,action_all,12/12,d,1,1,10475,55082,20988,1,0,13,0,0,0,0,1
+293,com.surpax.ledflashlight.panel,Exit status: 0,2:35,13.710685729980469,action_all,12/12,sf,3,6,10475,55082,36980,8,2,8,0,0,0,0,8
+294,com.surpax.ledflashlight.panel,Exit status: 0,7:39,10.327991485595703,action_all,12/12,i,1,1,10475,55082,19930,1,0,13,0,0,0,0,1
+295,com.bestcoolfungames.antsmasher,Exit status: 0,1:39,4.81329345703125,none,0,full static,5,7,12717,73007,34645,12,0,0,0,0,0,0,12
+296,com.bestcoolfungames.antsmasher,Exit status: 0,0:53,4.2484588623046875,first_only,1/25,d,0,0,12717,73006,13134,0,0,12,0,0,0,0,0
+297,com.bestcoolfungames.antsmasher,Exit status: 0,1:05,4.499172210693359,first_only,1/25,sf,1,4,12717,73006,19170,5,2,9,0,0,0,0,5
+298,com.bestcoolfungames.antsmasher,Exit status: 0,1:11,4.580104827880859,last_only,1/25,d,0,0,12717,73007,22075,0,0,12,0,0,0,0,0
+299,com.bestcoolfungames.antsmasher,Exit status: 0,1:35,6.476169586181641,last_only,1/25,sf,2,3,12717,73007,30739,4,1,9,0,0,0,0,4
+300,com.bestcoolfungames.antsmasher,Exit status: 0,2:05,11.928264617919922,activity_last,11/25,d,0,0,12717,73007,22393,0,0,12,0,0,0,0,0
+301,com.bestcoolfungames.antsmasher,Exit status: 0,2:15,12.970535278320312,activity_last,11/25,sf,1,1,12717,73007,30348,1,0,11,0,0,0,0,1
+302,com.bestcoolfungames.antsmasher,Exit status: 0,8:05,12.6104736328125,activity_last,11/25,i,0,0,12717,73007,16044,0,0,12,0,0,0,0,0
+303,com.bestcoolfungames.antsmasher,Exit status: 0,3:22,26.2337646484375,action_all,25/25,d,0,0,12717,73007,22499,0,0,12,0,0,0,0,0
+304,com.bestcoolfungames.antsmasher,Exit status: 0,3:36,25.76773452758789,action_all,25/25,sf,1,1,12717,73007,30537,1,0,11,0,0,0,0,1
+305,com.bestcoolfungames.antsmasher,Exit status: 0,17:40,14.851009368896484,action_all,25/25,i,0,0,12717,73007,16020,0,0,12,0,0,0,0,0
+306,com.sec.android.app.voicenote,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+307,flipboard.boxer.app,Exit status: 0,36:09,77.60791015625,none,0,full static,6,7,12520,67334,98733,12,0,0,0,0,0,0,12
+308,flipboard.boxer.app,Exit status: 0,1:08:49,81.04092407226562,first_only,1/61,d,1,1,12520,67332,34826,1,0,11,0,0,0,0,1
+309,flipboard.boxer.app,Exit status: 0,1:21:25,77.87335968017578,first_only,1/61,sf,9,24,12520,67333,55065,40,31,3,0,0,0,0,40
+310,flipboard.boxer.app,Exit status: 0,1:03:10,83.12028884887695,last_only,1/61,d,3,4,12520,67331,29431,4,3,11,0,0,0,0,4
+311,flipboard.boxer.app,Exit status: 0,57:18,79.00127792358398,last_only,1/61,sf,8,15,12520,67333,47879,28,20,4,0,0,0,0,28
+312,flipboard.boxer.app,Exit status: 0,1:15:20,77.99555206298828,activity_last,14/61,d,6,5,12520,67332,38095,7,6,11,0,0,0,0,7
+313,flipboard.boxer.app,Exit status: 0,1:36:00,78.86558532714844,activity_last,14/61,sf,9,14,12520,67333,53762,30,23,5,0,0,0,0,30
+314,flipboard.boxer.app,Exit status: 130,1:36:12,81.48262023925781,activity_last,14/61,i,1,1,0,0,35064,1,0,11,0,0,0,0,1
+315,flipboard.boxer.app,Exit status: 0,1:16:28,78.3816146850586,action_all,61/61,d,6,7,12520,67332,38477,8,7,11,0,0,0,0,8
+316,flipboard.boxer.app,Exit status: 0,1:41:21,79.57048034667969,action_all,61/61,sf,9,16,12520,67333,53925,30,24,6,0,0,0,0,30
+317,flipboard.boxer.app,Exit status: 130,1:36:12,80.55920028686523,action_all,61/61,i,1,1,0,0,34687,1,0,11,0,0,0,0,1
+318,com.microsoft.office.onenote,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+319,com.adobe.reader,Exit status: 0,45:16,76.83977508544922,none,0,full static,15,19,8386,49739,49500,44,0,0,0,0,0,0,44
+320,com.adobe.reader,Exit status: 0,1:04,4.600067138671875,first_only,1/53,d,7,8,8386,49737,21680,14,3,33,0,0,0,0,14
+321,com.adobe.reader,Exit status: 0,9:16,45.14494323730469,first_only,1/53,sf,8,13,8386,49739,32620,24,5,25,0,0,0,0,24
+322,com.adobe.reader,Exit status: 0,1:09,6.081878662109375,last_only,1/53,d,7,8,8386,49737,21719,15,4,33,0,0,0,0,15
+323,com.adobe.reader,Exit status: 0,8:58,43.45897674560547,last_only,1/53,sf,8,15,8386,49739,30378,28,6,22,0,0,0,0,28
+324,com.adobe.reader,Exit status: 0,2:42,18.219341278076172,activity_last,15/53,d,7,8,8386,49737,21771,15,4,33,0,0,0,0,15
+325,com.adobe.reader,Exit status: 0,10:15,44.51023864746094,activity_last,15/53,sf,10,16,8386,49738,29493,33,6,17,0,0,0,0,33
+326,com.adobe.reader,Exit status: 0,11:04,15.052200317382812,activity_last,15/53,i,7,8,8386,49737,21034,16,6,34,0,0,0,0,16
+327,com.adobe.reader,Exit status: 0,7:01,28.579116821289062,action_all,53/53,d,7,12,8386,49737,26564,19,7,32,0,0,0,0,19
+328,com.adobe.reader,Exit status: 0,15:10,43.25504684448242,action_all,53/53,sf,10,20,8386,49738,34663,36,11,19,0,0,0,0,36
+329,com.adobe.reader,Exit status: 0,38:18,18.24713134765625,action_all,53/53,i,7,8,8386,49737,21197,15,3,32,0,0,0,0,15
+330,com.forshared,Exit status: 0,1:53:00,82.32822036743164,none,0,full static,22,39,17664,110967,70196,63,0,0,0,0,0,0,63
+331,com.forshared,Exit status: 0,1:43,5.453792572021484,first_only,1/58,d,4,9,17664,110964,21273,18,13,58,0,0,0,0,18
+332,com.forshared,Exit status: 0,7:43,28.70458984375,first_only,1/58,sf,9,16,17664,110967,40186,33,18,48,0,0,0,0,33
+333,com.forshared,Exit status: 0,1:47,5.486484527587891,last_only,1/58,d,4,9,17664,110964,21204,16,11,58,0,0,0,0,16
+334,com.forshared,Exit status: 0,7:58,27.95189666748047,last_only,1/58,sf,9,16,17664,110967,39716,35,21,49,0,0,0,0,35
+335,com.forshared,Exit status: 0,3:23,16.54808807373047,activity_last,15/58,d,4,10,17664,110964,22305,20,14,57,0,0,0,0,20
+336,com.forshared,Exit status: 0,9:42,32.43778991699219,activity_last,15/58,sf,9,18,17664,110967,39865,34,20,49,0,0,0,0,34
+337,com.forshared,Exit status: 0,19:06,20.069091796875,activity_last,15/58,i,4,10,17664,110964,20993,20,14,57,0,0,0,0,20
+338,com.forshared,Exit status: 0,8:12,28.799087524414062,action_all,58/58,d,4,10,17664,110964,22305,19,13,57,0,0,0,0,19
+339,com.forshared,Exit status: 0,14:39,34.876708984375,action_all,58/58,sf,9,17,17664,110967,39858,34,20,49,0,0,0,0,34
+340,com.forshared,Exit status: 0,1:16:01,21.17308807373047,action_all,58/58,i,4,10,17664,110964,20967,20,14,57,0,0,0,0,20
+341,com.cyberlink.youcammakeup,Exit status: 0,46:33,81.83188247680664,none,0,full static,24,22,28426,154691,264250,37,0,0,0,0,0,0,37
+342,com.cyberlink.youcammakeup,Exit status: 0,8:18,10.655677795410156,first_only,1/59,d,15,15,28426,154682,61676,61,55,31,0,0,0,0,61
+343,com.cyberlink.youcammakeup,Exit status: 0,43:27,78.938232421875,first_only,1/59,sf,18,17,28426,154691,175886,22,0,15,0,0,0,0,22
+344,com.cyberlink.youcammakeup,Exit status: 0,8:04,22.643619537353516,last_only,1/59,d,13,13,28426,154682,61009,62,56,31,0,0,0,0,62
+345,com.cyberlink.youcammakeup,Exit status: 0,40:07,78.13800430297852,last_only,1/59,sf,15,14,28426,154691,205085,18,0,19,0,0,0,0,18
+346,com.cyberlink.youcammakeup,Exit status: 0,1:24:56,69.27268981933594,activity_last,23/59,d,14,11,28426,154684,72375,29,23,31,0,0,0,0,29
+347,com.cyberlink.youcammakeup,Exit status: 0,1:01:46,77.84323120117188,activity_last,23/59,sf,28,35,28426,154691,142701,92,77,22,0,0,0,0,92
+348,com.cyberlink.youcammakeup,Exit status: 130,1:46:34,29.86795425415039,activity_last,23/59,i,15,16,0,0,60896,62,56,31,0,0,0,0,62
+349,com.cyberlink.youcammakeup,Exit status: 0,1:30:32,77.80746078491211,action_all,59/59,d,14,14,28426,154684,73826,62,56,31,0,0,0,0,62
+350,com.cyberlink.youcammakeup,Exit status: 0,1:23:26,78.4129524230957,action_all,59/59,sf,28,37,28426,154691,144566,101,86,22,0,0,0,0,101
+351,com.cyberlink.youcammakeup,Exit status: 130,1:46:35,33.88405990600586,action_all,59/59,i,15,16,0,0,61044,55,49,31,0,0,0,0,55
+352,com.pinterest,Exit status: 0,37:56,76.53847122192383,none,0,full static,3,4,19801,88945,67086,9,0,0,0,0,0,0,9
+353,com.pinterest,Exit status: 0,4:07,11.221359252929688,first_only,1/55,d,0,0,19801,88943,31323,0,0,9,0,0,0,0,0
+354,com.pinterest,Exit status: 0,1:17:41,78.88299560546875,first_only,1/55,sf,4,7,19801,88945,50390,14,10,5,0,0,0,0,14
+355,com.pinterest,Exit status: 0,4:07,8.310279846191406,last_only,1/55,d,0,0,19801,88943,31335,0,0,9,0,0,0,0,0
+356,com.pinterest,Exit status: 0,5:17,11.958999633789062,last_only,1/55,sf,4,5,19801,88945,47545,13,9,5,0,0,0,0,13
+357,com.pinterest,Exit status: 0,5:27,14.97768783569336,activity_last,8/55,d,0,0,19801,88943,31899,0,0,9,0,0,0,0,0
+358,com.pinterest,Exit status: 0,6:27,16.482078552246094,activity_last,8/55,sf,3,4,19801,88945,45828,10,9,8,0,0,0,0,10
+359,com.pinterest,Exit status: 0,29:13,27.6324462890625,activity_last,8/55,i,0,0,19801,88943,30187,0,0,9,0,0,0,0,0
+360,com.pinterest,Exit status: 0,12:28,28.716236114501953,action_all,55/55,d,0,0,19801,88943,31933,0,0,9,0,0,0,0,0
+361,com.pinterest,Exit status: 0,12:57,28.610694885253906,action_all,55/55,sf,3,4,19801,88945,44743,10,9,8,0,0,0,0,10
+362,com.pinterest,Exit status: 130,1:37:56,27.66948699951172,action_all,55/55,i,0,0,0,0,29587,0,0,9,0,0,0,0,0
+363,com.evernote,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+364,com.outfit7.mytalkingangelafree,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+365,com.jio.jioplay.tv,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+366,com.king.candycrushsodasaga,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+367,com.badoo.mobile,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+368,com.fingersoft.hillclimb,Exit status: 0,1:13,4.4444427490234375,none,0,full static,7,4,11898,69649,28421,8,0,0,0,0,0,0,8
+369,com.fingersoft.hillclimb,Exit status: 0,0:45,4.170673370361328,first_only,1/6,d,5,1,11898,69648,11231,5,0,3,0,0,0,0,5
+370,com.fingersoft.hillclimb,Exit status: 0,0:59,4.510753631591797,first_only,1/6,sf,5,1,11898,69649,20840,5,0,3,0,0,0,0,5
+371,com.fingersoft.hillclimb,Exit status: 0,0:42,3.7894821166992188,last_only,1/6,d,5,1,11898,69648,11231,5,0,3,0,0,0,0,5
+372,com.fingersoft.hillclimb,Exit status: 0,0:58,4.296134948730469,last_only,1/6,sf,5,1,11898,69649,20843,5,0,3,0,0,0,0,5
+373,com.fingersoft.hillclimb,Exit status: 0,0:43,3.8628501892089844,activity_last,1/6,d,5,1,11898,69648,11231,5,0,3,0,0,0,0,5
+374,com.fingersoft.hillclimb,Exit status: 0,1:00,4.301445007324219,activity_last,1/6,sf,5,1,11898,69649,20843,5,0,3,0,0,0,0,5
+375,com.fingersoft.hillclimb,Exit status: 0,1:06,7.513671875,action_all,6/6,d,5,1,11898,69648,11231,5,0,3,0,0,0,0,5
+376,com.fingersoft.hillclimb,Exit status: 0,1:21,7.626827239990234,action_all,6/6,sf,5,1,11898,69649,20801,5,0,3,0,0,0,0,5
+377,com.fingersoft.hillclimb,Exit status: 0,3:08,8.458126068115234,action_all,6/6,i,5,1,11898,69648,11152,5,0,3,0,0,0,0,5
+378,com.outfit7.talkinggingerfree,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+379,com.shazam.android,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+380,com.roidapp.photogrid,Exit status: 0,47:33,80.19612503051758,none,0,full static,19,23,19633,116961,130869,40,0,0,0,0,0,0,40
+381,com.roidapp.photogrid,Exit status: 0,38:20,82.08330154418945,first_only,1/59,d,8,11,19633,116953,46912,14,9,35,0,0,0,0,14
+382,com.roidapp.photogrid,Exit status: 0,46:31,82.27641677856445,first_only,1/59,sf,15,28,19633,116958,86151,41,22,21,0,0,0,0,41
+383,com.roidapp.photogrid,Exit status: 0,39:41,83.34526443481445,last_only,1/59,d,8,12,19633,116953,46446,16,9,33,0,0,0,0,16
+384,com.roidapp.photogrid,Exit status: 0,47:08,84.32868957519531,last_only,1/59,sf,16,30,19633,116958,92544,52,34,22,0,0,0,0,52
+385,com.roidapp.photogrid,Exit status: 0,37:52,80.24164962768555,activity_last,15/59,d,8,11,19633,116953,47665,14,9,35,0,0,0,0,14
+386,com.roidapp.photogrid,Exit status: 0,45:03,81.50104522705078,activity_last,15/59,sf,12,22,19633,116958,78609,41,21,20,0,0,0,0,41
+387,com.roidapp.photogrid,Exit status: 130,1:47:39,82.23858261108398,activity_last,15/59,i,8,11,0,0,46428,12,7,35,0,0,0,0,12
+388,com.roidapp.photogrid,Exit status: 0,41:28,82.91651916503906,action_all,59/59,d,8,11,19633,116953,47824,14,9,35,0,0,0,0,14
+389,com.roidapp.photogrid,Exit status: 0,49:59,84.65455627441406,action_all,59/59,sf,12,20,19633,116958,78421,35,19,24,0,0,0,0,35
+390,com.roidapp.photogrid,Exit status: 130,1:49:40,82.9786491394043,action_all,59/59,i,8,13,0,0,46459,14,7,33,0,0,0,0,14
+391,com.shootbubble.bubbledexlue,Exit status: 0,2:11,13.01102066040039,none,0,full static,13,8,3996,23906,19114,18,0,0,0,0,0,0,18
+392,com.shootbubble.bubbledexlue,Exit status: 0,0:29,2.5727615356445312,first_only,1/10,d,5,4,3996,23906,9825,8,0,10,0,0,0,0,8
+393,com.shootbubble.bubbledexlue,Exit status: 0,0:46,4.34014892578125,first_only,1/10,sf,9,6,3996,23906,14963,12,0,6,0,0,0,0,12
+394,com.shootbubble.bubbledexlue,Exit status: 0,0:26,2.5733985900878906,last_only,1/10,d,5,4,3996,23905,9028,8,0,10,0,0,0,0,8
+395,com.shootbubble.bubbledexlue,Exit status: 0,0:35,3.1214141845703125,last_only,1/10,sf,7,5,3996,23905,13802,10,0,8,0,0,0,0,10
+396,com.shootbubble.bubbledexlue,Exit status: 0,0:57,6.902988433837891,activity_last,5/10,d,5,4,3996,23906,12261,8,0,10,0,0,0,0,8
+397,com.shootbubble.bubbledexlue,Exit status: 0,1:09,7.725650787353516,activity_last,5/10,sf,10,7,3996,23906,16290,13,0,5,0,0,0,0,13
+398,com.shootbubble.bubbledexlue,Exit status: 0,1:37,6.536834716796875,activity_last,5/10,i,5,4,3996,23906,9381,5,0,13,0,0,0,0,5
+399,com.shootbubble.bubbledexlue,Exit status: 0,1:12,8.212993621826172,action_all,10/10,d,5,4,3996,23906,12261,8,0,10,0,0,0,0,8
+400,com.shootbubble.bubbledexlue,Exit status: 0,1:22,8.111579895019531,action_all,10/10,sf,10,7,3996,23906,16290,13,0,5,0,0,0,0,13
+401,com.shootbubble.bubbledexlue,Exit status: 0,2:42,6.657741546630859,action_all,10/10,i,5,4,3996,23906,9116,5,0,13,0,0,0,0,5
+402,me.pou.app,Exit status: 0,12:31,44.54961013793945,none,0,full static,2,5,6245,30695,12000,8,0,0,0,0,0,0,8
+403,me.pou.app,Exit status: 0,4:08,25.413162231445312,first_only,1/38,d,2,3,6245,30695,6947,6,2,4,0,0,0,0,6
+404,me.pou.app,Exit status: 0,3:09,19.65966033935547,first_only,1/38,sf,2,4,6245,30695,8018,8,2,2,0,0,0,0,8
+405,me.pou.app,Exit status: 0,2:12,16.70465087890625,last_only,1/38,d,2,3,6245,30695,3799,4,2,6,0,0,0,0,4
+406,me.pou.app,Exit status: 0,2:42,19.053348541259766,last_only,1/38,sf,2,5,6245,30695,4563,10,4,2,0,0,0,0,10
+407,me.pou.app,Exit status: 0,10:36,45.02641677856445,activity_last,2/38,d,2,3,6245,30695,7533,6,2,4,0,0,0,0,6
+408,me.pou.app,Exit status: 0,5:16,31.076202392578125,activity_last,2/38,sf,2,5,6245,30695,8153,10,2,0,0,0,0,0,10
+409,me.pou.app,Exit status: 0,6:58,33.105316162109375,activity_last,2/38,i,2,3,6245,30695,5662,5,2,5,0,0,0,0,5
+410,me.pou.app,Exit status: 0,11:57,42.893314361572266,action_all,38/38,d,2,3,6245,30695,7582,5,2,5,0,0,0,0,5
+411,me.pou.app,Exit status: 0,7:25,36.563716888427734,action_all,38/38,sf,2,5,6245,30695,8168,10,2,0,0,0,0,0,10
+412,me.pou.app,Exit status: 130,1:12:32,40.16941833496094,action_all,38/38,i,2,3,0,0,6161,6,2,4,0,0,0,0,6
+413,com.imangi.templerun,Exit status: 0,0:28,2.2281112670898438,none,0,full static,2,5,7039,39227,13886,7,0,0,0,0,0,0,7
+414,com.imangi.templerun,Exit status: 0,0:24,2.3567237854003906,first_only,1/39,d,1,1,7039,39227,6125,1,0,6,0,0,0,0,1
+415,com.imangi.templerun,Exit status: 0,0:32,2.5527992248535156,first_only,1/39,sf,2,5,7039,39227,12978,7,0,0,0,0,0,0,7
+416,com.imangi.templerun,Exit status: 0,0:24,2.379444122314453,last_only,1/39,d,1,1,7039,39227,6137,1,0,6,0,0,0,0,1
+417,com.imangi.templerun,Exit status: 0,0:32,2.5592193603515625,last_only,1/39,sf,2,2,7039,39227,12869,2,0,5,0,0,0,0,2
+418,com.imangi.templerun,Exit status: 0,0:39,4.870151519775391,activity_last,5/39,d,1,1,7039,39227,6141,1,0,6,0,0,0,0,1
+419,com.imangi.templerun,Exit status: 0,0:47,5.976142883300781,activity_last,5/39,sf,2,2,7039,39227,12869,2,0,5,0,0,0,0,2
+420,com.imangi.templerun,Exit status: 0,1:18,5.059913635253906,activity_last,5/39,i,1,1,7039,39227,6102,1,0,6,0,0,0,0,1
+421,com.imangi.templerun,Exit status: 0,2:38,17.827964782714844,action_all,39/39,d,1,1,7039,39227,6141,1,0,6,0,0,0,0,1
+422,com.imangi.templerun,Exit status: 0,2:29,17.893653869628906,action_all,39/39,sf,2,2,7039,39227,12869,2,0,5,0,0,0,0,2
+423,com.imangi.templerun,Exit status: 0,8:25,5.128318786621094,action_all,39/39,i,1,1,7039,39227,6081,1,0,6,0,0,0,0,1
+424,com.google.android.apps.translate,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+425,com.google.android.apps.docs,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+426,com.mxtech.videoplayer.ad,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+427,com.sec.spp.push,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+428,com.google.android.apps.messaging,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+429,com.waze,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+430,com.facebook.mlite,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+431,com.google.android.deskclock,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+432,com.google.android.apps.plus,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+433,com.dsi.ant.plugins.antplus,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+434,com.nekki.shadowfight,Exit status: 0,1:25,4.906097412109375,none,0,full static,2,2,13608,84763,16455,2,0,0,0,0,0,0,2
+435,com.nekki.shadowfight,Exit status: 0,0:32,2.5516891479492188,first_only,1/39,d,1,1,13608,84763,5720,1,0,1,0,0,0,0,1
+436,com.nekki.shadowfight,Exit status: 0,0:43,2.977489471435547,first_only,1/39,sf,1,1,13608,84763,9807,1,0,1,0,0,0,0,1
+437,com.nekki.shadowfight,Exit status: 0,0:31,2.5519180297851562,last_only,1/39,d,1,1,13608,84763,6008,1,0,1,0,0,0,0,1
+438,com.nekki.shadowfight,Exit status: 0,0:45,3.0529556274414062,last_only,1/39,sf,1,1,13608,84763,9782,1,0,1,0,0,0,0,1
+439,com.nekki.shadowfight,Exit status: 0,0:36,3.8697242736816406,activity_last,2/39,d,1,1,13608,84763,6008,1,0,1,0,0,0,0,1
+440,com.nekki.shadowfight,Exit status: 0,0:48,4.546840667724609,activity_last,2/39,sf,1,1,13608,84763,9782,1,0,1,0,0,0,0,1
+441,com.nekki.shadowfight,Exit status: 0,0:51,4.89599609375,activity_last,2/39,i,1,1,13608,84763,5839,1,0,1,0,0,0,0,1
+442,com.nekki.shadowfight,Exit status: 0,2:41,17.64889144897461,action_all,39/39,d,1,1,13608,84763,6008,1,0,1,0,0,0,0,1
+443,com.nekki.shadowfight,Exit status: 0,2:37,17.82445526123047,action_all,39/39,sf,1,1,13608,84763,9507,1,0,1,0,0,0,0,1
+444,com.nekki.shadowfight,Exit status: 0,11:26,5.728935241699219,action_all,39/39,i,1,1,13608,84763,5667,1,0,1,0,0,0,0,1
+445,com.snapchat.android,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+446,com.samsung.android.app.simplesharing,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+447,com.google.android.gm,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+448,jp.naver.line.android,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+449,com.whatsapp,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+450,com.whatsapp.wallpaper,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+451,com.halfbrick.jetpackjoyride,Exit status: 0,2:05,9.302310943603516,none,0,full static,6,14,16521,113504,29195,17,0,0,0,0,0,0,17
+452,com.halfbrick.jetpackjoyride,Exit status: 0,1:02,4.43115234375,first_only,1/41,d,2,4,16521,113504,11579,4,1,14,0,0,0,0,4
+453,com.halfbrick.jetpackjoyride,Exit status: 0,1:52,8.594844818115234,first_only,1/41,sf,4,11,16521,113504,24694,14,2,5,0,0,0,0,14
+454,com.halfbrick.jetpackjoyride,Exit status: 0,1:03,4.413753509521484,last_only,1/41,d,2,4,16521,113504,11597,4,1,14,0,0,0,0,4
+455,com.halfbrick.jetpackjoyride,Exit status: 0,1:51,8.481311798095703,last_only,1/41,sf,3,9,16521,113504,24639,9,1,9,0,0,0,0,9
+456,com.halfbrick.jetpackjoyride,Exit status: 0,1:17,7.805046081542969,activity_last,4/41,d,2,4,16521,113504,11601,4,1,14,0,0,0,0,4
+457,com.halfbrick.jetpackjoyride,Exit status: 0,2:01,9.039546966552734,activity_last,4/41,sf,3,8,16521,113504,24631,8,1,10,0,0,0,0,8
+458,com.halfbrick.jetpackjoyride,Exit status: 0,3:14,9.174301147460938,activity_last,4/41,i,2,4,16521,113504,11327,4,1,14,0,0,0,0,4
+459,com.halfbrick.jetpackjoyride,Exit status: 0,4:20,23.691547393798828,action_all,41/41,d,2,4,16521,113504,11601,4,1,14,0,0,0,0,4
+460,com.halfbrick.jetpackjoyride,Exit status: 0,4:49,24.064857482910156,action_all,41/41,sf,3,9,16521,113504,24632,9,1,9,0,0,0,0,9
+461,com.halfbrick.jetpackjoyride,Exit status: 0,27:50,10.26129150390625,action_all,41/41,i,2,4,16521,113504,11479,4,1,14,0,0,0,0,4
+462,com.sonyericsson.extras.liveware,Exit status: 0,2:44,15.903522491455078,none,0,full static,32,33,1330,7715,16742,240,0,0,0,0,0,0,240
+463,com.sonyericsson.extras.liveware,Exit status: 0,0:54,4.848987579345703,first_only,1/44,d,28,28,1330,7715,13993,294,199,145,0,0,0,0,294
+464,com.sonyericsson.extras.liveware,Exit status: 0,2:22,16.66248321533203,first_only,1/44,sf,31,35,1330,7715,15141,261,169,148,0,0,0,0,261
+465,com.sonyericsson.extras.liveware,Exit status: 0,0:45,3.8671188354492188,last_only,1/44,d,28,22,1330,7715,14019,189,135,186,0,0,0,0,189
+466,com.sonyericsson.extras.liveware,Exit status: 0,1:29,10.969440460205078,last_only,1/44,sf,31,32,1330,7715,15268,205,142,177,0,0,0,0,205
+467,com.sonyericsson.extras.liveware,Exit status: 0,1:59,16.85287094116211,activity_last,12/44,d,28,28,1330,7715,14034,213,155,182,0,0,0,0,213
+468,com.sonyericsson.extras.liveware,Exit status: 0,2:31,18.42037582397461,activity_last,12/44,sf,29,30,1330,7715,15089,211,140,169,0,0,0,0,211
+469,com.sonyericsson.extras.liveware,Exit status: 0,7:25,13.238174438476562,activity_last,12/44,i,30,32,1330,7715,13857,115,77,202,0,0,0,0,115
+470,com.sonyericsson.extras.liveware,Exit status: 0,4:44,27.8905029296875,action_all,44/44,d,28,27,1330,7715,14142,242,173,171,0,0,0,0,242
+471,com.sonyericsson.extras.liveware,Exit status: 0,5:58,30.84209442138672,action_all,44/44,sf,30,27,1330,7715,15081,165,105,180,0,0,0,0,165
+472,com.sonyericsson.extras.liveware,Exit status: 0,21:44,14.62741470336914,action_all,44/44,i,30,30,1330,7715,13859,102,66,204,0,0,0,0,102
+473,com.truecaller,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+474,com.joeware.android.gpulumera,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+475,com.ea.game.pvzfree_row,Exit status: 0,16:12,45.58256912231445,none,0,full static,8,12,12491,75985,27057,19,0,0,0,0,0,0,19
+476,com.ea.game.pvzfree_row,Exit status: 0,0:38,3.470623016357422,first_only,1/75,d,0,0,12491,75983,7908,0,0,19,0,0,0,0,0
+477,com.ea.game.pvzfree_row,Exit status: 0,0:56,4.315711975097656,first_only,1/75,sf,0,0,12491,75983,18302,0,0,19,0,0,0,0,0
+478,com.ea.game.pvzfree_row,Exit status: 0,0:35,2.7787818908691406,last_only,1/75,d,0,0,12491,75983,7906,0,0,19,0,0,0,0,0
+479,com.ea.game.pvzfree_row,Exit status: 0,0:52,4.214286804199219,last_only,1/75,sf,0,0,12491,75983,15266,0,0,19,0,0,0,0,0
+480,com.ea.game.pvzfree_row,Exit status: 0,0:55,6.2387847900390625,activity_last,5/75,d,0,0,12491,75983,7914,0,0,19,0,0,0,0,0
+481,com.ea.game.pvzfree_row,Exit status: 0,1:06,6.275325775146484,activity_last,5/75,sf,0,0,12491,75983,14770,0,0,19,0,0,0,0,0
+482,com.ea.game.pvzfree_row,Exit status: 0,2:07,6.5676116943359375,activity_last,5/75,i,0,0,12491,75983,7810,0,0,19,0,0,0,0,0
+483,com.ea.game.pvzfree_row,Exit status: 0,6:03,22.60765838623047,action_all,75/75,d,0,0,12491,75983,7918,0,0,19,0,0,0,0,0
+484,com.ea.game.pvzfree_row,Exit status: 0,5:31,23.121383666992188,action_all,75/75,sf,0,0,12491,75983,14658,0,0,19,0,0,0,0,0
+485,com.ea.game.pvzfree_row,Exit status: 0,27:10,7.4037017822265625,action_all,75/75,i,0,0,12491,75983,7824,0,0,19,0,0,0,0,0
+486,com.lookout,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+487,com.skgames.trafficracer,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+488,com.linecorp.b612.android,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+489,com.google.android.play.games,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+490,com.antivirus,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+491,com.bbm,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+492,com.samsung.android.app.watchmanager,Exit status: 0,3:01,28.90261459350586,none,0,full static,4,6,687,3750,5463,42,0,0,0,0,0,0,42
+493,com.samsung.android.app.watchmanager,Exit status: 0,0:32,7.314945220947266,first_only,1/7,d,4,7,687,3750,3662,48,30,24,0,0,0,0,48
+494,com.samsung.android.app.watchmanager,Exit status: 0,0:42,11.067577362060547,first_only,1/7,sf,6,6,687,3750,4486,47,35,30,0,0,0,0,47
+495,com.samsung.android.app.watchmanager,Exit status: 0,0:30,8.350914001464844,last_only,1/7,d,6,4,687,3750,3662,35,23,30,0,0,0,0,35
+496,com.samsung.android.app.watchmanager,Exit status: 0,0:40,10.720245361328125,last_only,1/7,sf,6,2,687,3750,4486,23,17,36,0,0,0,0,23
+497,com.samsung.android.app.watchmanager,Exit status: 0,0:33,7.769611358642578,activity_last,2/7,d,4,3,687,3750,3662,18,12,36,0,0,0,0,18
+498,com.samsung.android.app.watchmanager,Exit status: 0,0:45,12.456615447998047,activity_last,2/7,sf,2,5,687,3750,4486,30,18,30,0,0,0,0,30
+499,com.samsung.android.app.watchmanager,Exit status: 0,0:53,11.672927856445312,activity_last,2/7,i,2,9,687,3750,3660,18,16,40,0,0,0,0,18
+500,com.samsung.android.app.watchmanager,Exit status: 0,0:48,10.715389251708984,action_all,7/7,d,3,7,687,3750,3662,31,31,42,0,0,0,0,31
+501,com.samsung.android.app.watchmanager,Exit status: 0,1:02,16.509231567382812,action_all,7/7,sf,6,9,687,3750,4511,54,42,30,0,0,0,0,54
+502,com.samsung.android.app.watchmanager,Exit status: 0,2:16,24.3170166015625,action_all,7/7,i,6,8,687,3750,3658,18,12,36,0,0,0,0,18
+503,com.gameloft.android.ANMP.GloftDMHM,Exit status: 0,0:41,3.90618896484375,none,0,full static,6,11,8826,46051,15067,14,0,0,0,0,0,0,14
+504,com.gameloft.android.ANMP.GloftDMHM,Exit status: 0,0:28,2.4060897827148438,first_only,1/73,d,4,8,8826,46051,7601,10,0,4,0,0,0,0,10
+505,com.gameloft.android.ANMP.GloftDMHM,Exit status: 0,0:42,3.961822509765625,first_only,1/73,sf,6,11,8826,46051,14349,14,3,3,0,0,0,0,14
+506,com.gameloft.android.ANMP.GloftDMHM,Exit status: 0,0:28,2.4132347106933594,last_only,1/73,d,4,7,8826,46051,7601,8,0,6,0,0,0,0,8
+507,com.gameloft.android.ANMP.GloftDMHM,Exit status: 0,0:42,3.9478073120117188,last_only,1/73,sf,6,12,8826,46051,14326,16,2,0,0,0,0,0,16
+508,com.gameloft.android.ANMP.GloftDMHM,Exit status: 0,0:38,4.373134613037109,activity_last,4/73,d,4,7,8826,46051,7601,8,0,6,0,0,0,0,8
+509,com.gameloft.android.ANMP.GloftDMHM,Exit status: 0,0:51,4.639106750488281,activity_last,4/73,sf,6,11,8826,46051,14325,14,2,2,0,0,0,0,14
+510,com.gameloft.android.ANMP.GloftDMHM,Exit status: 0,1:19,5.125194549560547,activity_last,4/73,i,4,8,8826,46051,7577,10,0,4,0,0,0,0,10
+511,com.gameloft.android.ANMP.GloftDMHM,Exit status: 0,3:38,26.877452850341797,action_all,73/73,d,4,8,8826,46051,7601,10,0,4,0,0,0,0,10
+512,com.gameloft.android.ANMP.GloftDMHM,Exit status: 0,3:29,26.944854736328125,action_all,73/73,sf,6,11,8826,46051,14325,13,2,3,0,0,0,0,13
+513,com.gameloft.android.ANMP.GloftDMHM,Exit status: 0,18:40,5.190311431884766,action_all,73/73,i,4,8,8826,46051,7569,10,0,4,0,0,0,0,10
+514,com.estrongs.android.pop,Exit status: 0,3:11:21,79.64438247680664,none,0,full static,45,48,18384,104232,162465,101,0,0,0,0,0,0,101
+515,com.estrongs.android.pop,Exit status: 0,1:10:30,80.35054397583008,first_only,1/53,d,19,34,18384,104231,65632,68,36,69,0,0,0,0,68
+516,com.estrongs.android.pop,Exit status: 0,2:09:53,80.19755172729492,first_only,1/53,sf,42,59,18384,104232,127909,154,99,46,0,0,0,0,154
+517,com.estrongs.android.pop,Exit status: 0,1:08:19,84.14056777954102,last_only,1/53,d,20,31,18384,104231,65842,68,37,70,0,0,0,0,68
+518,com.estrongs.android.pop,Exit status: 0,2:15:48,82.45046615600586,last_only,1/53,sf,41,59,18384,104232,129488,156,112,57,0,0,0,0,156
+519,com.estrongs.android.pop,Exit status: 0,1:19:39,81.90182876586914,activity_last,17/53,d,23,34,18384,104231,68951,76,42,67,0,0,0,0,76
+520,com.estrongs.android.pop,Exit status: 0,2:21:52,79.22349548339844,activity_last,17/53,sf,41,51,18384,104232,126412,109,50,42,0,0,0,0,109
+521,com.estrongs.android.pop,Exit status: 130,6:22:46,83.74758529663086,activity_last,17/53,i,20,36,0,0,59305,58,29,72,0,0,0,0,58
+522,com.estrongs.android.pop,Exit status: 0,1:31:06,83.44958114624023,action_all,53/53,d,22,37,18384,104231,69190,84,47,64,0,0,0,0,84
+523,com.estrongs.android.pop,Exit status: 0,2:01:27,77.9626350402832,action_all,53/53,sf,39,55,18384,104232,121700,130,83,54,0,0,0,0,130
+524,com.estrongs.android.pop,Exit status: 130,6:22:46,83.73948287963867,action_all,53/53,i,19,36,0,0,54233,57,28,72,0,0,0,0,57
+525,net.mobigame.zombietsunami,Exit status: 0,3:43,17.522750854492188,none,0,full static,7,13,10200,57228,20714,22,0,0,0,0,0,0,22
+526,net.mobigame.zombietsunami,Exit status: 0,0:35,2.5583419799804688,first_only,1/36,d,1,1,10200,57227,9348,2,0,20,0,0,0,0,2
+527,net.mobigame.zombietsunami,Exit status: 0,0:50,4.201442718505859,first_only,1/36,sf,2,3,10200,57228,16151,6,0,16,0,0,0,0,6
+528,net.mobigame.zombietsunami,Exit status: 0,0:34,2.5639266967773438,last_only,1/36,d,1,1,10200,57227,9346,2,0,20,0,0,0,0,2
+529,net.mobigame.zombietsunami,Exit status: 0,0:52,4.2241363525390625,last_only,1/36,sf,2,3,10200,57228,16164,8,3,17,0,0,0,0,8
+530,net.mobigame.zombietsunami,Exit status: 0,0:44,4.37615966796875,activity_last,3/36,d,1,1,10200,57227,9724,2,0,20,0,0,0,0,2
+531,net.mobigame.zombietsunami,Exit status: 0,0:57,4.663494110107422,activity_last,3/36,sf,2,3,10200,57228,16358,6,1,17,0,0,0,0,6
+532,net.mobigame.zombietsunami,Exit status: 0,1:26,6.422908782958984,activity_last,3/36,i,1,1,10200,57227,9427,1,0,21,0,0,0,0,1
+533,net.mobigame.zombietsunami,Exit status: 0,2:39,17.595050811767578,action_all,36/36,d,1,1,10200,57227,9746,2,0,20,0,0,0,0,2
+534,net.mobigame.zombietsunami,Exit status: 0,2:38,17.715702056884766,action_all,36/36,sf,2,3,10200,57228,16358,7,1,16,0,0,0,0,7
+535,net.mobigame.zombietsunami,Exit status: 0,13:16,7.135215759277344,action_all,36/36,i,1,1,10200,57227,9296,1,0,21,0,0,0,0,1
+536,com.google.android.marvin.talkback,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+537,com.google.android.calculator,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+538,com.google.android.music,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+539,com.netflix.mediaclient,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+540,com.king.petrescuesaga,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+541,com.google.android.apps.cloudprint,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+542,com.rovio.angrybirds,Exit status: 0,0:35,3.668781280517578,none,0,full static,3,13,6891,36922,10514,18,0,0,0,0,0,0,18
+543,com.rovio.angrybirds,Exit status: 0,0:22,2.3304710388183594,first_only,1/75,d,1,1,6891,36922,4799,1,0,17,0,0,0,0,1
+544,com.rovio.angrybirds,Exit status: 0,0:32,4.379993438720703,first_only,1/75,sf,3,10,6891,36922,9258,13,2,7,0,0,0,0,13
+545,com.rovio.angrybirds,Exit status: 0,0:22,2.371265411376953,last_only,1/75,d,1,1,6891,36922,4713,1,0,17,0,0,0,0,1
+546,com.rovio.angrybirds,Exit status: 0,0:35,5.330253601074219,last_only,1/75,sf,3,8,6891,36922,9830,14,2,6,0,0,0,0,14
+547,com.rovio.angrybirds,Exit status: 0,0:33,4.636207580566406,activity_last,4/75,d,1,1,6891,36922,4799,1,0,17,0,0,0,0,1
+548,com.rovio.angrybirds,Exit status: 0,0:41,4.914363861083984,activity_last,4/75,sf,3,10,6891,36922,9205,15,1,4,0,0,0,0,15
+549,com.rovio.angrybirds,Exit status: 0,0:58,4.491546630859375,activity_last,4/75,i,1,1,6891,36922,4757,1,0,17,0,0,0,0,1
+550,com.rovio.angrybirds,Exit status: 0,4:29,27.742748260498047,action_all,75/75,d,1,1,6891,36922,4823,1,0,17,0,0,0,0,1
+551,com.rovio.angrybirds,Exit status: 0,4:08,27.710636138916016,action_all,75/75,sf,2,6,6891,36922,9160,9,2,11,0,0,0,0,9
+552,com.rovio.angrybirds,Exit status: 0,13:04,4.848888397216797,action_all,75/75,i,1,1,6891,36922,4752,1,0,17,0,0,0,0,1
+553,com.google.android.inputmethod.latin,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+554,com.gau.go.launcherex,Exit status: 0,14:52:04,83.7426528930664,none,0,full static,82,109,22866,140965,182659,237,0,0,0,0,0,0,237
+555,com.gau.go.launcherex,Exit status: 0,1:12:00,78.82681274414062,first_only,1/38,d,22,35,22866,140949,53401,54,36,219,0,0,0,0,54
+556,com.gau.go.launcherex,Exit status: 0,1:36:42,79.7864990234375,first_only,1/38,sf,56,69,22866,140956,103238,137,61,161,0,0,0,0,137
+557,com.gau.go.launcherex,Exit status: 0,8:25,26.502365112304688,last_only,1/38,d,11,16,22866,140944,39801,23,11,225,0,0,0,0,23
+558,com.gau.go.launcherex,Exit status: 0,2:41:52,80.39918518066406,last_only,1/38,sf,59,64,22866,140957,148816,167,26,96,0,0,0,0,167
+559,com.gau.go.launcherex,Exit status: 0,1:07:24,83.93995666503906,activity_last,13/38,d,28,42,22866,140952,61534,99,38,176,0,0,0,0,99
+560,com.gau.go.launcherex,Exit status: 0,1:45:11,80.17649841308594,activity_last,13/38,sf,55,75,22866,140958,115270,207,86,116,0,0,0,0,207
+561,com.gau.go.launcherex,Exit status: 0,8:49:07,80.28424835205078,activity_last,13/38,i,29,44,22866,140952,50702,66,34,205,0,0,0,0,66
+562,com.gau.go.launcherex,Exit status: 0,1:09:10,77.51726913452148,action_all,38/38,d,32,44,22866,140952,65089,112,46,171,0,0,0,0,112
+563,com.gau.go.launcherex,Exit status: 0,1:37:33,78.66773986816406,action_all,38/38,sf,56,81,22866,140958,113969,202,84,119,0,0,0,0,202
+564,com.gau.go.launcherex,Exit status: 0,23:58:53,82.80300521850586,action_all,38/38,i,28,46,22866,140952,49295,68,35,204,0,0,0,0,68
+565,com.quvideo.xiaoying,Exit status: 0,50:28,77.34559631347656,none,0,full static,86,114,29626,176636,258929,272,0,0,0,0,0,0,272
+566,com.quvideo.xiaoying,Exit status: 0,15:13,25.65435791015625,first_only,1/53,d,29,41,29626,176633,59713,142,79,209,0,0,0,0,142
+567,com.quvideo.xiaoying,Exit status: 0,48:04,77.0311279296875,first_only,1/53,sf,61,91,29626,176635,171326,215,52,109,0,0,0,0,215
+568,com.quvideo.xiaoying,Exit status: 0,16:50,28.759212493896484,last_only,1/53,d,29,43,29626,176633,61137,138,75,209,0,0,0,0,138
+569,com.quvideo.xiaoying,Exit status: 0,49:11,77.8398666381836,last_only,1/53,sf,61,83,29626,176635,169641,232,59,99,0,0,0,0,232
+570,com.quvideo.xiaoying,Exit status: 0,1:14:21,82.0969123840332,activity_last,18/53,d,57,83,29626,176634,88052,410,323,185,0,0,0,0,410
+571,com.quvideo.xiaoying,Exit status: 0,1:28:08,78.2635726928711,activity_last,18/53,sf,93,118,29626,176636,199265,424,242,90,0,0,0,0,424
+572,com.quvideo.xiaoying,Exit status: 130,1:50:31,82.46060180664062,activity_last,18/53,i,47,75,0,0,70977,178,94,188,0,0,0,0,178
+573,com.quvideo.xiaoying,Exit status: 0,1:17:16,80.4129638671875,action_all,53/53,d,62,89,29626,176634,88507,447,358,183,0,0,0,0,447
+574,com.quvideo.xiaoying,Exit status: 0,3:05:47,77.27609634399414,action_all,53/53,sf,88,117,29626,176636,194430,408,256,120,0,0,0,0,408
+575,com.quvideo.xiaoying,Exit status: 130,1:50:36,80.79034042358398,action_all,53/53,i,46,68,0,0,70856,131,72,213,0,0,0,0,131
+576,com.vkontakte.android,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+577,com.tripadvisor.tripadvisor,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+578,com.microsoft.office.excel,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+579,com.nianticlabs.pokemongo,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+580,org.mozilla.firefox,Exit status: 0,4:22,27.90694808959961,none,0,full static,8,14,5750,31540,31808,20,0,0,0,0,0,0,20
+581,org.mozilla.firefox,Exit status: 0,0:49,4.264560699462891,first_only,1/42,d,5,5,5750,31538,18918,5,1,16,0,0,0,0,5
+582,org.mozilla.firefox,Exit status: 0,1:48,13.41189193725586,first_only,1/42,sf,8,13,5750,31538,22991,21,13,12,0,0,0,0,21
+583,org.mozilla.firefox,Exit status: 0,0:46,4.227207183837891,last_only,1/42,d,5,5,5750,31538,17777,5,1,16,0,0,0,0,5
+584,org.mozilla.firefox,Exit status: 0,1:43,10.301570892333984,last_only,1/42,sf,8,13,5750,31538,21937,19,7,8,0,0,0,0,19
+585,org.mozilla.firefox,Exit status: 0,1:31,9.89687728881836,activity_last,10/42,d,5,5,5750,31538,19083,5,1,16,0,0,0,0,5
+586,org.mozilla.firefox,Exit status: 0,1:55,10.919509887695312,activity_last,10/42,sf,6,8,5750,31538,23446,9,1,12,0,0,0,0,9
+587,org.mozilla.firefox,Exit status: 0,4:52,11.152069091796875,activity_last,10/42,i,5,5,5750,31538,17341,5,1,16,0,0,0,0,5
+588,org.mozilla.firefox,Exit status: 0,3:52,27.210128784179688,action_all,42/42,d,5,5,5750,31538,19260,5,1,16,0,0,0,0,5
+589,org.mozilla.firefox,Exit status: 0,4:14,27.545921325683594,action_all,42/42,sf,6,8,5750,31538,23605,9,1,12,0,0,0,0,9
+590,org.mozilla.firefox,Exit status: 0,19:21,11.309833526611328,action_all,42/42,i,5,5,5750,31538,17600,5,1,16,0,0,0,0,5
+591,com.outfit7.talkingtom,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+592,tv.peel.samsung.app,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+593,com.miniclip.eightballpool,Exit status: 0,2:58,11.655609130859375,none,0,full static,6,11,12702,72667,29257,13,0,0,0,0,0,0,13
+594,com.miniclip.eightballpool,Exit status: 0,0:42,3.0547103881835938,first_only,1/83,d,0,0,12702,72666,9345,0,0,13,0,0,0,0,0
+595,com.miniclip.eightballpool,Exit status: 0,2:15,9.62564468383789,first_only,1/83,sf,5,8,12702,72667,26720,10,0,3,0,0,0,0,10
+596,com.miniclip.eightballpool,Exit status: 0,0:48,4.2311248779296875,last_only,1/83,d,0,0,12702,72666,10410,0,0,13,0,0,0,0,0
+597,com.miniclip.eightballpool,Exit status: 0,1:38,7.834327697753906,last_only,1/83,sf,3,7,12702,72667,21483,9,1,5,0,0,0,0,9
+598,com.miniclip.eightballpool,Exit status: 0,1:04,7.5185546875,activity_last,4/83,d,0,0,12702,72666,10410,0,0,13,0,0,0,0,0
+599,com.miniclip.eightballpool,Exit status: 0,1:42,8.228828430175781,activity_last,4/83,sf,3,7,12702,72667,21390,9,1,5,0,0,0,0,9
+600,com.miniclip.eightballpool,Exit status: 0,2:23,9.017173767089844,activity_last,4/83,i,0,0,12702,72666,10357,0,0,13,0,0,0,0,0
+601,com.miniclip.eightballpool,Exit status: 0,6:38,24.92749786376953,action_all,83/83,d,0,0,12702,72666,10734,0,0,13,0,0,0,0,0
+602,com.miniclip.eightballpool,Exit status: 0,6:34,25.19408416748047,action_all,83/83,sf,3,6,12702,72667,21216,8,0,5,0,0,0,0,8
+603,com.miniclip.eightballpool,Exit status: 0,40:47,9.677230834960938,action_all,83/83,i,0,0,12702,72666,10145,0,0,13,0,0,0,0,0
+604,com.rovio.angrybirdsseasons,Exit status: 0,0:21,2.0609092712402344,none,0,full static,3,12,5724,30294,6000,16,0,0,0,0,0,0,16
+605,com.rovio.angrybirdsseasons,Exit status: 0,0:17,2.3097000122070312,first_only,1/52,d,1,1,5724,30294,3223,1,0,15,0,0,0,0,1
+606,com.rovio.angrybirdsseasons,Exit status: 0,0:25,4.171051025390625,first_only,1/52,sf,3,11,5724,30294,5424,16,3,3,0,0,0,0,16
+607,com.rovio.angrybirdsseasons,Exit status: 0,0:17,2.3551025390625,last_only,1/52,d,1,1,5724,30294,3310,1,0,15,0,0,0,0,1
+608,com.rovio.angrybirdsseasons,Exit status: 0,0:23,3.31396484375,last_only,1/52,sf,3,11,5724,30294,4797,15,3,4,0,0,0,0,15
+609,com.rovio.angrybirdsseasons,Exit status: 0,0:27,4.5724639892578125,activity_last,4/52,d,1,1,5724,30294,3325,1,0,15,0,0,0,0,1
+610,com.rovio.angrybirdsseasons,Exit status: 0,0:32,4.587512969970703,activity_last,4/52,sf,3,9,5724,30294,4795,12,1,5,0,0,0,0,12
+611,com.rovio.angrybirdsseasons,Exit status: 0,0:40,3.76727294921875,activity_last,4/52,i,1,1,5724,30294,3265,1,0,15,0,0,0,0,1
+612,com.rovio.angrybirdsseasons,Exit status: 0,3:07,26.86693572998047,action_all,52/52,d,1,1,5724,30294,3325,1,0,15,0,0,0,0,1
+613,com.rovio.angrybirdsseasons,Exit status: 0,2:50,23.42882537841797,action_all,52/52,sf,3,11,5724,30294,4795,18,5,3,0,0,0,0,18
+614,com.rovio.angrybirdsseasons,Exit status: 0,6:03,3.9757423400878906,action_all,52/52,i,1,1,5724,30294,3261,1,0,15,0,0,0,0,1
+615,com.dts.freefireth,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+616,air.com.hypah.io.slither,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+617,com.ea.games.r3_row,Exit status: 0,11:45,36.22574996948242,none,0,full static,6,11,8541,49776,16122,17,0,0,0,0,0,0,17
+618,com.ea.games.r3_row,Exit status: 0,0:27,2.4824295043945312,first_only,1/90,d,0,0,8541,49773,6871,0,0,17,0,0,0,0,0
+619,com.ea.games.r3_row,Exit status: 0,0:31,2.5586013793945312,first_only,1/90,sf,1,4,8541,49773,10087,5,1,13,0,0,0,0,5
+620,com.ea.games.r3_row,Exit status: 0,0:27,2.4837112426757812,last_only,1/90,d,0,0,8541,49773,6871,0,0,17,0,0,0,0,0
+621,com.ea.games.r3_row,Exit status: 0,0:32,2.552295684814453,last_only,1/90,sf,1,3,8541,49773,10087,4,0,13,0,0,0,0,4
+622,com.ea.games.r3_row,Exit status: 0,0:40,4.557422637939453,activity_last,4/90,d,0,0,8541,49773,6896,0,0,17,0,0,0,0,0
+623,com.ea.games.r3_row,Exit status: 0,0:42,4.595588684082031,activity_last,4/90,sf,0,0,8541,49773,9955,0,0,17,0,0,0,0,0
+624,com.ea.games.r3_row,Exit status: 0,1:17,5.403861999511719,activity_last,4/90,i,0,0,8541,49773,6807,0,0,17,0,0,0,0,0
+625,com.ea.games.r3_row,Exit status: 0,5:37,27.799293518066406,action_all,90/90,d,0,0,8541,49773,7156,0,0,17,0,0,0,0,0
+626,com.ea.games.r3_row,Exit status: 0,5:05,27.777503967285156,action_all,90/90,sf,0,0,8541,49773,9945,0,0,17,0,0,0,0,0
+627,com.ea.games.r3_row,Exit status: 0,22:08,6.747802734375,action_all,90/90,i,0,0,8541,49773,6784,0,0,17,0,0,0,0,0
+628,com.psafe.msuite,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+629,com.sec.android.app.shealth,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0
+630,com.opera.mini.native,No snapshots found,0,0.0,none,0,full static,0,0,0,0,0,0,0,0,0,0,0,0,0

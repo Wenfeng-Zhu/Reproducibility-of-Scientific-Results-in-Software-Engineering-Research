@@ -1,0 +1,655 @@
+17:44:51,887 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+17:44:51,887 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+17:44:51,887 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/data/wenfeng/heapster_artifact/ae/heapster-1.0-SNAPSHOT-jar-with-dependencies.jar!/logback.xml]
+17:44:51,898 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@67117f44 - URL [jar:file:/data/wenfeng/heapster_artifact/ae/heapster-1.0-SNAPSHOT-jar-with-dependencies.jar!/logback.xml] is not of type file
+17:44:51,933 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+17:44:51,933 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+17:44:51,938 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+17:44:51,975 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+17:44:51,975 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+17:44:51,975 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+17:44:51,976 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.classic.sift.SiftingAppender]
+17:44:51,978 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [SIFT]
+17:44:51,988 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.sift.MDCBasedDiscriminator] for [discriminator] property
+17:44:51,991 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+17:44:51,991 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+17:44:51,991 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+17:44:51,992 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5d3411d - Registering current configuration as safe fallback point
+
+2021-12-30 17:44:52 [main] INFO  d.u.t.heapdumps.analysis.Driver - Starting analysis with options - HeapDumps: false, StaticFallback: false, Iterative: false
+2021-12-30 17:44:52 [main] INFO  s.j.i.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 90 classes and 12 exclusions.
+2021-12-30 17:44:52 [main] INFO  s.j.i.android.SetupApplication - Initializing Soot...
+2021-12-30 17:44:52 [main] INFO  s.j.i.android.SetupApplication - Loading dex files...
+2021-12-30 17:45:00 [main] INFO  s.j.i.android.SetupApplication - ARSC file parsing took 1.463305972 seconds
+2021-12-30 17:45:00 [main] INFO  s.j.i.a.e.AndroidEntryPointCreator - Creating Android entry point for 178 components...
+2021-12-30 17:45:00 [main] INFO  s.j.i.android.SetupApplication - Constructing the callgraph...
+2021-12-30 17:45:17 [main] INFO  s.j.i.a.c.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+2021-12-30 17:45:17 [main] INFO  s.j.i.a.c.DefaultCallbackAnalyzer - Callback analysis done.
+2021-12-30 17:45:18 [main] INFO  s.j.i.a.e.AndroidEntryPointCreator - Creating Android entry point for 179 components...
+2021-12-30 17:45:18 [main] WARN  s.j.i.a.e.AndroidEntryPointCreator - Cannot create valid constructor for b.a.a.a.a$b, because it is abstract and cannot substitute with subclass
+2021-12-30 17:45:18 [main] WARN  s.j.i.a.e.c.ActivityEntryPointCreator - Cannot create valid constructor for com.microsoft.intune.mam.log.MAMLogPIIFactory, because it is an interface and cannot substitute with subclass
+2021-12-30 17:45:18 [main] WARN  s.j.i.a.e.c.ActivityEntryPointCreator - Cannot create valid constructor for com.microsoft.intune.mam.client.identity.ThreadIdentityOperations, because it is an interface and cannot substitute with subclass
+2021-12-30 17:45:18 [main] INFO  s.j.i.android.SetupApplication - Constructing the callgraph...
+2021-12-30 17:45:44 [main] INFO  s.j.i.a.c.DefaultCallbackAnalyzer - Running incremental callback analysis for 109 components...
+2021-12-30 17:45:45 [main] INFO  s.j.i.a.c.DefaultCallbackAnalyzer - Incremental callback analysis done.
+2021-12-30 17:45:45 [main] INFO  s.j.i.a.e.AndroidEntryPointCreator - Creating Android entry point for 180 components...
+2021-12-30 17:45:45 [main] WARN  s.j.i.a.e.c.ActivityEntryPointCreator - Cannot create valid constructor for com.microsoft.authorization.z, because it is an interface and cannot substitute with subclass
+2021-12-30 17:45:45 [main] WARN  s.j.i.a.e.c.ActivityEntryPointCreator - Cannot create valid constructor for com.swiftkey.cornedbeef.b, because it is abstract and cannot substitute with subclass
+2021-12-30 17:45:45 [main] WARN  s.j.i.a.e.c.ActivityEntryPointCreator - Cannot create valid constructor for com.microsoft.intune.mam.log.MAMLogPIIFactory, because it is an interface and cannot substitute with subclass
+2021-12-30 17:45:45 [main] WARN  s.j.i.a.e.c.ActivityEntryPointCreator - Cannot create valid constructor for com.microsoft.intune.mam.client.identity.ThreadIdentityOperations, because it is an interface and cannot substitute with subclass
+2021-12-30 17:45:45 [main] WARN  s.j.i.a.e.c.ActivityEntryPointCreator - Cannot create valid constructor for com.swiftkey.cornedbeef.b, because it is abstract and cannot substitute with subclass
+2021-12-30 17:45:45 [main] WARN  s.j.i.a.e.c.ActivityEntryPointCreator - Cannot create valid constructor for com.microsoft.odsp.operation.j, because it is an interface and cannot substitute with subclass
+2021-12-30 17:45:45 [main] INFO  s.j.i.android.SetupApplication - Constructing the callgraph...
+2021-12-30 17:46:07 [main] INFO  s.j.i.a.c.DefaultCallbackAnalyzer - Running incremental callback analysis for 9 components...
+2021-12-30 17:46:07 [main] INFO  s.j.i.a.c.DefaultCallbackAnalyzer - Incremental callback analysis done.
+2021-12-30 17:46:07 [main] INFO  s.j.i.memory.MemoryWarningSystem - Shutting down the memory warning system...
+2021-12-30 17:46:07 [main] INFO  s.j.i.android.SetupApplication - Callback analysis terminated normally
+2021-12-30 17:46:07 [main] INFO  s.j.i.android.SetupApplication - Entry point calculation done.
+2021-12-30 17:46:07 [main] INFO  s.j.i.a.s.AccessPathBasedSourceSinkManager - Created a SourceSinkManager with 39 sources, 126 sinks, and 250 callback methods.
+2021-12-30 17:46:07 [main] INFO  s.j.i.android.SetupApplication - Collecting callbacks and building a callgraph took 67 seconds
+2021-12-30 17:46:07 [main] INFO  s.j.i.android.SetupApplication - Running data flow analysis on ../DroidMacroBench/repacked_apps/com.microsoft.skydrive.apk with 39 sources and 126 sinks...
+2021-12-30 17:46:07 [main] INFO  s.j.infoflow.InfoflowConfiguration - Implicit flow tracking is NOT enabled
+2021-12-30 17:46:07 [main] INFO  s.j.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+2021-12-30 17:46:07 [main] INFO  s.j.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+2021-12-30 17:46:07 [main] INFO  s.j.infoflow.InfoflowConfiguration - Using path-agnostic result collection
+2021-12-30 17:46:07 [main] INFO  s.j.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+2021-12-30 17:46:07 [main] INFO  s.j.infoflow.InfoflowConfiguration - Taint analysis enabled: true
+2021-12-30 17:46:07 [main] INFO  s.j.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+2021-12-30 17:46:07 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Callgraph construction took 0 seconds
+2021-12-30 17:46:08 [main] INFO  s.j.i.c.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+2021-12-30 17:46:09 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Dead code elimination took 2.428838429 seconds
+2021-12-30 17:46:09 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Callgraph has 50031 edges
+2021-12-30 17:46:09 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Starting Taint Analysis
+2021-12-30 17:46:10 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Using context- and flow-sensitive solver
+2021-12-30 17:46:10 [main] WARN  s.j.i.a.SetupApplication$InPlaceInfoflow - Running with limited join point abstractions can break context-sensitive path builders
+2021-12-30 17:46:10 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Looking for sources and sinks...
+2021-12-30 17:46:10 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Source lookup done, found 67 sources and 361 sinks.
+2021-12-30 18:16:22 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Taint wrapper hits: 1233772
+2021-12-30 18:16:22 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Taint wrapper misses: 17184419
+2021-12-30 18:16:22 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - IFDS problem with 22950859 forward and 31016855 backward edges solved, processing 42 results...
+2021-12-30 18:16:22 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Current memory consumption: 27565 MB
+2021-12-30 18:16:44 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Mem consumption after gc: 10976 MB
+2021-12-30 18:16:45 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Memory consumption after cleanup: 943 MB
+2021-12-30 18:16:45 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 1 with 5 elements
+2021-12-30 18:16:45 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 18:16:45 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 18:16:45 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 18:16:45 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 18:16:45 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 18:16:45 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 18:17:21 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 2 with 5 elements
+2021-12-30 18:17:21 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 18:17:21 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 18:17:21 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 18:17:21 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 18:17:21 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 18:17:21 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 18:17:21 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 3 with 5 elements
+2021-12-30 18:17:21 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 18:17:21 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 18:17:21 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 18:17:21 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 18:17:21 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 18:17:21 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 18:17:24 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 4 with 5 elements
+2021-12-30 18:17:24 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 18:17:24 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 18:17:24 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 18:17:24 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 18:17:24 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 18:17:24 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 18:17:28 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 5 with 5 elements
+2021-12-30 18:17:28 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 18:17:28 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 18:17:28 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 18:17:28 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 18:17:28 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 18:17:28 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 18:17:44 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 6 with 5 elements
+2021-12-30 18:17:44 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 18:17:44 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 18:17:44 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 18:17:44 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 18:17:44 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 18:17:44 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 7 with 5 elements
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 8 with 5 elements
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 9 with 2 elements
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 2 connections between sources and sinks
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 18:17:57 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 18:17:57 [main] INFO  s.j.i.memory.MemoryWarningSystem - Shutting down the memory warning system...
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Memory consumption after path building: 4474 MB
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Path reconstruction took 75 seconds
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink $z00 = virtualinvoke $r01.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r02, $r05, 1) in method <com.microsoft.tokenshare.r$d: void a(java.lang.String,java.lang.String)> was called with values from the following sources:
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r49 = virtualinvoke $r04.<android.content.pm.PackageManager: java.util.List queryIntentServices(android.content.Intent,int)>($r02, 512) in method <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r49 = virtualinvoke $r04.<android.content.pm.PackageManager: java.util.List queryIntentServices(android.content.Intent,int)>($r02, 512)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r48 = $r49
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r47 = interfaceinvoke $r48.<java.util.List: java.util.Iterator iterator()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r25 = interfaceinvoke $r47.<java.util.Iterator: java.lang.Object next()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r08 = (android.content.pm.ResolveInfo) $r25
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r44.<java.util.List: boolean add(java.lang.Object)>($r08)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $r44
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List c(android.content.Context)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: void a(android.content.Context,com.microsoft.tokenshare.b)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r02.<com.microsoft.tokenshare.r: void a(android.content.Context,java.util.List,com.microsoft.tokenshare.r$a)>($r00, $r08, $r03)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: void a(android.content.Context,java.util.List,com.microsoft.tokenshare.r$a)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r10 = interfaceinvoke $r11.<java.util.List: java.util.Iterator iterator()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: void a(android.content.Context,java.util.List,com.microsoft.tokenshare.r$a)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r07 = interfaceinvoke $r10.<java.util.Iterator: java.lang.Object next()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: void a(android.content.Context,java.util.List,com.microsoft.tokenshare.r$a)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r01 = (android.content.pm.ResolveInfo) $r07
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: void a(android.content.Context,java.util.List,com.microsoft.tokenshare.r$a)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r02 = $r01.<android.content.pm.ResolveInfo: android.content.pm.ServiceInfo serviceInfo>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: void a(android.content.Context,java.util.List,com.microsoft.tokenshare.r$a)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r08 = $r02.<android.content.pm.ServiceInfo: java.lang.String packageName>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: void a(android.content.Context,java.util.List,com.microsoft.tokenshare.r$a)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r04.<com.microsoft.tokenshare.r: void a(android.content.Context,java.lang.String,java.lang.String,com.microsoft.tokenshare.b)>($r00, $r08, $r09, $r05)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: void a(android.content.Context,java.lang.String,java.lang.String,com.microsoft.tokenshare.b)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<com.microsoft.tokenshare.r: void b(android.content.Context,java.lang.String,java.lang.String,com.microsoft.tokenshare.b)>($r0, $r4, $r5, $r3)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: void b(android.content.Context,java.lang.String,java.lang.String,com.microsoft.tokenshare.b)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r3.<com.microsoft.tokenshare.r$5: void <init>(com.microsoft.tokenshare.r,com.microsoft.tokenshare.b,com.microsoft.tokenshare.r$d,java.lang.String)>($r2, $r1, $r4, $r5)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r$5: void <init>(com.microsoft.tokenshare.r,com.microsoft.tokenshare.b,com.microsoft.tokenshare.r$d,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r2.<com.microsoft.tokenshare.r$5: java.lang.String b> = $r4
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r$5: void <init>(com.microsoft.tokenshare.r,com.microsoft.tokenshare.b,com.microsoft.tokenshare.r$d,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<com.microsoft.tokenshare.c: void <init>(com.microsoft.tokenshare.b)>($r0)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.c: void <init>(com.microsoft.tokenshare.b)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r4.<com.microsoft.tokenshare.c: void <init>(com.microsoft.tokenshare.b,android.os.Handler)>($r3, $r0)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.c: void <init>(com.microsoft.tokenshare.b,android.os.Handler)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r3.<com.microsoft.tokenshare.c$1: void <init>(com.microsoft.tokenshare.c)>($r2)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.c$1: void <init>(com.microsoft.tokenshare.c)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.c: void <init>(com.microsoft.tokenshare.b,android.os.Handler)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.c: void <init>(com.microsoft.tokenshare.b)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r$5: void <init>(com.microsoft.tokenshare.r,com.microsoft.tokenshare.b,com.microsoft.tokenshare.r$d,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: void b(android.content.Context,java.lang.String,java.lang.String,com.microsoft.tokenshare.b)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r7.<java.util.concurrent.ConcurrentHashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>($r4, $r3)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: void b(android.content.Context,java.lang.String,java.lang.String,com.microsoft.tokenshare.b)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r7 = $r2.<com.microsoft.tokenshare.r: java.util.concurrent.ConcurrentHashMap e>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: void b(android.content.Context,java.lang.String,java.lang.String,com.microsoft.tokenshare.b)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r3.<com.microsoft.tokenshare.r$5: void <init>(com.microsoft.tokenshare.r,com.microsoft.tokenshare.b,com.microsoft.tokenshare.r$d,java.lang.String)>($r2, $r1, $r4, $r5)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r$5: void <init>(com.microsoft.tokenshare.r,com.microsoft.tokenshare.b,com.microsoft.tokenshare.r$d,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r2 := @this: com.microsoft.tokenshare.r$5
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: void b(android.content.Context,java.lang.String,java.lang.String,com.microsoft.tokenshare.b)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r4.<com.microsoft.tokenshare.r$d: void <init>(com.microsoft.tokenshare.r,android.content.Context)>($r2, $r0)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r$d: void <init>(com.microsoft.tokenshare.r,android.content.Context)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r3.<com.microsoft.tokenshare.r$d: com.microsoft.tokenshare.r a> = $r2
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r$d: void <init>(com.microsoft.tokenshare.r,android.content.Context)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: void b(android.content.Context,java.lang.String,java.lang.String,com.microsoft.tokenshare.b)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r3.<com.microsoft.tokenshare.r$5: void <init>(com.microsoft.tokenshare.r,com.microsoft.tokenshare.b,com.microsoft.tokenshare.r$d,java.lang.String)>($r2, $r1, $r4, $r5)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r$5: void <init>(com.microsoft.tokenshare.r,com.microsoft.tokenshare.b,com.microsoft.tokenshare.r$d,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: void b(android.content.Context,java.lang.String,java.lang.String,com.microsoft.tokenshare.b)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r4.<com.microsoft.tokenshare.r$d: void a(java.lang.String,java.lang.String)>($r5, $r6)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r$d: void a(java.lang.String,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $z00 = virtualinvoke $r01.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r02, $r05, 1)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r07, $r08) in method <com.microsoft.tokenshare.h: void a(int,java.lang.String,java.lang.String)> was called with values from the following sources:
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r49 = virtualinvoke $r04.<android.content.pm.PackageManager: java.util.List queryIntentServices(android.content.Intent,int)>($r02, 512) in method <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r49 = virtualinvoke $r04.<android.content.pm.PackageManager: java.util.List queryIntentServices(android.content.Intent,int)>($r02, 512)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r48 = $r49
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r47 = interfaceinvoke $r48.<java.util.List: java.util.Iterator iterator()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r25 = interfaceinvoke $r47.<java.util.Iterator: java.lang.Object next()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r08 = (android.content.pm.ResolveInfo) $r25
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r16 = $r08.<android.content.pm.ResolveInfo: android.content.pm.ServiceInfo serviceInfo>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r34 = $r16.<android.content.pm.ServiceInfo: java.lang.String packageName>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r42 = virtualinvoke $r41.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r34)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r43 = virtualinvoke $r42.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" because it\'s not MS application")
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r35 = virtualinvoke $r43.<java.lang.StringBuilder: java.lang.String toString()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.r: java.util.List b(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <com.microsoft.tokenshare.h: void a(java.lang.String,java.lang.String)>("TokenSharingManager", $r35)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.h: void a(java.lang.String,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r0.<com.microsoft.tokenshare.h: void a(int,java.lang.String,java.lang.String)>(3, $r1, $r2)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.h: void a(int,java.lang.String,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r04[0] = $r06
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.h: void a(int,java.lang.String,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r08 = staticinvoke <java.lang.String: java.lang.String format(java.util.Locale,java.lang.String,java.lang.Object[])>($r12, "Custom log failed to log message:%s", $r04)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.tokenshare.h: void a(int,java.lang.String,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r07, $r08)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r03.<android.os.Bundle: void putLong(java.lang.String,long)>("localFileSize", $l00) in method <com.microsoft.skydrive.intent.actionsend.d: android.os.Bundle a(android.content.Context,android.net.Uri)> was called with values from the following sources:
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r02 = virtualinvoke $r00.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r03, $r05, null, null, null) in method <com.microsoft.skydrive.common.AssetFileWrapper: long getFileSize()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.AssetFileWrapper: long getFileSize()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r02 = virtualinvoke $r00.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r03, $r05, null, null, null)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.AssetFileWrapper: long getFileSize()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $i02 = interfaceinvoke $r02.<android.database.Cursor: int getInt(int)>($i01)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.AssetFileWrapper: long getFileSize()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $l04 = (long) $i02
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.AssetFileWrapper: long getFileSize()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $l04
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.intent.actionsend.d: android.os.Bundle a(android.content.Context,android.net.Uri)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r03.<android.os.Bundle: void putLong(java.lang.String,long)>("localFileSize", $l00)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink interfaceinvoke $r03.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r20, $z03) in method <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: void findMediaFolders(android.content.Context)> was called with values from the following sources:
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r09 = interfaceinvoke $r02.<android.database.Cursor: java.lang.String getString(int)>(1) in method <com.microsoft.skydrive.common.MediaStoreUtils: java.util.Map getBuckets(android.net.Uri,android.content.ContentResolver,java.lang.String,java.lang.String[])>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: java.util.Map getBuckets(android.net.Uri,android.content.ContentResolver,java.lang.String,java.lang.String[])>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r09 = interfaceinvoke $r02.<android.database.Cursor: java.lang.String getString(int)>(1)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: java.util.Map getBuckets(android.net.Uri,android.content.ContentResolver,java.lang.String,java.lang.String[])>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r19.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r09, $r10)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: java.util.Map getBuckets(android.net.Uri,android.content.ContentResolver,java.lang.String,java.lang.String[])>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $r19
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: void fetchBucketIds(android.content.ContentResolver,android.net.Uri)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r5 = interfaceinvoke $r3.<java.util.Map: java.util.Set keySet()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: void fetchBucketIds(android.content.ContentResolver,android.net.Uri)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r4.<java.util.Set: boolean addAll(java.util.Collection)>($r5)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: void fetchBucketIds(android.content.ContentResolver,android.net.Uri)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r4 = <com.microsoft.skydrive.common.MediaStoreUtils: java.util.Set CAMERA_ROLL_BUCKET_IDS>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: void fetchBucketIds(android.content.ContentResolver,android.net.Uri)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: void initializeBucketIds(android.content.ContentResolver)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: java.util.Set getCameraRollBucketIds(android.content.ContentResolver)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> r1 = <com.microsoft.skydrive.common.MediaStoreUtils: java.util.Set CAMERA_ROLL_BUCKET_IDS>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: java.util.Set getCameraRollBucketIds(android.content.ContentResolver)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return r1
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: boolean isDefaultCameraRollBucket(android.content.ContentResolver,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $z0 = interfaceinvoke $r2.<java.util.Set: boolean contains(java.lang.Object)>($r1)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: boolean isDefaultCameraRollBucket(android.content.ContentResolver,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $z0
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: void findMediaFolders(android.content.Context)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r03.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r20, $z03)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r10 = interfaceinvoke $r02.<android.database.Cursor: java.lang.String getString(int)>(0) in method <com.microsoft.skydrive.common.MediaStoreUtils: java.util.Map getBuckets(android.net.Uri,android.content.ContentResolver,java.lang.String,java.lang.String[])>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: java.util.Map getBuckets(android.net.Uri,android.content.ContentResolver,java.lang.String,java.lang.String[])>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r10 = interfaceinvoke $r02.<android.database.Cursor: java.lang.String getString(int)>(0)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: java.util.Map getBuckets(android.net.Uri,android.content.ContentResolver,java.lang.String,java.lang.String[])>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r19.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r09, $r10)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: java.util.Map getBuckets(android.net.Uri,android.content.ContentResolver,java.lang.String,java.lang.String[])>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $r19
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: void fetchBucketIds(android.content.ContentResolver,android.net.Uri)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r5 = interfaceinvoke $r3.<java.util.Map: java.util.Set keySet()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: void fetchBucketIds(android.content.ContentResolver,android.net.Uri)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r4.<java.util.Set: boolean addAll(java.util.Collection)>($r5)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: void fetchBucketIds(android.content.ContentResolver,android.net.Uri)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r4 = <com.microsoft.skydrive.common.MediaStoreUtils: java.util.Set CAMERA_ROLL_BUCKET_IDS>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: void fetchBucketIds(android.content.ContentResolver,android.net.Uri)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: void initializeBucketIds(android.content.ContentResolver)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: java.util.Set getCameraRollBucketIds(android.content.ContentResolver)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> r1 = <com.microsoft.skydrive.common.MediaStoreUtils: java.util.Set CAMERA_ROLL_BUCKET_IDS>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: java.util.Set getCameraRollBucketIds(android.content.ContentResolver)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return r1
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: boolean isDefaultCameraRollBucket(android.content.ContentResolver,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $z0 = interfaceinvoke $r2.<java.util.Set: boolean contains(java.lang.Object)>($r1)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.MediaStoreUtils: boolean isDefaultCameraRollBucket(android.content.ContentResolver,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $z0
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: void findMediaFolders(android.content.Context)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r03.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r20, $z03)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1) in method <com.microsoft.applications.telemetry.core.ab: void b(java.lang.String,java.lang.String)> was called with values from the following sources:
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r11 = interfaceinvoke $r01.<android.database.Cursor: java.lang.String getString(int)>(0) in method <com.microsoft.applications.telemetry.core.an: java.lang.String a(long,android.database.sqlite.SQLiteDatabase)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.applications.telemetry.core.an: java.lang.String a(long,android.database.sqlite.SQLiteDatabase)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r11 = interfaceinvoke $r01.<android.database.Cursor: java.lang.String getString(int)>(0)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.applications.telemetry.core.an: java.lang.String a(long,android.database.sqlite.SQLiteDatabase)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r08 = $r11
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.applications.telemetry.core.an: java.lang.String a(long,android.database.sqlite.SQLiteDatabase)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $r08
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.applications.telemetry.core.an: boolean a(android.database.sqlite.SQLiteDatabase,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r19 = staticinvoke <com.microsoft.applications.telemetry.core.d: java.lang.String b(java.lang.String)>($r15)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.applications.telemetry.core.d: java.lang.String b(java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r1 = virtualinvoke $r0.<java.lang.String: java.lang.String substring(int,int)>(0, $i0)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.applications.telemetry.core.d: java.lang.String b(java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.applications.telemetry.core.an: boolean a(android.database.sqlite.SQLiteDatabase,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r12[3] = $r19
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.applications.telemetry.core.an: boolean a(android.database.sqlite.SQLiteDatabase,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r20 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>("Stage End Fail: event name=%s, event priority=%s, id=%s, tenantId=%s reason=Record dropped from offline to empty some space.", $r12)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.applications.telemetry.core.an: boolean a(android.database.sqlite.SQLiteDatabase,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <com.microsoft.applications.telemetry.core.as: void h(java.lang.String,java.lang.String)>($r16, $r20)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.applications.telemetry.core.as: void h(java.lang.String,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <com.microsoft.applications.telemetry.core.ab: void b(java.lang.String,java.lang.String)>($r0, $r1)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.applications.telemetry.core.ab: void b(java.lang.String,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink $r02 = virtualinvoke $r00.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r03, null, null, null, null) in method <com.microsoft.skydrive.upload.FileUploadUtils: com.microsoft.skydrive.upload.FileUploadUtils$QueueSummary getQueueSummary(android.content.Context,android.net.Uri)> was called with values from the following sources:
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r0.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null) in method <com.microsoft.skydrive.upload.FileUploadUtils: com.microsoft.skydrive.upload.FileUploadUtils$StateRecord readUploadingQueueState(android.content.Context,android.net.Uri)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadUtils: com.microsoft.skydrive.upload.FileUploadUtils$StateRecord readUploadingQueueState(android.content.Context,android.net.Uri)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r3 = virtualinvoke $r0.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadUtils: com.microsoft.skydrive.upload.FileUploadUtils$StateRecord readUploadingQueueState(android.content.Context,android.net.Uri)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r5 = staticinvoke <com.microsoft.skydrive.upload.FileUploadUtils: com.microsoft.skydrive.upload.FileUploadUtils$StateRecord readUploadingQueueStateFromCursor(android.database.Cursor)>($r3)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadUtils: com.microsoft.skydrive.upload.FileUploadUtils$StateRecord readUploadingQueueStateFromCursor(android.database.Cursor)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $i03 = interfaceinvoke $r00.<android.database.Cursor: int getInt(int)>($i02)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadUtils: com.microsoft.skydrive.upload.FileUploadUtils$StateRecord readUploadingQueueStateFromCursor(android.database.Cursor)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r02.<com.microsoft.skydrive.upload.FileUploadUtils$StateRecord: void <init>(com.microsoft.skydrive.upload.SyncContract$ServiceStatus,int)>($r04, $i03)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadUtils$StateRecord: void <init>(com.microsoft.skydrive.upload.SyncContract$ServiceStatus,int)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r0.<com.microsoft.skydrive.upload.FileUploadUtils$StateRecord: int errorCode> = $i0
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadUtils$StateRecord: void <init>(com.microsoft.skydrive.upload.SyncContract$ServiceStatus,int)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadUtils: com.microsoft.skydrive.upload.FileUploadUtils$StateRecord readUploadingQueueStateFromCursor(android.database.Cursor)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $r02
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadUtils: com.microsoft.skydrive.upload.FileUploadUtils$StateRecord readUploadingQueueState(android.content.Context,android.net.Uri)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $r5
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploaderNotificationManager: void resetToDefaultNotificationPreferences(android.content.Context)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r3.<com.microsoft.skydrive.upload.FileUploaderNotificationManager: void setIsNotificationShownPreferenceId(android.content.Context,boolean,com.microsoft.skydrive.upload.FileUploadUtils$StateRecord)>($r0, 0, $r2)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploaderNotificationManager: void setIsNotificationShownPreferenceId(android.content.Context,boolean,com.microsoft.skydrive.upload.FileUploadUtils$StateRecord)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r5.<com.microsoft.skydrive.upload.FileUploaderNotificationManager: com.microsoft.skydrive.upload.FileUploadUtils$StateRecord mPreviousState> = $r4
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploaderNotificationManager: void setIsNotificationShownPreferenceId(android.content.Context,boolean,com.microsoft.skydrive.upload.FileUploadUtils$StateRecord)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r5 := @this: com.microsoft.skydrive.upload.FileUploaderNotificationManager
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploaderNotificationManager: void resetToDefaultNotificationPreferences(android.content.Context)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r3 := @this: com.microsoft.skydrive.upload.FileUploaderNotificationManager
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.ManualUploadService: void setServiceInForeground(java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r12 = virtualinvoke $r15.<com.microsoft.skydrive.upload.ManualUploadService: com.microsoft.skydrive.upload.FileLoaderNotificationManager getFileLoaderNotificationManager()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.ManualUploadService: com.microsoft.skydrive.upload.FileLoaderNotificationManager getFileLoaderNotificationManager()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> r0 = $r1.<com.microsoft.skydrive.upload.ManualUploadService: com.microsoft.skydrive.upload.FileUploaderNotificationManager mNotificationManager>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.ManualUploadService: com.microsoft.skydrive.upload.FileLoaderNotificationManager getFileLoaderNotificationManager()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r1 := @this: com.microsoft.skydrive.upload.ManualUploadService
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService: void showNotification()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r1 := @this: com.microsoft.skydrive.upload.FileUploadService
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r37 = $r38.<com.microsoft.skydrive.upload.FileUploadService$FileProcessor: com.microsoft.skydrive.upload.FileUploadService this$0>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r38 := @this: com.microsoft.skydrive.upload.FileUploadService$FileProcessor
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <java.lang.Thread: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> target = this.<java.lang.Thread: java.lang.Runnable target0>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <java.lang.Thread: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> this := @this: java.lang.Thread
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.intune.mam.policy.MAMWERetryScheduler: void <init>(com.microsoft.intune.mam.policy.MAMWEEnroller,com.microsoft.intune.mam.client.identity.MAMIdentityManager,com.microsoft.intune.mam.log.MAMLogPIIFactory,android.content.Context,com.microsoft.intune.mam.client.identity.ThreadIdentityOperations)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r10 = $r05.<com.microsoft.intune.mam.policy.MAMWERetryScheduler: java.lang.Thread mTaskThread>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.intune.mam.policy.MAMWERetryScheduler: void <init>(com.microsoft.intune.mam.policy.MAMWEEnroller,com.microsoft.intune.mam.client.identity.MAMIdentityManager,com.microsoft.intune.mam.log.MAMLogPIIFactory,android.content.Context,com.microsoft.intune.mam.client.identity.ThreadIdentityOperations)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r10 = $r05.<com.microsoft.intune.mam.policy.MAMWERetryScheduler: java.lang.Thread mTaskThread>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.intune.mam.policy.MAMWERetryScheduler: void <init>(com.microsoft.intune.mam.policy.MAMWEEnroller,com.microsoft.intune.mam.client.identity.MAMIdentityManager,com.microsoft.intune.mam.log.MAMLogPIIFactory,android.content.Context,com.microsoft.intune.mam.client.identity.ThreadIdentityOperations)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r10.<java.lang.Thread: void start()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <java.lang.Thread: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> target = this.<java.lang.Thread: java.lang.Runnable target0>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <java.lang.Thread: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke target.<java.lang.Runnable: void run()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r36 = $r38.<com.microsoft.skydrive.upload.FileUploadService$FileProcessor: com.microsoft.skydrive.upload.FileUploadService this$0>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r36.<com.microsoft.skydrive.upload.FileUploadService: void onEndCommandScheduleItems(boolean)>($z00)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.SyncService: void onEndCommandScheduleItems(boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r05 = staticinvoke <com.microsoft.skydrive.upload.FileUploadUtils: com.microsoft.skydrive.upload.FileUploadUtils$QueueSummary getQueueSummary(android.content.Context,android.net.Uri)>($r14, $r00)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadUtils: com.microsoft.skydrive.upload.FileUploadUtils$QueueSummary getQueueSummary(android.content.Context,android.net.Uri)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r00 = virtualinvoke $r01.<android.content.Context: android.content.ContentResolver getContentResolver()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadUtils: com.microsoft.skydrive.upload.FileUploadUtils$QueueSummary getQueueSummary(android.content.Context,android.net.Uri)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r02 = virtualinvoke $r00.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r03, null, null, null, null)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink $r08 = virtualinvoke $r01.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r10, null, "localFileHash =? and (originalETag is null or originalETag != ?)", $r33, null) in method <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)> was called with values from the following sources:
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r26 = interfaceinvoke $r07.<android.database.Cursor: java.lang.String getString(int)>($i02) in method <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r26 = interfaceinvoke $r07.<android.database.Cursor: java.lang.String getString(int)>($i02)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r33[1] = $r26
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r08 = virtualinvoke $r01.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r10, null, "localFileHash =? and (originalETag is null or originalETag != ?)", $r33, null)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r27 = interfaceinvoke $r07.<android.database.Cursor: java.lang.String getString(int)>($i03) in method <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r27 = interfaceinvoke $r07.<android.database.Cursor: java.lang.String getString(int)>($i03)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r33[0] = $r27
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r08 = virtualinvoke $r01.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r10, null, "localFileHash =? and (originalETag is null or originalETag != ?)", $r33, null)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink $r07 = virtualinvoke $r01.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r06, $r03) in method <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)> was called with values from the following sources:
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r26 = interfaceinvoke $r07.<android.database.Cursor: java.lang.String getString(int)>($i02) in method <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r26 = interfaceinvoke $r07.<android.database.Cursor: java.lang.String getString(int)>($i02)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r03.<android.content.ContentValues: void put(java.lang.String,java.lang.String)>("originalETag", $r26)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $z04 = virtualinvoke $r18.<com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: boolean uploadMediaItem(android.content.Context,android.content.ContentValues,boolean,com.microsoft.authorization.z)>($r04, $r03, 1, $r11)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: boolean uploadMediaItem(android.content.Context,android.content.ContentValues,boolean,com.microsoft.authorization.z)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $z01 = staticinvoke <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>($r04, $r01, $r00, $z00, null)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r23 = virtualinvoke $r02.<android.content.ContentValues: java.lang.String getAsString(java.lang.String)>("name")
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r03.<android.content.ContentValues: void put(java.lang.String,java.lang.String)>("name", $r23)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r07 = virtualinvoke $r01.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r06, $r03)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r29 = interfaceinvoke $r07.<android.database.Cursor: java.lang.String getString(int)>($i06) in method <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r29 = interfaceinvoke $r07.<android.database.Cursor: java.lang.String getString(int)>($i06)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r03.<android.content.ContentValues: void put(java.lang.String,java.lang.String)>("name", $r29)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $z04 = virtualinvoke $r18.<com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: boolean uploadMediaItem(android.content.Context,android.content.ContentValues,boolean,com.microsoft.authorization.z)>($r04, $r03, 1, $r11)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: boolean uploadMediaItem(android.content.Context,android.content.ContentValues,boolean,com.microsoft.authorization.z)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $z01 = staticinvoke <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>($r04, $r01, $r00, $z00, null)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r23 = virtualinvoke $r02.<android.content.ContentValues: java.lang.String getAsString(java.lang.String)>("name")
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r03.<android.content.ContentValues: void put(java.lang.String,java.lang.String)>("name", $r23)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r07 = virtualinvoke $r01.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r06, $r03)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r30 = interfaceinvoke $r07.<android.database.Cursor: java.lang.String getString(int)>($i07) in method <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r30 = interfaceinvoke $r07.<android.database.Cursor: java.lang.String getString(int)>($i07)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r03.<android.content.ContentValues: void put(java.lang.String,java.lang.String)>("resourceId", $r30)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $z04 = virtualinvoke $r18.<com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: boolean uploadMediaItem(android.content.Context,android.content.ContentValues,boolean,com.microsoft.authorization.z)>($r04, $r03, 1, $r11)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: boolean uploadMediaItem(android.content.Context,android.content.ContentValues,boolean,com.microsoft.authorization.z)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $z01 = staticinvoke <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>($r04, $r01, $r00, $z00, null)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r23 = virtualinvoke $r02.<android.content.ContentValues: java.lang.String getAsString(java.lang.String)>("name")
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r03.<android.content.ContentValues: void put(java.lang.String,java.lang.String)>("name", $r23)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r07 = virtualinvoke $r01.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r06, $r03)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1) in method <com.microsoft.powerlift.android.LogcatLoggerFactory$LogcatLogger: void i(java.lang.String)> was called with values from the following sources:
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r2 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.microsoft.powerlift.android.internal.util.Cursors: java.lang.String getString(android.database.Cursor,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.util.Cursors: java.lang.String getString(android.database.Cursor,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r2 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.util.Cursors: java.lang.String getString(android.database.Cursor,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.provider.IncidentInfo: com.microsoft.powerlift.android.internal.provider.IncidentInfo fromCursor(android.database.Cursor)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r01.<com.microsoft.powerlift.android.internal.provider.IncidentInfo: void <init>(long,java.util.UUID,java.lang.String,long,long,java.lang.String,int)>($l01, $r05, $r03, $l02, $l03, $r04, $i00)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.provider.IncidentInfo: void <init>(long,java.util.UUID,java.lang.String,long,long,java.lang.String,int)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r0.<com.microsoft.powerlift.android.internal.provider.IncidentInfo: java.lang.String apiKey> = $r2
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.provider.IncidentInfo: void <init>(long,java.util.UUID,java.lang.String,long,long,java.lang.String,int)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.provider.IncidentInfo: com.microsoft.powerlift.android.internal.provider.IncidentInfo fromCursor(android.database.Cursor)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $r01
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.sync.SyncIncidents$Repository: java.util.List readAllIncidents()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r09.<java.util.List: boolean add(java.lang.Object)>($r04)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.sync.SyncIncidents$Repository: java.util.List readAllIncidents()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $r09
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.sync.SyncIncidents: void sync()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r14 = interfaceinvoke $r15.<java.util.List: java.util.Iterator iterator()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.sync.SyncIncidents: void sync()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r06 = interfaceinvoke $r14.<java.util.Iterator: java.lang.Object next()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.sync.SyncIncidents: void sync()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r00 = (com.microsoft.powerlift.android.internal.provider.IncidentInfo) $r06
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.sync.SyncIncidents: void sync()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r01.<com.microsoft.powerlift.android.internal.sync.SyncIncidents: void uploadSingleIncident(com.microsoft.powerlift.android.internal.provider.IncidentInfo)>($r00)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.sync.SyncIncidents: void uploadSingleIncident(com.microsoft.powerlift.android.internal.provider.IncidentInfo)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r10.<com.microsoft.powerlift.android.internal.sync.SyncIncidents$Repository: void trackIncidentFailure(com.microsoft.powerlift.android.internal.provider.IncidentInfo)>($r08)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.sync.SyncIncidents$Repository: void trackIncidentFailure(com.microsoft.powerlift.android.internal.provider.IncidentInfo)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.sync.SyncIncidents: void uploadSingleIncident(com.microsoft.powerlift.android.internal.provider.IncidentInfo)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r29 = $r08.<com.microsoft.powerlift.android.internal.provider.IncidentInfo: java.lang.String filePath>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.sync.SyncIncidents: void uploadSingleIncident(com.microsoft.powerlift.android.internal.provider.IncidentInfo)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r25 = staticinvoke <com.microsoft.powerlift.android.internal.sync.SyncUtil: java.io.File getCacheRelativeFileFromPath(android.content.Context,java.lang.String)>($r00, $r29)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.sync.SyncUtil: java.io.File getCacheRelativeFileFromPath(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r1.<java.io.File: void <init>(java.lang.String)>($r4)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.sync.SyncUtil: java.io.File getCacheRelativeFileFromPath(android.content.Context,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.sync.SyncIncidents$Repository: boolean deleteIncidentInfo(com.microsoft.powerlift.android.internal.provider.IncidentInfo)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r12 = virtualinvoke $r10.<java.io.File: java.lang.String getAbsolutePath()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.sync.SyncIncidents$Repository: boolean deleteIncidentInfo(com.microsoft.powerlift.android.internal.provider.IncidentInfo)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r16 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r12)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.sync.SyncIncidents$Repository: boolean deleteIncidentInfo(com.microsoft.powerlift.android.internal.provider.IncidentInfo)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r13 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.String toString()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.internal.sync.SyncIncidents$Repository: boolean deleteIncidentInfo(com.microsoft.powerlift.android.internal.provider.IncidentInfo)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r09.<com.microsoft.powerlift.log.Logger: void i(java.lang.String)>($r13)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.powerlift.android.LogcatLoggerFactory$LogcatLogger: void i(java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink $r00 = virtualinvoke $r02.<com.microsoft.skydrive.upload.AutoUploadService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>(null, $r01) in method <com.microsoft.skydrive.upload.AutoUploadService: com.microsoft.skydrive.upload.UploadErrorCode getBatteryConditionError()> was called with values from the following sources:
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r06 = virtualinvoke $r00.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r09, null, null, null, null) in method <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r06 = virtualinvoke $r00.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r09, null, null, null, null)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $l05 = interfaceinvoke $r06.<android.database.Cursor: long getLong(int)>($i01)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r48 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>($l05)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r59.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r48, $r40)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r59 = $r34.<com.microsoft.skydrive.upload.FileUploadService: java.util.Map mLoadingTasks>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r34 = $r38.<com.microsoft.skydrive.upload.FileUploadService$FileProcessor: com.microsoft.skydrive.upload.FileUploadService this$0>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r36 = $r38.<com.microsoft.skydrive.upload.FileUploadService$FileProcessor: com.microsoft.skydrive.upload.FileUploadService this$0>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r36.<com.microsoft.skydrive.upload.FileUploadService: void onEndCommandScheduleItems(boolean)>($z00)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.SyncService: void onEndCommandScheduleItems(boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r01 = virtualinvoke $r14.<com.microsoft.skydrive.upload.SyncService: android.net.Uri getStateUri()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadService: android.net.Uri getStateUri()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return r0
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.SyncService: void onEndCommandScheduleItems(boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r06 = staticinvoke <com.microsoft.skydrive.upload.FileUploadUtils: com.microsoft.skydrive.upload.FileUploadUtils$StateRecord readUploadingQueueState(android.content.Context,android.net.Uri)>($r14, $r01)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadUtils: com.microsoft.skydrive.upload.FileUploadUtils$StateRecord readUploadingQueueState(android.content.Context,android.net.Uri)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> throw $r6
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadService: void onTaskFinish(com.microsoft.skydrive.upload.FileUploadTask,java.lang.Exception)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r30 = virtualinvoke $r19.<com.microsoft.skydrive.upload.AutoUploadService: com.microsoft.skydrive.upload.UploadErrorCode getCurrentErrorState()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadService: com.microsoft.skydrive.upload.UploadErrorCode getCurrentErrorState()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r04 = virtualinvoke $r02.<com.microsoft.skydrive.upload.AutoUploadService: com.microsoft.skydrive.upload.UploadErrorCode getBatteryConditionError()>()
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadService: com.microsoft.skydrive.upload.UploadErrorCode getBatteryConditionError()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r00 = virtualinvoke $r02.<com.microsoft.skydrive.upload.AutoUploadService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>(null, $r01)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r03.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("name", $r06) in method <com.microsoft.skydrive.intent.actionsend.d: android.os.Bundle a(android.content.Context,android.net.Uri)> was called with values from the following sources:
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r14 = interfaceinvoke $r01.<android.database.Cursor: java.lang.String getString(int)>($i00) in method <com.microsoft.skydrive.common.AssetFileWrapper: java.lang.String getFileName()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.AssetFileWrapper: java.lang.String getFileName()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r14 = interfaceinvoke $r01.<android.database.Cursor: java.lang.String getString(int)>($i00)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.AssetFileWrapper: java.lang.String getFileName()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r10 = $r14
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.common.AssetFileWrapper: java.lang.String getFileName()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $r10
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.intent.actionsend.d: android.os.Bundle a(android.content.Context,android.net.Uri)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r03.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("name", $r06)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r02.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r11, $r03, null, null) in method <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()> was called with values from the following sources:
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r06 = virtualinvoke $r00.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r09, null, null, null, null) in method <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r06 = virtualinvoke $r00.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r09, null, null, null, null)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $l06 = interfaceinvoke $r06.<android.database.Cursor: long getLong(int)>($i03)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r47 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>($l06)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r03.<android.content.ContentValues: void put(java.lang.String,java.lang.Long)>("syncProgress", $r47)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.FileUploadService$FileProcessor: void run()>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r02.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r11, $r03, null, null)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink $i02 = virtualinvoke $r00.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r05, $r03, "localFileHash =? ", $r31) in method <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)> was called with values from the following sources:
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r26 = interfaceinvoke $r07.<android.database.Cursor: java.lang.String getString(int)>($i02) in method <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r26 = interfaceinvoke $r07.<android.database.Cursor: java.lang.String getString(int)>($i02)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r03.<android.content.ContentValues: void put(java.lang.String,java.lang.String)>("originalETag", $r26)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $z04 = virtualinvoke $r18.<com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: boolean uploadMediaItem(android.content.Context,android.content.ContentValues,boolean,com.microsoft.authorization.z)>($r04, $r03, 1, $r11)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: boolean uploadMediaItem(android.content.Context,android.content.ContentValues,boolean,com.microsoft.authorization.z)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $z01 = staticinvoke <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>($r04, $r01, $r00, $z00, null)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r24 = virtualinvoke $r02.<android.content.ContentValues: java.lang.String getAsString(java.lang.String)>("localFileHash")
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r31[0] = $r24
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $i02 = virtualinvoke $r00.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r05, $r03, "localFileHash =? ", $r31)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r29 = interfaceinvoke $r07.<android.database.Cursor: java.lang.String getString(int)>($i06) in method <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r29 = interfaceinvoke $r07.<android.database.Cursor: java.lang.String getString(int)>($i06)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r03.<android.content.ContentValues: void put(java.lang.String,java.lang.String)>("name", $r29)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $z04 = virtualinvoke $r18.<com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: boolean uploadMediaItem(android.content.Context,android.content.ContentValues,boolean,com.microsoft.authorization.z)>($r04, $r03, 1, $r11)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: boolean uploadMediaItem(android.content.Context,android.content.ContentValues,boolean,com.microsoft.authorization.z)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $z01 = staticinvoke <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>($r04, $r01, $r00, $z00, null)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r24 = virtualinvoke $r02.<android.content.ContentValues: java.lang.String getAsString(java.lang.String)>("localFileHash")
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r31[0] = $r24
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $i02 = virtualinvoke $r00.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r05, $r03, "localFileHash =? ", $r31)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r30 = interfaceinvoke $r07.<android.database.Cursor: java.lang.String getString(int)>($i07) in method <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r30 = interfaceinvoke $r07.<android.database.Cursor: java.lang.String getString(int)>($i07)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r03.<android.content.ContentValues: void put(java.lang.String,java.lang.String)>("resourceId", $r30)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: int repairCorruptedFiles(com.microsoft.authorization.z,android.content.Context,boolean)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $z04 = virtualinvoke $r18.<com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: boolean uploadMediaItem(android.content.Context,android.content.ContentValues,boolean,com.microsoft.authorization.z)>($r04, $r03, 1, $r11)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.camerabackup.CameraRollBackupProcessor: boolean uploadMediaItem(android.content.Context,android.content.ContentValues,boolean,com.microsoft.authorization.z)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $z01 = staticinvoke <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>($r04, $r01, $r00, $z00, null)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r24 = virtualinvoke $r02.<android.content.ContentValues: java.lang.String getAsString(java.lang.String)>("localFileHash")
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r31[0] = $r24
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.microsoft.skydrive.upload.AutoUploadDataModel: boolean uploadMediaFile(com.microsoft.authorization.z,android.content.Context,android.content.ContentValues,boolean,java.lang.String)>
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $i02 = virtualinvoke $r00.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r05, $r03, "localFileHash =? ", $r31)
+2021-12-30 18:18:00 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Data flow solver took 1913 seconds. Maximum memory consumption: 27565 MB
+2021-12-30 18:18:00 [main] INFO  s.j.i.android.SetupApplication - Found 13 leaks
+2021-12-30 18:18:00 [main] INFO  d.u.t.heapdumps.analysis.Driver - Finished analysis. Took 33.14 min. Writing out results...
+2021-12-30 18:18:00 [main] INFO  d.u.t.heapdumps.analysis.Driver - Terminaton state: 0, #Sources 13, #Sinks 13, #Classes: 15361, #Methods: 109819, #AppClasses: 11508, #AppMethods: 71634
+2021-12-30 18:18:00 [main] INFO  d.u.t.heapdumps.analysis.Driver - Callgraph Construction: 67 seconds
+Taint Propagation: 1812 seconds
+Path Reconstruction: 75 seconds
+Total Runtime: 1980 seconds
+Max Memory Consumption: 27565 MB
+
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis no_dumps /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.skydrive.apk"
+	User time (seconds): 5888.73
+	System time (seconds): 265.22
+	Percent of CPU this job got: 309%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 33:10.09
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 40220256
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 10414245
+	Voluntary context switches: 12135140
+	Involuntary context switches: 93120
+	Swaps: 0
+	File system inputs: 71424
+	File system outputs: 2720
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

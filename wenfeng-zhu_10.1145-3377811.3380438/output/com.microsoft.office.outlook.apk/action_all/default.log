@@ -1,0 +1,85 @@
+17:44:42,717 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+17:44:42,717 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+17:44:42,717 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/data/wenfeng/heapster_artifact/ae/heapster-1.0-SNAPSHOT-jar-with-dependencies.jar!/logback.xml]
+17:44:42,728 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@67117f44 - URL [jar:file:/data/wenfeng/heapster_artifact/ae/heapster-1.0-SNAPSHOT-jar-with-dependencies.jar!/logback.xml] is not of type file
+17:44:42,763 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+17:44:42,763 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+17:44:42,768 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+17:44:42,823 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+17:44:42,823 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+17:44:42,823 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+17:44:42,823 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.classic.sift.SiftingAppender]
+17:44:42,826 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [SIFT]
+17:44:42,838 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.sift.MDCBasedDiscriminator] for [discriminator] property
+17:44:42,841 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+17:44:42,841 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+17:44:42,841 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+17:44:42,842 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5d3411d - Registering current configuration as safe fallback point
+
+2021-12-30 17:44:42 [main] INFO  d.u.t.heapdumps.analysis.Driver - Starting analysis with options - HeapDumps: true, StaticFallback: false, Iterative: false
+2021-12-30 17:44:42 [main] INFO  s.j.i.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 90 classes and 12 exclusions.
+2021-12-30 17:44:42 [main] INFO  s.j.i.android.SetupApplication - Initializing Soot...
+2021-12-30 17:44:43 [main] INFO  s.j.i.android.SetupApplication - Loading dex files...
+2021-12-30 17:44:50 [main] INFO  s.j.i.android.SetupApplication - ARSC file parsing took 1.95149642 seconds
+2021-12-30 17:44:51 [main] INFO  s.j.i.a.e.AndroidEntryPointCreator - Creating Android entry point for 175 components...
+2021-12-30 17:44:51 [main] INFO  s.j.i.android.SetupApplication - Constructing the callgraph...
+2021-12-30 17:44:51 [main] INFO  s.j.s.heapdumpparser.PointToHeapDump - Reading heapDump from /data/wenfeng/heapster_artifact/ae/evaluation-scripts/../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733412571.hprof
+2021-12-30 17:44:51 [main] INFO  s.j.i.memory.MemoryWarningSystem - Shutting down the memory warning system...
+2021-12-30 17:44:51 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis action_all -d ../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733412571.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734266769.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733145199.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733099630.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733122002.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734027095.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732996470.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734077187.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733045210.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733957348.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734039039.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733354107.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732205288.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734183913.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733294149.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732181825.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734161886.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734240611.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734068925.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733987997.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733970833.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734032474.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733017927.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733328931.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732224881.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733931722.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734019837.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733225229.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734193973.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732962138.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734252172.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734057904.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734209466.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547732149483.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733519257.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734006689.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733441931.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734049582.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733560457.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734172202.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733947631.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733379454.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733476678.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547733180735.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734223992.hprof:../DroidMacroBench_snapshots/com.microsoft.office.outlook.apk/2019-01-17_14_35_46/1547734200649.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.microsoft.office.outlook.apk"
+	User time (seconds): 33.21
+	System time (seconds): 1.79
+	Percent of CPU this job got: 382%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1447464
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 413914
+	Voluntary context switches: 22561
+	Involuntary context switches: 277
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255

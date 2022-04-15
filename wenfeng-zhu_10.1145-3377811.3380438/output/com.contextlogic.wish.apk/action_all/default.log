@@ -1,0 +1,85 @@
+16:46:48,511 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:46:48,511 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+16:46:48,511 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/data/wenfeng/heapster_artifact/ae/heapster-1.0-SNAPSHOT-jar-with-dependencies.jar!/logback.xml]
+16:46:48,523 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@67117f44 - URL [jar:file:/data/wenfeng/heapster_artifact/ae/heapster-1.0-SNAPSHOT-jar-with-dependencies.jar!/logback.xml] is not of type file
+16:46:48,560 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+16:46:48,560 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:46:48,565 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+16:46:48,603 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+16:46:48,603 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+16:46:48,603 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+16:46:48,603 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.classic.sift.SiftingAppender]
+16:46:48,605 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [SIFT]
+16:46:48,616 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.sift.MDCBasedDiscriminator] for [discriminator] property
+16:46:48,619 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+16:46:48,619 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+16:46:48,620 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+16:46:48,620 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5d3411d - Registering current configuration as safe fallback point
+
+2021-12-30 16:46:48 [main] INFO  d.u.t.heapdumps.analysis.Driver - Starting analysis with options - HeapDumps: true, StaticFallback: false, Iterative: false
+2021-12-30 16:46:48 [main] INFO  s.j.i.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 90 classes and 12 exclusions.
+2021-12-30 16:46:48 [main] INFO  s.j.i.android.SetupApplication - Initializing Soot...
+2021-12-30 16:46:48 [main] INFO  s.j.i.android.SetupApplication - Loading dex files...
+2021-12-30 16:46:53 [main] INFO  s.j.i.android.SetupApplication - ARSC file parsing took 0.323218032 seconds
+2021-12-30 16:46:53 [main] INFO  s.j.i.a.e.AndroidEntryPointCreator - Creating Android entry point for 116 components...
+2021-12-30 16:46:53 [main] INFO  s.j.i.android.SetupApplication - Constructing the callgraph...
+2021-12-30 16:46:53 [main] INFO  s.j.s.heapdumpparser.PointToHeapDump - Reading heapDump from /data/wenfeng/heapster_artifact/ae/evaluation-scripts/../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475175824.hprof
+2021-12-30 16:46:53 [main] INFO  s.j.i.memory.MemoryWarningSystem - Shutting down the memory warning system...
+2021-12-30 16:46:53 [main] ERROR d.u.t.heapdumps.analysis.Driver - An exception broke the analysis...
+java.lang.NoClassDefFoundError: com/sun/tools/hat/internal/parser/Reader
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.getSnapshotFromFile(PointToHeapDump.java:353)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:264)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:546)
+	at soot.jimple.spark.heapdumpparser.PointToHeapDump.create(PointToHeapDump.java:202)
+	at soot.jimple.spark.SparkTransformer.internalTransform(SparkTransformer.java:149)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.RadioScenePack.internalApply(RadioScenePack.java:68)
+	at soot.jimple.toolkits.callgraph.CallGraphPack.internalApply(CallGraphPack.java:58)
+	at soot.Pack.apply(Pack.java:117)
+	at soot.jimple.infoflow.android.SetupApplication.constructCallgraphInternal(SetupApplication.java:586)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbackMethods(SetupApplication.java:699)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:498)
+	at soot.jimple.infoflow.android.SetupApplication.calculateCallbacks(SetupApplication.java:466)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1454)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1418)
+	at de.upb.testify.heapdumps.analysis.Driver.runAnalysis(Driver.java:144)
+	at de.upb.testify.heapdumps.analysis.Driver.main(Driver.java:75)
+Caused by: java.lang.ClassNotFoundException: com.sun.tools.hat.internal.parser.Reader
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 common frames omitted
+Command exited with non-zero status 255
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis action_all -d ../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475175824.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475569609.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475652110.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476322877.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476925468.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476246250.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475739322.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477163886.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476029709.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475755640.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477143246.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476378583.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474473246.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476123879.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477253258.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476964484.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475824844.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474958120.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476307719.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474487498.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476442618.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476111361.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475957425.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476077340.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475218600.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476201954.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475683800.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476714649.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475942876.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476059972.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476853936.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476342927.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475665986.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476214810.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476729333.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475919218.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476948724.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476428580.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477262841.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476011594.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476137598.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474644264.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477237227.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476095362.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475191309.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475842981.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476501667.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475316110.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475721623.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474571286.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475855897.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475784342.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475147975.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475522725.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476230138.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475805502.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476983383.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475773379.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474547834.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477191021.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476149846.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475336734.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476044537.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474536067.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476628523.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475486436.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476461907.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475611638.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474617115.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547474498481.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547477221996.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475636934.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475452535.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475598338.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476873091.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475989624.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475260396.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476812914.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476413770.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476832877.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475880549.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476697984.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547476186867.hprof:../DroidMacroBench_snapshots/com.contextlogic.wish.apk/2019-01-14_15_01_10/1547475112701.hprof /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.contextlogic.wish.apk"
+	User time (seconds): 24.91
+	System time (seconds): 1.23
+	Percent of CPU this job got: 483%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.40
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 845608
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 253359
+	Voluntary context switches: 15923
+	Involuntary context switches: 872
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255

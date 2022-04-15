@@ -1,0 +1,529 @@
+16:01:14,947 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:01:14,947 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+16:01:14,947 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/data/wenfeng/heapster_artifact/ae/heapster-1.0-SNAPSHOT-jar-with-dependencies.jar!/logback.xml]
+16:01:14,958 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@67117f44 - URL [jar:file:/data/wenfeng/heapster_artifact/ae/heapster-1.0-SNAPSHOT-jar-with-dependencies.jar!/logback.xml] is not of type file
+16:01:14,993 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+16:01:14,993 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:01:14,998 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+16:01:15,034 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+16:01:15,034 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+16:01:15,034 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+16:01:15,035 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.classic.sift.SiftingAppender]
+16:01:15,037 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [SIFT]
+16:01:15,046 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.sift.MDCBasedDiscriminator] for [discriminator] property
+16:01:15,049 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+16:01:15,049 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+16:01:15,049 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+16:01:15,050 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5d3411d - Registering current configuration as safe fallback point
+
+2021-12-30 16:01:15 [main] INFO  d.u.t.heapdumps.analysis.Driver - Starting analysis with options - HeapDumps: false, StaticFallback: false, Iterative: false
+2021-12-30 16:01:15 [main] INFO  s.j.i.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 90 classes and 12 exclusions.
+2021-12-30 16:01:15 [main] INFO  s.j.i.android.SetupApplication - Initializing Soot...
+2021-12-30 16:01:15 [main] INFO  s.j.i.android.SetupApplication - Loading dex files...
+2021-12-30 16:01:22 [main] INFO  s.j.i.android.SetupApplication - ARSC file parsing took 0.407182648 seconds
+2021-12-30 16:01:22 [main] INFO  s.j.i.a.e.AndroidEntryPointCreator - Creating Android entry point for 116 components...
+2021-12-30 16:01:22 [main] INFO  s.j.i.android.SetupApplication - Constructing the callgraph...
+2021-12-30 16:01:53 [main] INFO  s.j.i.a.c.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+2021-12-30 16:01:55 [main] INFO  s.j.i.a.c.DefaultCallbackAnalyzer - Callback analysis done.
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.resources.LayoutFileParser - Layout class x is not derived from android.view.View
+2021-12-30 16:01:56 [main] INFO  s.j.i.a.e.AndroidEntryPointCreator - Creating Android entry point for 116 components...
+2021-12-30 16:01:56 [main] WARN  s.j.i.a.e.AndroidEntryPointCreator - Cannot create valid constructor for io.fabric.sdk.android.ActivityLifecycleManager$Callbacks, because it is abstract and cannot substitute with subclass
+2021-12-30 16:01:56 [main] INFO  s.j.i.android.SetupApplication - Constructing the callgraph...
+2021-12-30 16:02:21 [main] INFO  s.j.i.a.c.DefaultCallbackAnalyzer - Running incremental callback analysis for 115 components...
+2021-12-30 16:02:21 [main] INFO  s.j.i.a.c.DefaultCallbackAnalyzer - Incremental callback analysis done.
+2021-12-30 16:02:21 [main] INFO  s.j.i.a.e.AndroidEntryPointCreator - Creating Android entry point for 116 components...
+2021-12-30 16:02:21 [main] INFO  s.j.i.android.SetupApplication - Constructing the callgraph...
+2021-12-30 16:02:45 [main] INFO  s.j.i.a.c.DefaultCallbackAnalyzer - Running incremental callback analysis for 2 components...
+2021-12-30 16:02:45 [main] INFO  s.j.i.a.c.DefaultCallbackAnalyzer - Incremental callback analysis done.
+2021-12-30 16:02:45 [main] INFO  s.j.i.memory.MemoryWarningSystem - Shutting down the memory warning system...
+2021-12-30 16:02:45 [main] INFO  s.j.i.android.SetupApplication - Callback analysis terminated normally
+2021-12-30 16:02:45 [main] INFO  s.j.i.android.SetupApplication - Entry point calculation done.
+2021-12-30 16:02:45 [main] INFO  s.j.i.a.s.AccessPathBasedSourceSinkManager - Created a SourceSinkManager with 39 sources, 126 sinks, and 116 callback methods.
+2021-12-30 16:02:45 [main] INFO  s.j.i.android.SetupApplication - Collecting callbacks and building a callgraph took 83 seconds
+2021-12-30 16:02:45 [main] INFO  s.j.i.android.SetupApplication - Running data flow analysis on ../DroidMacroBench/repacked_apps/com.contextlogic.wish.apk with 39 sources and 126 sinks...
+2021-12-30 16:02:45 [main] INFO  s.j.infoflow.InfoflowConfiguration - Implicit flow tracking is NOT enabled
+2021-12-30 16:02:45 [main] INFO  s.j.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+2021-12-30 16:02:45 [main] INFO  s.j.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+2021-12-30 16:02:45 [main] INFO  s.j.infoflow.InfoflowConfiguration - Using path-agnostic result collection
+2021-12-30 16:02:45 [main] INFO  s.j.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+2021-12-30 16:02:45 [main] INFO  s.j.infoflow.InfoflowConfiguration - Taint analysis enabled: true
+2021-12-30 16:02:45 [main] INFO  s.j.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+2021-12-30 16:02:45 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Callgraph construction took 0 seconds
+2021-12-30 16:02:46 [main] INFO  s.j.i.c.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+2021-12-30 16:02:48 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Dead code elimination took 2.75436795 seconds
+2021-12-30 16:02:48 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Callgraph has 41937 edges
+2021-12-30 16:02:48 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Starting Taint Analysis
+2021-12-30 16:02:48 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Using context- and flow-sensitive solver
+2021-12-30 16:02:48 [main] WARN  s.j.i.a.SetupApplication$InPlaceInfoflow - Running with limited join point abstractions can break context-sensitive path builders
+2021-12-30 16:02:48 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Looking for sources and sinks...
+2021-12-30 16:02:48 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Source lookup done, found 43 sources and 268 sinks.
+2021-12-30 16:44:07 [Service Thread] INFO  s.j.i.memory.MemoryWarningSystem - Triggering memory warning at 55803 MB (55803 MB in tenured gen)...
+2021-12-30 16:44:13 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Taint wrapper hits: 2127961
+2021-12-30 16:44:13 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Taint wrapper misses: 170452970
+2021-12-30 16:44:13 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - IFDS problem with 125742862 forward and 47775360 backward edges solved, processing 59 results...
+2021-12-30 16:44:13 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Current memory consumption: 55985 MB
+2021-12-30 16:45:48 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Mem consumption after gc: 51696 MB
+2021-12-30 16:45:48 [Service Thread] WARN  s.j.i.memory.FlowDroidMemoryWatcher - Running out of memory, solvers terminated
+2021-12-30 16:45:50 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Memory consumption after cleanup: 1162 MB
+2021-12-30 16:45:50 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 1 with 5 elements
+2021-12-30 16:45:50 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 16:45:50 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 16:45:50 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 16:45:50 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 16:45:50 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 16:45:50 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 16:46:02 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 2 with 5 elements
+2021-12-30 16:46:02 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 16:46:02 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 16:46:02 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 16:46:02 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 16:46:02 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 16:46:02 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 3 with 5 elements
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 4 with 5 elements
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 5 with 5 elements
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 6 with 5 elements
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 16:46:13 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 7 with 5 elements
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 8 with 5 elements
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 9 with 5 elements
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 10 with 5 elements
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 11 with 5 elements
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 5 connections between sources and sinks
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 5...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.BatchPathBuilder - Running path reconstruction batch 12 with 4 elements
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Obtainted 4 connections between sources and sinks
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 1...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 2...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 3...
+2021-12-30 16:46:25 [main] INFO  s.j.i.d.p.ContextInsensitivePathBuilder - Building path 4...
+2021-12-30 16:46:26 [main] INFO  s.j.i.memory.MemoryWarningSystem - Shutting down the memory warning system...
+2021-12-30 16:46:27 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Memory consumption after path building: 2702 MB
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Path reconstruction took 38 seconds
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink interfaceinvoke $r02.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r05, $r06) in method <com.threatmetrix.TrustDefender.internal.JG: void 'int'(com.threatmetrix.TrustDefender.internal.P$O,java.lang.String,java.lang.String,java.lang.String)> was called with values from the following sources:
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r11 = virtualinvoke $r03.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.threatmetrix.TrustDefender.internal.JG: java.lang.String 'if'(com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.JG: java.lang.String 'if'(com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r11 = virtualinvoke $r03.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>()
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.JG: java.lang.String 'if'(com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r12 = $r11
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.JG: java.lang.String 'if'(com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $r12
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.K7$E: void <init>(com.threatmetrix.TrustDefender.internal.K7,com.threatmetrix.TrustDefender.internal.K7$E,java.lang.String,com.threatmetrix.TrustDefender.internal.Y,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r005.<com.threatmetrix.TrustDefender.internal.K7$E: java.lang.String 'long'> = $r040
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.K7$E: void <init>(com.threatmetrix.TrustDefender.internal.K7,com.threatmetrix.TrustDefender.internal.K7$E,java.lang.String,com.threatmetrix.TrustDefender.internal.Y,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r069 = $r005.<com.threatmetrix.TrustDefender.internal.K7$E: java.lang.String 'long'>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.K7$E: void <init>(com.threatmetrix.TrustDefender.internal.K7,com.threatmetrix.TrustDefender.internal.K7$E,java.lang.String,com.threatmetrix.TrustDefender.internal.Y,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r033.<com.threatmetrix.TrustDefender.internal.V: void <init>(com.threatmetrix.TrustDefender.internal.P$O,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>($r027, $r039, "SHENASE_H", $r069, $r070, 1)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.V: void <init>(com.threatmetrix.TrustDefender.internal.P$O,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <com.threatmetrix.TrustDefender.internal.JG: void 'int'(com.threatmetrix.TrustDefender.internal.P$O,java.lang.String,java.lang.String,java.lang.String)>($r00, $r02, $r03, $r04)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.JG: void 'int'(com.threatmetrix.TrustDefender.internal.P$O,java.lang.String,java.lang.String,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r02.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r05, $r06)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r02.<java.io.OutputStream: void write(byte[])>($r00) in method <com.facebook.GraphRequest$Serializer: void writeContentDisposition(java.lang.String,java.lang.String,java.lang.String)> was called with values from the following sources:
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r2 = virtualinvoke $r0.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null) in method <com.facebook.internal.Utility: long getContentSize(android.net.Uri)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.internal.Utility: long getContentSize(android.net.Uri)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r2 = virtualinvoke $r0.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.internal.Utility: long getContentSize(android.net.Uri)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $l1 = interfaceinvoke $r2.<android.database.Cursor: long getLong(int)>($i0)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.internal.Utility: long getContentSize(android.net.Uri)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $l1
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void writeContentUri(java.lang.String,android.net.Uri,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r04.<com.facebook.ProgressNoopOutputStream: void addProgress(long)>($l02)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.ProgressNoopOutputStream: void addProgress(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r07.<com.facebook.RequestProgress: void addToMax(long)>($l02)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.RequestProgress: void addToMax(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $l2 = $l1 + $l0
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.RequestProgress: void addToMax(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r0.<com.facebook.RequestProgress: long maxProgress> = $l2
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.RequestProgress: void addToMax(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: com.facebook.RequestProgress
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.ProgressNoopOutputStream: void addProgress(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r07 = $r03.<com.facebook.ProgressNoopOutputStream: com.facebook.RequestProgress currentRequestProgress>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.ProgressNoopOutputStream: void addProgress(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r06 = $r03.<com.facebook.ProgressNoopOutputStream: com.facebook.RequestProgress currentRequestProgress>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.ProgressNoopOutputStream: void addProgress(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r08.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r02, $r06)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.ProgressNoopOutputStream: void addProgress(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r08 = $r03.<com.facebook.ProgressNoopOutputStream: java.util.Map progressMap>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.ProgressNoopOutputStream: void addProgress(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r03 := @this: com.facebook.ProgressNoopOutputStream
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void writeContentUri(java.lang.String,android.net.Uri,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r04 = (com.facebook.ProgressNoopOutputStream) $r09
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void writeContentUri(java.lang.String,android.net.Uri,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r09 = $r03.<com.facebook.GraphRequest$Serializer: java.io.OutputStream outputStream>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void writeContentUri(java.lang.String,android.net.Uri,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r03.<com.facebook.GraphRequest$Serializer: void writeLine(java.lang.String,java.lang.Object[])>("", $r12)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void writeLine(java.lang.String,java.lang.Object[])>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>($r3, $r1)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void writeLine(java.lang.String,java.lang.Object[])>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void writeRecordBoundary()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest: void processGraphObjectProperty(java.lang.String,java.lang.Object,com.facebook.GraphRequest$KeyValueSerializer,boolean)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r00.<com.facebook.GraphRequest$KeyValueSerializer: void writeString(java.lang.String,java.lang.String)>($r15, $r23)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void writeString(java.lang.String,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<com.facebook.GraphRequest$Serializer: void writeContentDisposition(java.lang.String,java.lang.String,java.lang.String)>($r4, null, null)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void writeContentDisposition(java.lang.String,java.lang.String,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r02 = $r01.<com.facebook.GraphRequest$Serializer: java.io.OutputStream outputStream>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void writeContentDisposition(java.lang.String,java.lang.String,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r02.<java.io.OutputStream: void write(byte[])>($r00)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r1) in method <com.threatmetrix.TrustDefender.TrustDefender: void 'if'(com.threatmetrix.TrustDefender.internal.P$O)> was called with values from the following sources:
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r01 = virtualinvoke $r02.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r07) in method <com.threatmetrix.TrustDefender.internal.XZ: android.location.Location else()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XZ: android.location.Location else()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r01 = virtualinvoke $r02.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r07)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XZ: android.location.Location else()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r00 = $r01
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XZ: android.location.Location else()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $r00
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XZ: void 'char'()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r11.<com.threatmetrix.TrustDefender.internal.U6: void onLocationChanged(android.location.Location)>($r03)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.U6: void onLocationChanged(android.location.Location)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r02.<com.threatmetrix.TrustDefender.internal.U6: android.location.Location 'if'> = $r00
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.U6: void onLocationChanged(android.location.Location)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r02 := @this: com.threatmetrix.TrustDefender.internal.U6
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XZ: void 'char'()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r11 = $r14.<com.threatmetrix.TrustDefender.internal.XZ: com.threatmetrix.TrustDefender.internal.U6 'goto'>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XZ: void 'char'()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r03 = specialinvoke $r14.<com.threatmetrix.TrustDefender.internal.XZ: android.location.Location else()>()
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XZ: android.location.Location else()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r03 := @this: com.threatmetrix.TrustDefender.internal.XZ
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XZ: void 'char'()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r14 := @this: com.threatmetrix.TrustDefender.internal.XZ
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XZ: void 'int'(com.threatmetrix.TrustDefender.Config)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r18.<com.threatmetrix.TrustDefender.internal.MR: com.threatmetrix.TrustDefender.internal.XZ 'new'> = $r28
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XZ: void 'int'(com.threatmetrix.TrustDefender.Config)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r18 = $r28.<com.threatmetrix.TrustDefender.internal.XZ: com.threatmetrix.TrustDefender.internal.MR 'long'>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XZ: void 'int'(com.threatmetrix.TrustDefender.Config)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r28.<com.threatmetrix.TrustDefender.internal.XZ: com.threatmetrix.TrustDefender.internal.U6 'goto'> = $r25
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XZ: void 'int'(com.threatmetrix.TrustDefender.Config)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r25.<com.threatmetrix.TrustDefender.internal.U6: void <init>()>()
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.U6: void <init>()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XZ: void 'int'(com.threatmetrix.TrustDefender.Config)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r28.<com.threatmetrix.TrustDefender.internal.XZ: com.threatmetrix.TrustDefender.internal.U6 'goto'> = $r25
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XZ: void 'int'(com.threatmetrix.TrustDefender.Config)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r28 := @this: com.threatmetrix.TrustDefender.internal.XZ
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$4: void run()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r45 = $r42.<com.threatmetrix.TrustDefender.internal.XU$4: com.threatmetrix.TrustDefender.internal.XU$L 'new'>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$4: void run()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r42 := @this: com.threatmetrix.TrustDefender.internal.XU$4
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <java.lang.Thread: void run()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> target = this.<java.lang.Thread: java.lang.Runnable target0>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <java.lang.Thread: void run()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> this := @this: java.lang.Thread
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.contextlogic.wish.application.DeviceIdManager: void writeDeviceId(java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r3.<java.lang.Thread: void <init>(java.lang.Runnable)>($r1)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <java.lang.Thread: void <init>(java.lang.Runnable)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> this.<java.lang.Thread: java.lang.Runnable target0> = p0
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <java.lang.Thread: void <init>(java.lang.Runnable)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> this := @this: java.lang.Thread
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: void init(com.threatmetrix.TrustDefender.Config)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r16.<com.threatmetrix.TrustDefender.internal.XU$4: void <init>(com.threatmetrix.TrustDefender.internal.XU,com.threatmetrix.TrustDefender.internal.XU$L,com.threatmetrix.TrustDefender.Config,com.threatmetrix.TrustDefender.internal.P$O)>($r15, $r17, $r04, $r07)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$4: void <init>(com.threatmetrix.TrustDefender.internal.XU,com.threatmetrix.TrustDefender.internal.XU$L,com.threatmetrix.TrustDefender.Config,com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r3.<com.threatmetrix.TrustDefender.internal.XU$4: com.threatmetrix.TrustDefender.internal.XU$L 'new'> = $r4
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$4: void <init>(com.threatmetrix.TrustDefender.internal.XU,com.threatmetrix.TrustDefender.internal.XU$L,com.threatmetrix.TrustDefender.Config,com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r3 := @this: com.threatmetrix.TrustDefender.internal.XU$4
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: void init(com.threatmetrix.TrustDefender.Config)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r17 = $r15.<com.threatmetrix.TrustDefender.internal.XU: com.threatmetrix.TrustDefender.internal.XU$L 'int'>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: void init(com.threatmetrix.TrustDefender.Config)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r16.<com.threatmetrix.TrustDefender.internal.XU$4: void <init>(com.threatmetrix.TrustDefender.internal.XU,com.threatmetrix.TrustDefender.internal.XU$L,com.threatmetrix.TrustDefender.Config,com.threatmetrix.TrustDefender.internal.P$O)>($r15, $r17, $r04, $r07)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$4: void <init>(com.threatmetrix.TrustDefender.internal.XU,com.threatmetrix.TrustDefender.internal.XU$L,com.threatmetrix.TrustDefender.Config,com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r3.<com.threatmetrix.TrustDefender.internal.XU$4: com.threatmetrix.TrustDefender.internal.XU 'if'> = $r2
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$4: void <init>(com.threatmetrix.TrustDefender.internal.XU,com.threatmetrix.TrustDefender.internal.XU$L,com.threatmetrix.TrustDefender.Config,com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: void init(com.threatmetrix.TrustDefender.Config)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r40.<java.lang.Thread: void <init>(java.lang.Runnable)>($r16)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <java.lang.Thread: void <init>(java.lang.Runnable)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> this.<java.lang.Thread: java.lang.Runnable target0> = p0
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <java.lang.Thread: void <init>(java.lang.Runnable)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: void init(com.threatmetrix.TrustDefender.Config)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r40.<java.lang.Thread: void start()>()
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <java.lang.Thread: void run()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> target = this.<java.lang.Thread: java.lang.Runnable target0>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <java.lang.Thread: void run()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke target.<java.lang.Runnable: void run()>()
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$4: void run()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r32 = $r42.<com.threatmetrix.TrustDefender.internal.XU$4: com.threatmetrix.TrustDefender.internal.XU 'if'>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$4: void run()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r32.<com.threatmetrix.TrustDefender.internal.XU: void 'if'(com.threatmetrix.TrustDefender.internal.P$O)>($r17)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.TrustDefender: void 'if'(com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r3.<com.threatmetrix.TrustDefender.internal.NH: void <init>(com.threatmetrix.TrustDefender.TrustDefender)>($r2)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.NH: void <init>(com.threatmetrix.TrustDefender.TrustDefender)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r1.<com.threatmetrix.TrustDefender.internal.NH: com.threatmetrix.TrustDefender.TrustDefender 'int'> = $r0
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.NH: void <init>(com.threatmetrix.TrustDefender.TrustDefender)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.TrustDefender: void 'if'(com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r1)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r08.<java.io.OutputStream: void write(byte[])>($r02) in method <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])> was called with values from the following sources:
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r2 = virtualinvoke $r0.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null) in method <com.facebook.internal.Utility: long getContentSize(android.net.Uri)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.internal.Utility: long getContentSize(android.net.Uri)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r2 = virtualinvoke $r0.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.internal.Utility: long getContentSize(android.net.Uri)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $l1 = interfaceinvoke $r2.<android.database.Cursor: long getLong(int)>($i0)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.internal.Utility: long getContentSize(android.net.Uri)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $l1
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void writeContentUri(java.lang.String,android.net.Uri,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r04.<com.facebook.ProgressNoopOutputStream: void addProgress(long)>($l02)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.ProgressNoopOutputStream: void addProgress(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r07.<com.facebook.RequestProgress: void addToMax(long)>($l02)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.RequestProgress: void addToMax(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $l2 = $l1 + $l0
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.RequestProgress: void addToMax(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r0.<com.facebook.RequestProgress: long maxProgress> = $l2
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.RequestProgress: void addToMax(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: com.facebook.RequestProgress
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.ProgressNoopOutputStream: void addProgress(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r07 = $r03.<com.facebook.ProgressNoopOutputStream: com.facebook.RequestProgress currentRequestProgress>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.ProgressNoopOutputStream: void addProgress(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r06 = $r03.<com.facebook.ProgressNoopOutputStream: com.facebook.RequestProgress currentRequestProgress>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.ProgressNoopOutputStream: void addProgress(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r08.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r02, $r06)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.ProgressNoopOutputStream: void addProgress(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r08 = $r03.<com.facebook.ProgressNoopOutputStream: java.util.Map progressMap>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.ProgressNoopOutputStream: void addProgress(long)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r03 := @this: com.facebook.ProgressNoopOutputStream
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void writeContentUri(java.lang.String,android.net.Uri,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r04 = (com.facebook.ProgressNoopOutputStream) $r09
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void writeContentUri(java.lang.String,android.net.Uri,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r09 = $r03.<com.facebook.GraphRequest$Serializer: java.io.OutputStream outputStream>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void writeContentUri(java.lang.String,android.net.Uri,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r03.<com.facebook.GraphRequest$Serializer: void writeLine(java.lang.String,java.lang.Object[])>("", $r12)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void writeLine(java.lang.String,java.lang.Object[])>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>($r3, $r1)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r08 = $r05.<com.facebook.GraphRequest$Serializer: java.io.OutputStream outputStream>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.facebook.GraphRequest$Serializer: void write(java.lang.String,java.lang.Object[])>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r08.<java.io.OutputStream: void write(byte[])>($r02)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1) in method <com.threatmetrix.TrustDefender.internal.TL: void 'new'(java.lang.String,java.lang.String)> was called with values from the following sources:
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r18 = virtualinvoke $r38.<java.util.Locale: java.lang.String getCountry()>() in method <com.threatmetrix.TrustDefender.internal.WY: java.lang.String for(com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.WY: java.lang.String for(com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r18 = virtualinvoke $r38.<java.util.Locale: java.lang.String getCountry()>()
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.WY: java.lang.String for(com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r34.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r18)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.WY: java.lang.String for(com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r19 = virtualinvoke $r34.<java.lang.Object: java.lang.String toString()>()
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.WY: java.lang.String for(com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r23 = virtualinvoke $r19.<java.lang.String: java.lang.String toLowerCase(java.util.Locale)>($r39)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.WY: java.lang.String for(com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r36.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r23)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.WY: java.lang.String for(com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r32 = virtualinvoke $r36.<java.lang.Object: java.lang.String toString()>()
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.WY: java.lang.String for(com.threatmetrix.TrustDefender.internal.P$O)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $r32
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.R: java.lang.String 'int'()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r05.<com.threatmetrix.TrustDefender.internal.R: java.lang.String 'if'> = $r10
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.R: java.lang.String 'int'()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r05 := @this: com.threatmetrix.TrustDefender.internal.R
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.K7: void <init>(com.threatmetrix.TrustDefender.internal.P$O,java.lang.String,long,java.util.concurrent.atomic.AtomicLong,boolean,com.threatmetrix.TrustDefender.internal.K)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r03.<com.threatmetrix.TrustDefender.internal.K7: com.threatmetrix.TrustDefender.internal.K try> = $r01
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.K7: void <init>(com.threatmetrix.TrustDefender.internal.P$O,java.lang.String,long,java.util.concurrent.atomic.AtomicLong,boolean,com.threatmetrix.TrustDefender.internal.K)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$4: void run()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r38.<com.threatmetrix.TrustDefender.internal.XU: com.threatmetrix.TrustDefender.internal.K7 for> = $r14
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$4: void run()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r38 = $r42.<com.threatmetrix.TrustDefender.internal.XU$4: com.threatmetrix.TrustDefender.internal.XU 'if'>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$4: void run()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r42 := @this: com.threatmetrix.TrustDefender.internal.XU$4
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <java.lang.Thread: void run()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> target = this.<java.lang.Thread: java.lang.Runnable target0>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <java.lang.Thread: void run()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> this := @this: java.lang.Thread
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: com.threatmetrix.TrustDefender.Profile$Handle doProfileRequest(com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r27.<com.threatmetrix.TrustDefender.internal.XU: java.lang.Thread const> = $r50
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: com.threatmetrix.TrustDefender.Profile$Handle doProfileRequest(com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r28.<com.threatmetrix.TrustDefender.internal.XU$1: void <init>(com.threatmetrix.TrustDefender.internal.XU,java.lang.String,com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier,long,com.threatmetrix.TrustDefender.internal.XU$T)>($r27, $r44, $r11, $r00, $l19, $r39)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$1: void <init>(com.threatmetrix.TrustDefender.internal.XU,java.lang.String,com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier,long,com.threatmetrix.TrustDefender.internal.XU$T)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r3 := @this: com.threatmetrix.TrustDefender.internal.XU$1
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: com.threatmetrix.TrustDefender.Profile$Handle doProfileRequest(com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r39.<com.threatmetrix.TrustDefender.internal.XU$T: void <init>(com.threatmetrix.TrustDefender.internal.XU,java.lang.String)>($r27, $r44)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$T: void <init>(com.threatmetrix.TrustDefender.internal.XU,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r1.<com.threatmetrix.TrustDefender.internal.XU$T: com.threatmetrix.TrustDefender.internal.XU 'new'> = $r0
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$T: void <init>(com.threatmetrix.TrustDefender.internal.XU,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: com.threatmetrix.TrustDefender.Profile$Handle doProfileRequest(com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r28.<com.threatmetrix.TrustDefender.internal.XU$1: void <init>(com.threatmetrix.TrustDefender.internal.XU,java.lang.String,com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier,long,com.threatmetrix.TrustDefender.internal.XU$T)>($r27, $r44, $r11, $r00, $l19, $r39)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$1: void <init>(com.threatmetrix.TrustDefender.internal.XU,java.lang.String,com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier,long,com.threatmetrix.TrustDefender.internal.XU$T)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r3.<com.threatmetrix.TrustDefender.internal.XU$1: com.threatmetrix.TrustDefender.internal.XU$T 'new'> = $r4
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$1: void <init>(com.threatmetrix.TrustDefender.internal.XU,java.lang.String,com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier,long,com.threatmetrix.TrustDefender.internal.XU$T)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: com.threatmetrix.TrustDefender.Profile$Handle doProfileRequest(com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r50.<java.lang.Thread: void <init>(java.lang.Runnable)>($r28)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <java.lang.Thread: void <init>(java.lang.Runnable)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> this.<java.lang.Thread: java.lang.Runnable target0> = p0
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <java.lang.Thread: void <init>(java.lang.Runnable)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: com.threatmetrix.TrustDefender.Profile$Handle doProfileRequest(com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r27.<com.threatmetrix.TrustDefender.internal.XU: java.lang.Thread const> = $r50
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: com.threatmetrix.TrustDefender.Profile$Handle doProfileRequest(com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r28.<com.threatmetrix.TrustDefender.internal.XU$1: void <init>(com.threatmetrix.TrustDefender.internal.XU,java.lang.String,com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier,long,com.threatmetrix.TrustDefender.internal.XU$T)>($r27, $r44, $r11, $r00, $l19, $r39)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$1: void <init>(com.threatmetrix.TrustDefender.internal.XU,java.lang.String,com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier,long,com.threatmetrix.TrustDefender.internal.XU$T)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r3 := @this: com.threatmetrix.TrustDefender.internal.XU$1
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: com.threatmetrix.TrustDefender.Profile$Handle doProfileRequest(com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r39.<com.threatmetrix.TrustDefender.internal.XU$T: void <init>(com.threatmetrix.TrustDefender.internal.XU,java.lang.String)>($r27, $r44)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$T: void <init>(com.threatmetrix.TrustDefender.internal.XU,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: com.threatmetrix.TrustDefender.Profile$Handle doProfileRequest(com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r29.<com.threatmetrix.TrustDefender.internal.XU$I: void <init>(com.threatmetrix.TrustDefender.internal.XU,com.threatmetrix.TrustDefender.Profile$Result,com.threatmetrix.TrustDefender.EndNotifier)>($r27, $r06, $r00)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$I: void <init>(com.threatmetrix.TrustDefender.internal.XU,com.threatmetrix.TrustDefender.Profile$Result,com.threatmetrix.TrustDefender.EndNotifier)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: com.threatmetrix.TrustDefender.Profile$Handle 'int'(com.threatmetrix.TrustDefender.Profile$Result,com.threatmetrix.TrustDefender.EndNotifier,com.threatmetrix.TrustDefender.Profile$Handle)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: void for(com.threatmetrix.TrustDefender.internal.XU,java.lang.String,com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier,long,com.threatmetrix.TrustDefender.internal.XU$T)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU$1: void run()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <com.threatmetrix.TrustDefender.internal.XU: void for(com.threatmetrix.TrustDefender.internal.XU,java.lang.String,com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier,long,com.threatmetrix.TrustDefender.internal.XU$T)>($r03, $r07, $r01, $r00, $l00, $r06)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: void for(com.threatmetrix.TrustDefender.internal.XU,java.lang.String,com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier,long,com.threatmetrix.TrustDefender.internal.XU$T)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $z011 = virtualinvoke $r060.<com.threatmetrix.TrustDefender.internal.XU: boolean do(int,boolean,com.threatmetrix.TrustDefender.internal.XU$R)>(0, 1, $r065)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.TrustDefender: boolean do(int,boolean,com.threatmetrix.TrustDefender.internal.XU$R)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r02.<com.threatmetrix.TrustDefender.TrustDefender$1: void <init>(com.threatmetrix.TrustDefender.TrustDefender,long,boolean,int,int,com.threatmetrix.TrustDefender.internal.XU$R)>($r01, $l05, $z05, $i03, $i02, $r07)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.TrustDefender$1: void <init>(com.threatmetrix.TrustDefender.TrustDefender,long,boolean,int,int,com.threatmetrix.TrustDefender.internal.XU$R)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.TrustDefender: boolean do(int,boolean,com.threatmetrix.TrustDefender.internal.XU$R)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> return 1
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: void for(com.threatmetrix.TrustDefender.internal.XU,java.lang.String,com.threatmetrix.TrustDefender.ProfilingOptions,com.threatmetrix.TrustDefender.EndNotifier,long,com.threatmetrix.TrustDefender.internal.XU$T)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r067 = virtualinvoke $r060.<com.threatmetrix.TrustDefender.internal.XU: com.threatmetrix.TrustDefender.internal.XU$W 'new'(java.lang.String,com.threatmetrix.TrustDefender.internal.YB)>($r081, $r068)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: com.threatmetrix.TrustDefender.internal.XU$W 'new'(java.lang.String,com.threatmetrix.TrustDefender.internal.YB)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r015 = $r043.<com.threatmetrix.TrustDefender.internal.XU: com.threatmetrix.TrustDefender.internal.K7 for>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.XU: com.threatmetrix.TrustDefender.internal.XU$W 'new'(java.lang.String,com.threatmetrix.TrustDefender.internal.YB)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r017.<com.threatmetrix.TrustDefender.internal.K7$E: void <init>(com.threatmetrix.TrustDefender.internal.K7,com.threatmetrix.TrustDefender.internal.K7$E,java.lang.String,com.threatmetrix.TrustDefender.internal.Y,java.lang.String)>($r015, $r018, $r070, $r036, $r071)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.K7$E: void <init>(com.threatmetrix.TrustDefender.internal.K7,com.threatmetrix.TrustDefender.internal.K7$E,java.lang.String,com.threatmetrix.TrustDefender.internal.Y,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r001 = $r003.<com.threatmetrix.TrustDefender.internal.K7: com.threatmetrix.TrustDefender.internal.K try>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.K7$E: void <init>(com.threatmetrix.TrustDefender.internal.K7,com.threatmetrix.TrustDefender.internal.K7$E,java.lang.String,com.threatmetrix.TrustDefender.internal.Y,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $z000 = virtualinvoke $r001.<com.threatmetrix.TrustDefender.internal.K: boolean for()>()
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.R: boolean for()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r09 = $r03.<com.threatmetrix.TrustDefender.internal.R: java.util.concurrent.CountDownLatch 'long'>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.R: boolean for()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $i05 = virtualinvoke $r09.<java.lang.Object: int hashCode()>()
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.R: boolean for()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r07.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i05)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.R: boolean for()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r06 = virtualinvoke $r07.<java.lang.Object: java.lang.String toString()>()
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.R: boolean for()>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <com.threatmetrix.TrustDefender.internal.TL: void 'new'(java.lang.String,java.lang.String)>($r05, $r06)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.threatmetrix.TrustDefender.internal.TL: void 'new'(java.lang.String,java.lang.String)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r04.<java.io.ByteArrayOutputStream: void write(byte[],int,int)>($r00, 0, $i00) in method <com.braintreepayments.api.internal.HttpClient: java.lang.String readStream(java.io.InputStream,boolean)> was called with values from the following sources:
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - - $r10 = virtualinvoke $r27.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.braintreepayments.api.internal.HttpClient: java.lang.String parseResponse(java.net.HttpURLConnection)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	on Path: 
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.braintreepayments.api.internal.HttpClient: java.lang.String parseResponse(java.net.HttpURLConnection)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r10 = virtualinvoke $r27.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.braintreepayments.api.internal.HttpClient: java.lang.String parseResponse(java.net.HttpURLConnection)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $r20 = specialinvoke $r08.<com.braintreepayments.api.internal.HttpClient: java.lang.String readStream(java.io.InputStream,boolean)>($r10, $z00)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.braintreepayments.api.internal.HttpClient: java.lang.String readStream(java.io.InputStream,boolean)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> r06 = (java.io.InputStream) $r09
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.braintreepayments.api.internal.HttpClient: java.lang.String readStream(java.io.InputStream,boolean)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> $i00 = virtualinvoke r06.<java.io.InputStream: int read(byte[])>($r00)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 	 -> <com.braintreepayments.api.internal.HttpClient: java.lang.String readStream(java.io.InputStream,boolean)>
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r04.<java.io.ByteArrayOutputStream: void write(byte[],int,int)>($r00, 0, $i00)
+2021-12-30 16:46:28 [main] INFO  s.j.i.a.SetupApplication$InPlaceInfoflow - Data flow solver took 2623 seconds. Maximum memory consumption: 55985 MB
+2021-12-30 16:46:28 [main] INFO  s.j.i.android.SetupApplication - Found 6 leaks
+2021-12-30 16:46:29 [main] INFO  d.u.t.heapdumps.analysis.Driver - Finished analysis. Took 45.23 min. Writing out results...
+2021-12-30 16:46:29 [main] INFO  d.u.t.heapdumps.analysis.Driver - Terminaton state: 0, #Sources 6, #Sinks 5, #Classes: 15974, #Methods: 98711, #AppClasses: 12488, #AppMethods: 62921
+2021-12-30 16:46:29 [main] INFO  d.u.t.heapdumps.analysis.Driver - Callgraph Construction: 83 seconds
+Taint Propagation: 2484 seconds
+Path Reconstruction: 38 seconds
+Total Runtime: 2707 seconds
+Max Memory Consumption: 55985 MB
+
+	Command being timed: "java -d64 -Xmx80G -jar ../heapster-1.0-SNAPSHOT-jar-with-dependencies.jar -dis no_dumps /data/wenfeng/Android/Sdk/platforms ../DroidMacroBench/repacked_apps/com.contextlogic.wish.apk"
+	User time (seconds): 25114.51
+	System time (seconds): 422.88
+	Percent of CPU this job got: 939%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 45:17.19
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 85289872
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 23779234
+	Voluntary context switches: 27052661
+	Involuntary context switches: 107158
+	Swaps: 0
+	File system inputs: 43624
+	File system outputs: 3544
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
